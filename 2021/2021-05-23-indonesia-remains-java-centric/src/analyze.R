@@ -134,7 +134,7 @@ popDistribution <- popIsland %>%
   distinct(island, .keep_all = TRUE) %>%
   ungroup() %>%
   mutate(population_share = population_island / total * 100) %>%
-  select(-total) %>%
+  select(-c(total, population_island)) %>%
   relocate(island)
 
 popDistribution %>%
@@ -158,19 +158,26 @@ respGRDPparsed <- respGRDPraw %>%
   content(type = 'text') %>%
   fromJSON(simplifyDataFrame = TRUE)
 
-respGRDPparsed %>% str()
+achor_regex <- function(data) {
 
-idComponent <- as_tibble(respGRDPparsed$turvar) %>%
-  mutate(val = paste0('^', val, '$'))
+  if (!any('val' %in% names(data))) {
+    stop('`data` must contain `val` column.')
+  }
 
-idProvince <- as_tibble(respGRDPparsed$vervar) %>%
-  mutate(val = paste0('^', val, '$'))
+  data_anchored <- data %>%
+    dplyr::mutate(val = paste0('^', val, '$'))
 
-idYear <- as_tibble(respGRDPparsed$tahun) %>%
-  mutate(val = paste0('^', val, '$'))
+  return(data_anchored)
 
-idQuarter <- as_tibble(respGRDPparsed$turtahun) %>%
-  mutate(val = paste0('^', val, '$'))
+}
+
+idComponent <- respGRDPparsed$turvar %>% as_tibble() %>% anchor_regex()
+
+idProvince <- respGRDPparsed$vervar %>% as_tibble() %>% anchor_regex()
+
+idYear <- respGRDPparsed$tahun %>% as_tibble() %>% anchor_regex()
+
+idQuarter <- respGRDPparsed$turtahun %>% as_tibble() %>% anchor_regex()
 
 GRDPraw <- as_tibble(respGRDPparsed$datacontent)
 
