@@ -1,4 +1,4 @@
-province,in_total,in_rate,out_total,out_rate,net_total,net_rate
+province,in_total,in_share,out_total,out_share,net_total,net_share
 Aceh,232693,4.4,307845,5.7,-75152,-1.4
 Sumatera Utara,586721,4,2341095,14.4,-1754374,-11.4
 Sumatera Barat,405024,7.5,1232335,19.7,-827311,-14.2
@@ -12,7 +12,7 @@ Kepulauan Riau,1010257,46.4,140139,10.7,870118,50
 DKI Jakarta,3745690,35.6,3308356,32.8,437334,4.2
 Jawa Barat,5698359,11.6,2651834,5.8,3046525,6.4
 Jawa Tengah,1143288,3.3,6943718,17.2,-5800430,-15.4
-DI Yogyakarta Jawa Timur,686699,17.9,878536,21.8,-191837,-4.9
+DI Yogyakarta,686699,17.9,878536,21.8,-191837,-4.9
 Jawa Timur,1064004,2.7,3770731,8.9,-2706727,-6.6
 Banten,2898000,22.5,776720,7.2,2121280,18
 Bali,478193,11.1,269820,6.6,208373,-4.9

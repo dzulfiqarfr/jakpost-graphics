@@ -269,7 +269,7 @@ migration <- read_csv(
 )
 
 migrationIn <- migration %>%
-  select(province, in_rate) %>%
+  select(province, in_share) %>%
   mutate(province = str_replace_all(province, 'Kep\\.', 'Kepulauan'))
 
 
@@ -279,7 +279,7 @@ GRDPmigration <- GRDPannual %>%
   filter(year == '2020') %>%
   left_join(migrationIn) %>%
   left_join(pop2020total) %>%
-  rename('population' = '2020', 'migrant_incoming_share' = 'in_rate') %>%
+  rename('population' = '2020', 'migrant_incoming_share' = 'in_share') %>%
   add_island_group()
 
 GRDPperCapita <- GRDPmigration %>%
