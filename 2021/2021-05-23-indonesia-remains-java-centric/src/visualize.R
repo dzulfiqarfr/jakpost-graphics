@@ -56,23 +56,27 @@ plotPop <- ggplot(
     y = NULL
   ) +
   dfr_theme() +
-  theme(legend.position = 'top')
+  theme(
+    legend.position = 'top',
+    axis.line.x = element_line(color = 'black'),
+    axis.ticks.x = element_line(color = 'black')
+  )
 
 
 ## GRDP distribution ----
 
-GRDPdistribution <- read_csv(
-  here(dirYear, dirProject, 'result', 'grdp-distribution.csv')
+GDPdistribution <- read_csv(
+  here(dirYear, dirProject, 'result', 'gdp-distribution.csv')
 )
 
-GRDPdistributionDec <- GRDPdistribution %>%
+GDPdistributionDec <- GDPdistribution %>%
   mutate(
     island = fct_reorder(island, grdp_share),
     grdp_share = grdp_share / 100
   )
 
-plotGRDP <- ggplot(
-  GRDPdistributionDec,
+plotGDP <- ggplot(
+  GDPdistributionDec,
   aes(x = year, y = grdp_share, fill = island)
 ) +
   geom_col(position = 'stack', width = 0.6, show.legend = FALSE) +
@@ -92,13 +96,17 @@ plotGRDP <- ggplot(
     x = NULL,
     y = NULL
   ) +
-  dfr_theme()
+  dfr_theme() +
+  theme(
+    axis.line.x = element_line(color = 'black'),
+    axis.ticks.x = element_line(color = 'black')
+  )
 
 
 ## Patchwork ----
 
 plotPop +
-  plotGRDP +
+  plotGDP +
   plot_annotation(
     title = 'Population concentration follows development pattern',
     subtitle = 'Population and GDP distribution, by island (percent)',

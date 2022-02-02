@@ -158,7 +158,7 @@ respGRDPparsed <- respGRDPraw %>%
   content(type = 'text') %>%
   fromJSON(simplifyDataFrame = TRUE)
 
-achor_regex <- function(data) {
+anchor_regex <- function(data) {
 
   if (!any('val' %in% names(data))) {
     stop('`data` must contain `val` column.')
@@ -244,7 +244,7 @@ GRDPisland <- GRDPannual %>%
   ungroup() %>%
   relocate(island)
 
-GRDPtotal <- GRDPclean %>%
+GDP <- GRDPclean %>%
   filter(
     component == 'PDRB',
     quarter == 'Tahunan',
@@ -253,13 +253,13 @@ GRDPtotal <- GRDPclean %>%
   select(year, expenditure) %>%
   rename('total' = 'expenditure')
 
-GRDPdistribution <- GRDPisland %>%
-  left_join(GRDPtotal) %>%
+GDPdistribution <- GRDPisland %>%
+  left_join(GDP) %>%
   mutate(grdp_share = grdp_island / total * 100) %>%
   select(-c(grdp_island, total))
 
-GRDPdistribution %>%
-  write_csv(here(dirYear, dirProject, 'result', 'grdp-distribution.csv'))
+GDPdistribution %>%
+  write_csv(here(dirYear, dirProject, 'result', 'gdp-distribution.csv'))
 
 
 ## Lifetime migration ----
