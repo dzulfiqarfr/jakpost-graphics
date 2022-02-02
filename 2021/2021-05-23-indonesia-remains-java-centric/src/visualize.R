@@ -71,13 +71,13 @@ GDPdistribution <- read_csv(
 
 GDPdistributionDec <- GDPdistribution %>%
   mutate(
-    island = fct_reorder(island, grdp_share),
-    grdp_share = grdp_share / 100
+    island = fct_reorder(island, gdp_share),
+    gdp_share = gdp_share / 100
   )
 
 plotGDP <- ggplot(
   GDPdistributionDec,
-  aes(x = year, y = grdp_share, fill = island)
+  aes(x = year, y = gdp_share, fill = island)
 ) +
   geom_col(position = 'stack', width = 0.6, show.legend = FALSE) +
   scale_x_continuous(

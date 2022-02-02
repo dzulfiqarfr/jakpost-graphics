@@ -255,7 +255,7 @@ GDP <- GRDPclean %>%
 
 GDPdistribution <- GRDPisland %>%
   left_join(GDP) %>%
-  mutate(grdp_share = grdp_island / total * 100) %>%
+  mutate(gdp_share = grdp_island / total * 100) %>%
   select(-c(grdp_island, total))
 
 GDPdistribution %>%
