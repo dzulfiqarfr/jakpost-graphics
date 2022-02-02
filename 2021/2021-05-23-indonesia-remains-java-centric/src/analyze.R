@@ -50,55 +50,55 @@ popAllTotal <- popAll %>%
 
 # Create island groups to find the population distribution
 groupJava <- c(
-  "DKI Jakarta",
-  "Jawa Tengah",
-  "Jawa Timur",
-  "Jawa Barat",
-  "DI Yogyakarta",
-  "Banten"
+  'DKI Jakarta',
+  'Jawa Tengah',
+  'Jawa Timur',
+  'Jawa Barat',
+  'DI Yogyakarta',
+  'Banten'
 )
 
 groupKalimantan <- c(
-  "Kalimantan Tengah",
-  "Kalimantan Timur",
-  "Kalimantan Barat",
-  "Kalimantan Selatan",
-  "Kalimantan Utara"
+  'Kalimantan Tengah',
+  'Kalimantan Timur',
+  'Kalimantan Barat',
+  'Kalimantan Selatan',
+  'Kalimantan Utara'
 )
 
 groupSulawesi <- c(
-  "Sulawesi Tengah",
-  "Sulawesi Tenggara",
-  "Sulawesi Barat",
-  "Sulawesi Utara",
-  "Sulawesi Selatan",
-  "Gorontalo"
+  'Sulawesi Tengah',
+  'Sulawesi Tenggara',
+  'Sulawesi Barat',
+  'Sulawesi Utara',
+  'Sulawesi Selatan',
+  'Gorontalo'
 )
 
 groupSumatra <- c(
-  "Aceh",
-  "Sumatera Barat",
-  "Jambi",
-  "Bengkulu",
-  "Kepulauan Bangka Belitung",
-  "Sumatera Utara",
-  "Riau",
-  "Sumatera Selatan",
-  "Lampung",
-  "Kepulauan Riau"
+  'Aceh',
+  'Sumatera Barat',
+  'Jambi',
+  'Bengkulu',
+  'Kepulauan Bangka Belitung',
+  'Sumatera Utara',
+  'Riau',
+  'Sumatera Selatan',
+  'Lampung',
+  'Kepulauan Riau'
 )
 
 groupBaliNT <- c(
-  "Bali",
-  "Nusa Tenggara Timur",
-  "Nusa Tenggara Barat"
+  'Bali',
+  'Nusa Tenggara Timur',
+  'Nusa Tenggara Barat'
 )
 
 groupMalukuPapua <- c(
-  "Maluku Utara",
-  "Maluku",
-  "Papua",
-  "Papua Barat"
+  'Maluku Utara',
+  'Maluku',
+  'Papua',
+  'Papua Barat'
 )
 
 add_island_group <- function(data) {
