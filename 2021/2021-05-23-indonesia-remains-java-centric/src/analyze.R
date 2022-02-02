@@ -164,10 +164,10 @@ anchor_regex <- function(data) {
     stop('`data` must contain `val` column.')
   }
 
-  data_anchored <- data %>%
+  dataAnchored <- data %>%
     dplyr::mutate(val = paste0('^', val, '$'))
 
-  return(data_anchored)
+  return(dataAnchored)
 
 }
 
