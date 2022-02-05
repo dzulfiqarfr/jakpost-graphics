@@ -119,6 +119,6 @@ plotPop +
 
 ggsave(
   here(dirYear, dirProject, "result", "population-gdp-distribution.png"),
-  width = 9.5,
+  width = 10,
   height = 5
 )
