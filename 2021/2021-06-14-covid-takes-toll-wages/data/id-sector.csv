@@ -1,0 +1,19 @@
+id,sector
+A,"Agriculture, forestry and fishery"
+B,Mining
+C,Manufacturing
+D,Electricity and gas procurement
+E,"Water, waste and recycling management procurement"
+F,Construction
+G,Wholesale and retail trade; car and motorcycle repair
+H,Transportation and warehouse
+I,Accommodation and food and beverage services
+J,Information and communication
+K,Financial and insurance services
+L,Real estate
+"M, N",Corporate service
+O,"Government, defense and social security administration"
+P,Education service
+Q,Healthcare and social activity services
+"R, S, T, U",Other
+Rata-Rata,Overall
