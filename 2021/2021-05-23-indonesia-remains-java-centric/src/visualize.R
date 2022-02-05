@@ -108,7 +108,7 @@ plotGDP <- ggplot(
 plotPop +
   plotGDP +
   plot_annotation(
-    title = "Population concentration follows development pattern",
+    title = "Population, economic development remain Java-centric",
     subtitle = "Population and GDP distribution, by island (percent)",
     caption = paste0(
       "Source: Statistics Indonesia (BPS); *The Jakarta Post* analysis<br>",
@@ -119,6 +119,6 @@ plotPop +
 
 ggsave(
   here(dirYear, dirProject, "result", "population-gdp-distribution.png"),
-  width = 10,
+  width = 9.5,
   height = 5
 )
