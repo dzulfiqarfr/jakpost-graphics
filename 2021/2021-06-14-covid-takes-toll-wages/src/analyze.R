@@ -150,7 +150,7 @@ wageGrowth %>%
 
 ## Minimum wage by province ----
 
-wageMinRaw <- read_csv(
+wageMin <- read_csv(
   here(dirYear, dirProject, "data", "wage-2021-02-01-cleaned.csv")
 )
 
@@ -161,7 +161,7 @@ provinceNameEn <- read_csv(
 provinceNameEn <- provinceNameEn %>%
   mutate(province_id = paste0("^", province_id, "$"))
 
-wageMinClean <- wageMinRaw %>%
+wageMinClean <- wageMin %>%
   select(-c(starts_with("growth"), `2020-08-01`)) %>%
   pivot_longer(
     cols = c(`2020-02-01`, `2021-02-01`),
