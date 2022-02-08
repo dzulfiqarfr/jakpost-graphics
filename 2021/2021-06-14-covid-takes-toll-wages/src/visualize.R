@@ -30,7 +30,7 @@ plotWage <- ggplot(wageGrowth, aes(x = date, y = wage_real_growth)) +
     lwd = 0.5,
     lty = "dashed"
   ) +
-  geom_line(lwd = 1.25, color = "#304890FF") +
+  geom_line(lwd = 1.25, color = "#6078A8FF") +
   geom_text(
     data = tibble(x = ymd("2020-03-01"), y = 20, label = "COVID-19 pandemic"),
     aes(x = x, y = y, label = label),
@@ -72,7 +72,7 @@ plotUnemp <- ggplot(unemp, aes(x = date, y = unemployment_rate)) +
     lwd = 0.5,
     lty = "dashed"
   ) +
-  geom_line(lwd = 1.25, color = "#304890FF") +
+  geom_line(lwd = 1.25, color = "#6078A8FF") +
   scale_x_continuous(
     breaks = seq(ymd("2016-02-01"), ymd("2020-02-01"), by = "1 year"),
     labels = c("Feb\n2016", "'17", "'18", "'19", "'20")
@@ -166,7 +166,7 @@ ggplot(
   geom_point(
     pch = 21,
     color = "white",
-    fill = "#304890FF",
+    fill = "#486090FF",
     size = 4,
     alpha = 0.75
   ) +
@@ -183,7 +183,6 @@ ggplot(
     size = dfr_convert_font_size(),
     color = "#757575",
     hjust = 0,
-    # vjust = "outward",
     nudge_x = 0.5,
     label.size = 0,
     label.color = NA
@@ -201,7 +200,7 @@ ggplot(
       "annual growth in 2020 by sector (percent)"
     ),
     x = "Gross value added",
-    y = "Wage",
+    y = "Average net wage",
     caption = paste0(
       "\\*At 2010 prices<br>",
       "Source: Statistics Indonesia (BPS); World Bank; ",
@@ -249,7 +248,7 @@ ggplot(wageMinClean, aes(y = province)) +
     aes(x = wage_minimum_2021),
     pch = 21,
     color = "white",
-    fill = "#C87D4BFF",
+    fill = "#A8A8A8FF",
     size = 3,
     alpha = 0.75
   ) +
@@ -263,11 +262,12 @@ ggplot(wageMinClean, aes(y = province)) +
     aes(x = x, y = y, label = label),
     size = dfr_convert_font_size(),
     hjust = 1,
-    nudge_x = -0.15,
-    color = "#C87D4BFF"
+    nudge_x = -0.175,
+    color = "#A8A8A8FF",
+    fontface = "bold"
   ) +
   scale_x_continuous(breaks = seq(1, 5), limits = c(1, 5)) +
-  scale_fill_manual(values = c("2020" = "#4B647DFF", "2021" = "#19324BFF")) +
+  scale_fill_manual(values = c("2020" = "#90A8C0FF", "2021" = "#304890FF")) +
   facet_wrap(~ category, ncol = 2, scales = "free_y") +
   labs(
     title = "Wage falls below minimum level in some provinces",
@@ -287,7 +287,7 @@ ggplot(wageMinClean, aes(y = province)) +
   theme(
     axis.text.y = element_text(hjust = 0),
     panel.grid.major.y = element_blank(),
-    legend.position = c(0.025, 0.975),
+    legend.position = c(0.02, 1.025),
     legend.justification = c(0, 1)
   )
 
