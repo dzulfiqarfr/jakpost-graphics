@@ -24,13 +24,13 @@ wageGrowth <- read_csv(here(dirYear, dirProject, "result", "wage-growth.csv"))
 
 plotWage <- ggplot(wageGrowth, aes(x = date, y = wage_real_growth)) +
   geom_hline(yintercept = 0, lwd = 12/22, color = "black") +
+  geom_line(lwd = 1, color = "#6078A8FF") +
   geom_vline(
     xintercept = ymd("2020-03-01"),
     color = "#757575",
     lwd = 0.5,
     lty = "dashed"
   ) +
-  geom_line(lwd = 1.25, color = "#6078A8FF") +
   geom_text(
     data = tibble(x = ymd("2020-03-01"), y = 20, label = "COVID-19 pandemic"),
     aes(x = x, y = y, label = label),
@@ -66,13 +66,13 @@ plotWage <- ggplot(wageGrowth, aes(x = date, y = wage_real_growth)) +
 unemp <- read_csv(here(dirYear, dirProject, "result", "unemployment-rate.csv"))
 
 plotUnemp <- ggplot(unemp, aes(x = date, y = unemployment_rate)) +
+  geom_line(lwd = 1, color = "#6078A8FF") +
   geom_vline(
     xintercept = ymd("2020-03-01"),
     color = "#757575",
     lwd = 0.5,
     lty = "dashed"
   ) +
-  geom_line(lwd = 1.25, color = "#6078A8FF") +
   scale_x_continuous(
     breaks = seq(ymd("2016-02-01"), ymd("2020-02-01"), by = "1 year"),
     labels = c("Feb\n2016", "'17", "'18", "'19", "'20")
@@ -105,8 +105,8 @@ plotWage +
     caption = paste0(
       "\\*At 2010 prices<br>",
       "Source: Statistics Indonesia (BPS); World Bank; ",
-      "*The Jakarta Post* analysis<br>",
-      "Chart: JP/Dzulfiqar Fathur Rahman"
+      "author's analysis<br>",
+      "Chart: Dzulfiqar Fathur Rahman"
     ),
     theme = dfr_theme()
   )
@@ -204,8 +204,8 @@ ggplot(
     caption = paste0(
       "\\*At 2010 prices<br>",
       "Source: Statistics Indonesia (BPS); World Bank; ",
-      "*The Jakarta Post* analysis<br>",
-      "Chart: JP/Dzulfiqar Fathur Rahman"
+      "author's analysis<br>",
+      "Chart: Dzulfiqar Fathur Rahman"
     )
   ) +
   dfr_theme()
@@ -280,7 +280,7 @@ ggplot(wageMinClean, aes(y = province)) +
     caption = paste0(
       "\\*February figures<br>",
       "Source: Statistics Indonesia (BPS)<br>",
-      "Chart: JP/Dzulfiqar Fathur Rahman"
+      "Chart: Dzulfiqar Fathur Rahman"
     )
   ) +
   dfr_theme() +
