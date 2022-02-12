@@ -50,7 +50,7 @@ plotWage <- ggplot(wageGrowth, aes(x = date, y = wage_real_growth)) +
     position = "right"
   ) +
   labs(
-    subtitle = "Real average net wage\\* annual growth<br>(percent)",
+    subtitle = "Average net wage\\* year-on-year change<br>(percent)",
     x = NULL,
     y = NULL
   ) +
@@ -167,13 +167,13 @@ ggplot(
     pch = 21,
     color = "white",
     fill = "#486090FF",
-    size = 4,
+    size = 4.5,
     alpha = 0.75
   ) +
   geom_smooth(
     method = "lm",
     se = FALSE,
-    lwd = 0.5,
+    lwd = 0.75,
     color = "#757575",
     lty = "dashed"
   ) +
@@ -196,15 +196,14 @@ ggplot(
   labs(
     title = "Decline in wage follows contraction across all sectors",
     subtitle = paste0(
-      "Real average net wage\\* and real gross value added\\* ",
-      "annual growth in 2020 by sector (percent)"
+      "Average net wage\\* and gross value added\\* ",
+      "annual change in 2020, by sector (percent)"
     ),
     x = "Gross value added",
     y = "Average net wage",
     caption = paste0(
       "\\*At 2010 prices<br>",
-      "Source: Statistics Indonesia (BPS); World Bank; ",
-      "author's analysis<br>",
+      "Source: Statistics Indonesia (BPS); World Bank; author's analysis<br>",
       "Chart: Dzulfiqar Fathur Rahman"
     )
   ) +
