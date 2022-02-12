@@ -94,20 +94,26 @@ importCategory <- importColumnNamed %>%
       .fns = ~str_remove_all(.x, "[\\p{No}]") # Remove superscripts
     ),
     across(cols = starts_with("category"), .fns = ~str_trim(.x)),
+    # Main categories are prefixed with roman numerals
     category_main = case_when(
       str_detect(category_eng, "^I++\\.|IV\\.|V\\.") ~ category_eng
     ),
     across(
       cols = starts_with("category"),
+      # Remove roman numeral prefixes
       .fns = ~str_remove_all(.x, "^I++\\.|IV\\.|V\\.")
     ),
+    # Second categories, which consist of raw materials and capital goods,
+    # are prefixed with capital letters from A to D
     category_second = case_when(
       str_detect(category_eng, "^[A-D]\\.") ~ category_eng
     ),
     across(
       cols = starts_with("category"),
-      .fns = ~str_remove_all(.x, "^[A-D]\\.")
+      .fns = ~str_remove_all(.x, "^[A-D]\\.") # Remove capital letter prefixes
     ),
+    # The are rows with total imports for the main categories, hence add
+    # the main category labels to `category_second` column for those rows
     category_second = case_when(
       is.na(category_second) ~ category_main,
       TRUE ~ category_second
@@ -119,7 +125,7 @@ importCategory <- importColumnNamed %>%
   select(-category_idn) %>%
   rename("category_third" = "category_eng")
 
-importClean <- importCategory %>%
+importLong <- importCategory %>%
   pivot_longer(
     cols = columnFirstLast[1]:columnFirstLast[2],
     names_to = "date",
@@ -131,19 +137,21 @@ categoryRawCapitalGoods <- c(
   "Capital goods"
 )
 
-importGrouped <- importClean %>%
+importGrouped <- importLong %>%
   filter(
     category_second %in% categoryRawCapitalGoods,
-    # Remove totals by second category
+    # Remove totals by second category as we will calculate it using
+    # `group_by()` and `mutate()` later so we don't have to create a new tibble
+    # and join the tibble
     !(category_third %in% categoryRawCapitalGoods),
-    !str_detect(category_third, "^o/w"), # Remove subcategories
+    !str_detect(category_third, "^o/w"), # Remove these nested categories
     !str_detect(date, "annual")
   ) %>%
   mutate(
     date = ymd(date),
     import = as.double(import),
     category_second = str_remove_all(category_second, " and auxiliary goods"),
-    # Make subcategories to simplify categories
+    # Make subcategories to simplify the third categories
     category_fourth = case_when(
       str_detect(category_third, "Food and beverages") ~ "Food and beverages",
       str_detect(category_third, "Industrial supplies") ~ "Industrial supplies",
@@ -163,15 +171,14 @@ importCategoryFourth <- importGrouped %>%
   ungroup() %>%
   select(-c(import, category_third))
 
-# Calculate the sum of imports grouped by the second category, which consists
-# of raw materials and capital goods
+# Calculate the sum of imports grouped by the second category
 importCategorySecond <- importCategoryFourth %>%
   group_by(category_second, date) %>%
   mutate(import_total_category_second = sum(import_total_category_fourth)) %>%
   ungroup()
 
 # Calculate the contribution of each item in the fourth category to the
-# year-on-year change of the second category
+# year-on-year change of the raw materials and capital goods, respectively
 importContributionChange <- importCategorySecond %>%
   mutate(
     month = month(date),
