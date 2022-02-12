@@ -111,8 +111,8 @@ plotPop +
     title = "Population, economic development remain Java-centric",
     subtitle = "Population and GDP distribution, by island (percent)",
     caption = paste0(
-      "Source: Statistics Indonesia (BPS); *The Jakarta Post* analysis<br>",
-      "Chart: JP/Dzulfiqar Fathur Rahman"
+      "Source: Statistics Indonesia (BPS); author's analysis<br>",
+      "Chart: Dzulfiqar Fathur Rahman"
     ),
     theme = dfr_theme()
   )
