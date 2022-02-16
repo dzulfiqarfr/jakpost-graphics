@@ -151,11 +151,21 @@ wageGrowth %>%
 ## Minimum wage by province ----
 
 wageMin <- read_csv(
-  here(dirYear, dirProject, "data", "wage-2021-02-01-cleaned.csv")
+  here(
+    dirYear,
+    dirProject,
+    "data",
+    "wage-2021-02-01-cleaned.csv"
+  )
 )
 
 provinceNameEn <- read_csv(
-  here(dirYear, dirProject, "data", "province-name.csv")
+  here(
+    dirYear,
+    dirProject,
+    "data",
+    "province-name.csv"
+  )
 )
 
 provinceNameEn <- provinceNameEn %>%

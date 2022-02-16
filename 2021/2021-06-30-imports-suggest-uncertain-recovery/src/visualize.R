@@ -17,7 +17,12 @@ i_am(paste(dirYear, dirProject, "src", "visualize.R", sep = "/"))
 # Plot ----
 
 importContributionChange <- read_csv(
-  here(dirYear, dirProject, "result", "import-contribution-change-yoy.csv")
+  here(
+    dirYear,
+    dirProject,
+    "result",
+    "import-contribution-change-yoy.csv"
+  )
 )
 
 importContributionChangeSplit <- importContributionChange %>%

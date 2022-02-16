@@ -19,7 +19,12 @@ i_am(paste(dirYear, dirProject, "src", "visualize.R", sep = "/"))
 ## Population distribution ----
 
 popDistribution <- read_csv(
-  here(dirYear, dirProject, "result", "population-distribution.csv")
+  here(
+    dirYear,
+    dirProject,
+    "result",
+    "population-distribution.csv"
+  )
 )
 
 popDistributionDec <- popDistribution %>%
@@ -66,7 +71,12 @@ plotPop <- ggplot(
 ## GRDP distribution ----
 
 GDPdistribution <- read_csv(
-  here(dirYear, dirProject, "result", "gdp-distribution.csv")
+  here(
+    dirYear,
+    dirProject,
+    "result",
+    "gdp-distribution.csv"
+  )
 )
 
 GDPdistributionDec <- GDPdistribution %>%

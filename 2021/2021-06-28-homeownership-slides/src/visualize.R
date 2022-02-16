@@ -21,7 +21,12 @@ i_am(paste(dirYear, dirProject, "src", "visualize.R", sep = "/"))
 ## Homeownership ----
 
 ownershipIndex <- read_csv(
-  here(dirYear, dirProject, "result", "homeownership-index.csv")
+  here(
+    dirYear,
+    dirProject,
+    "result",
+    "homeownership-index.csv"
+  )
 )
 
 

@@ -121,7 +121,12 @@ ggsave(
 ## Real wage growth and sectoral value added growth ----
 
 wageValueAddedGrowth <- read_csv(
-  here(dirYear, dirProject, "result", "wage-value-added-growth.csv")
+  here(
+    dirYear,
+    dirProject,
+    "result",
+    "wage-value-added-growth.csv"
+  )
 )
 
 filterSector <- c(

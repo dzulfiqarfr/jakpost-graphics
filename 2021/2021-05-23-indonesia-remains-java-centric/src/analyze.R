@@ -24,7 +24,12 @@ pop2010 <- read_csv(
 )
 
 pop2020 <- read_csv(
-  here(dirYear, dirProject, "data", "bps-population-2020-cleaned.csv")
+  here(
+    dirYear,
+    dirProject,
+    "data",
+    "bps-population-2020-cleaned.csv"
+  )
 )
 
 pop2020total <- pop2020 %>%
@@ -88,11 +93,7 @@ groupSumatra <- c(
   "Kepulauan Riau"
 )
 
-groupBaliNT <- c(
-  "Bali",
-  "Nusa Tenggara Timur",
-  "Nusa Tenggara Barat"
-)
+groupBaliNT <- c("Bali", "Nusa Tenggara Timur", "Nusa Tenggara Barat")
 
 groupMalukuPapua <- c(
   "Maluku Utara",
@@ -151,7 +152,12 @@ idVar <- "533"
 
 respGRDPraw <- GET(
   url = urlBPS,
-  query = list(model = "data", domain = "0000", var = idVar, key = keyBPS)
+  query = list(
+    model = "data",
+    domain = "0000",
+    var = idVar,
+    key = keyBPS
+  )
 )
 
 respGRDPparsed <- respGRDPraw %>%
@@ -265,7 +271,12 @@ GDPdistribution %>%
 ## Lifetime migration ----
 
 migration <- read_csv(
-  here(dirYear, dirProject, "data", "bps-lifetime-migration-cleaned.csv")
+  here(
+    dirYear,
+    dirProject,
+    "data",
+    "bps-lifetime-migration-cleaned.csv"
+  )
 )
 
 migrationIn <- migration %>%

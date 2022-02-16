@@ -230,7 +230,12 @@ priceSubset %>%
 ## Mortgage ----
 
 mortgagePayment <- read_csv(
-  here(dirYear, dirProject, "data", "bps-mortgage-payment-2019-cleaned.csv")
+  here(
+    dirYear,
+    dirProject,
+    "data",
+    "bps-mortgage-payment-2019-cleaned.csv"
+  )
 )
 
 mortgagePaymentOverall <- mortgagePayment %>%

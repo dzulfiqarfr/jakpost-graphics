@@ -208,5 +208,10 @@ importContributionChangeClean <- importContributionChange %>%
 
 importContributionChangeClean %>%
   write_csv(
-    here(dirYear, dirProject, "result", "import-contribution-change-yoy.csv")
+    here(
+      dirYear,
+      dirProject,
+      "result",
+      "import-contribution-change-yoy.csv"
+    )
   )
