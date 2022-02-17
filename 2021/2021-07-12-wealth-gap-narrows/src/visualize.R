@@ -165,12 +165,8 @@ ggplot() +
   ) +
   geom_ribbon(
     data = areaShrinkInequality,
-    aes(
-      x = decile,
-      ymin = wealth_dis_cum_2019,
-      ymax = wealth_dis_cum_2020
-    ),
-    fill = "#36B3D9",
+    aes(x = decile, ymin = wealth_dis_cum_2019, ymax = wealth_dis_cum_2020),
+    fill = "#4B647DFF",
     alpha = 0.15
   ) +
   geom_hline(
@@ -189,16 +185,6 @@ ggplot() +
     lwd = 0.5,
     lty = "dashed"
   ) +
-  scale_x_continuous(
-    breaks = seq(10, 100, 10),
-    limits = c(10, 100)
-  ) +
-  scale_y_continuous(
-    breaks = seq(-25, 100, 25),
-    limits = c(-25, 100),
-    position = "right"
-  ) +
-  scale_color_manual(values = c("2019" = "#36B3D9", "2020" = "#127DB3")) +
   geom_text(
     data = tibble(x = 55, y = 60, label = "Equality"),
     aes(x = x, y = y, label = label),
@@ -212,7 +198,7 @@ ggplot() +
     aes(x = x, y = y, label = label),
     size = dfr_convert_font_size(),
     hjust = 1,
-    color = "#36B3D9",
+    color = "#4B647DFF",
     nudge_y = -22.5,
     nudge_x = -2.5,
     segment.curvature = 0.25,
@@ -221,6 +207,16 @@ ggplot() +
     label.size = NA,
     label.padding = unit(0, "lines")
   ) +
+  scale_x_continuous(
+    breaks = seq(10, 100, 10),
+    limits = c(10, 100)
+  ) +
+  scale_y_continuous(
+    breaks = seq(-25, 100, 25),
+    limits = c(-25, 100),
+    position = "right"
+  ) +
+  scale_color_manual(values = c("2019" = "#4B647DFF", "2020" = "#19324BFF")) +
   labs(
     title = "Wealth gap narrows during pandemic",
     subtitle = "Wealth distribution in Indonesia (percent)",
