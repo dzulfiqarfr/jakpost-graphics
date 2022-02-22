@@ -76,9 +76,9 @@ ggplot(
   ) +
   scale_fill_manual(
     values = c(
-      "Nonfinancial asset" = "#19324BFF",
-      "Financial asset" = "#4B647DFF",
-      "Debt" = "#C89664FF"
+      "Nonfinancial asset" = "#127DB3",
+      "Financial asset" = "#36B3D9",
+      "Debt" = "grey"
     )
   ) +
   labs(
@@ -166,7 +166,7 @@ ggplot() +
   geom_ribbon(
     data = areaShrinkInequality,
     aes(x = decile, ymin = wealth_dis_cum_2019, ymax = wealth_dis_cum_2020),
-    fill = "#36A3D9",
+    fill = "#36B3D9",
     alpha = 0.15
   ) +
   geom_hline(
@@ -198,7 +198,7 @@ ggplot() +
     aes(x = x, y = y, label = label),
     size = dfr_convert_font_size(),
     hjust = 1,
-    color = "#36A3D9",
+    color = "#36B3D9",
     nudge_y = -22.5,
     nudge_x = -2.5,
     segment.curvature = 0.25,
@@ -216,7 +216,7 @@ ggplot() +
     limits = c(-25, 100),
     position = "right"
   ) +
-  scale_color_manual(values = c("2019" = "#36A3D9", "2020" = "#2477B3")) +
+  scale_color_manual(values = c("2019" = "#36B3D9", "2020" = "#127DB3")) +
   labs(
     title = "Wealth gap narrows during pandemic",
     subtitle = "Wealth distribution in Indonesia (percent)",
