@@ -30,6 +30,7 @@ popDistribution <- read_csv(
 popDistributionDec <- popDistribution %>%
   mutate(
     island = fct_reorder(island, population_share),
+    # Convert to decimal to stack the bars
     population_share = population_share / 100
   )
 
