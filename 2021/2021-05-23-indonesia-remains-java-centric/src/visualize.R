@@ -55,11 +55,7 @@ plotPop <- ggplot(
   ) +
   scale_fill_manual(values = palIsland) +
   guides(fill = guide_legend(reverse = TRUE)) +
-  labs(
-    subtitle = "Population",
-    x = NULL,
-    y = NULL
-  ) +
+  labs(subtitle = "Population", x = NULL, y = NULL) +
   dfr_theme() +
   theme(
     legend.position = "top",
@@ -70,7 +66,7 @@ plotPop <- ggplot(
 
 ## GRDP distribution ----
 
-GDPdistribution <- read_csv(
+grdpDistribution <- read_csv(
   here(
     dirYear,
     dirProject,
@@ -79,14 +75,14 @@ GDPdistribution <- read_csv(
   )
 )
 
-GDPdistributionDec <- GDPdistribution %>%
+grdpDistributionDec <- grdpDistribution %>%
   mutate(
     island = fct_reorder(island, gdp_share),
-    gdp_share = gdp_share / 100
+    gdp_share = gdp_share / 100 # Convert to decimal to stack the bars
   )
 
 plotGDP <- ggplot(
-  GDPdistributionDec,
+  grdpDistributionDec,
   aes(x = year, y = gdp_share, fill = island)
 ) +
   geom_col(position = "stack", width = 0.6, show.legend = FALSE) +
@@ -101,11 +97,7 @@ plotGDP <- ggplot(
   ) +
   scale_fill_manual(values = palIsland) +
   guides(fill = guide_legend(reverse = TRUE)) +
-  labs(
-    subtitle = "GDP",
-    x = NULL,
-    y = NULL
-  ) +
+  labs(subtitle = "GDP", x = NULL, y = NULL) +
   dfr_theme() +
   theme(
     axis.line.x = element_line(color = "black"),

@@ -53,60 +53,59 @@ popAllTotal <- popAll %>%
   filter(province != "INDONESIA") %>%
   left_join(popTotal)
 
-# Create island groups to find the population distribution
-groupJava <- c(
-  "DKI Jakarta",
-  "Jawa Tengah",
-  "Jawa Timur",
-  "Jawa Barat",
-  "DI Yogyakarta",
-  "Banten"
-)
-
-groupKalimantan <- c(
-  "Kalimantan Tengah",
-  "Kalimantan Timur",
-  "Kalimantan Barat",
-  "Kalimantan Selatan",
-  "Kalimantan Utara"
-)
-
-groupSulawesi <- c(
-  "Sulawesi Tengah",
-  "Sulawesi Tenggara",
-  "Sulawesi Barat",
-  "Sulawesi Utara",
-  "Sulawesi Selatan",
-  "Gorontalo"
-)
-
-groupSumatra <- c(
-  "Aceh",
-  "Sumatera Barat",
-  "Jambi",
-  "Bengkulu",
-  "Kepulauan Bangka Belitung",
-  "Sumatera Utara",
-  "Riau",
-  "Sumatera Selatan",
-  "Lampung",
-  "Kepulauan Riau"
-)
-
-groupBaliNT <- c("Bali", "Nusa Tenggara Timur", "Nusa Tenggara Barat")
-
-groupMalukuPapua <- c(
-  "Maluku Utara",
-  "Maluku",
-  "Papua",
-  "Papua Barat"
-)
-
 add_island_group <- function(data) {
 
   if (!any("province" %in% names(data))) {
     stop("`data` must contain `province` column.")
   }
+
+  groupJava <- c(
+    "DKI Jakarta",
+    "Jawa Tengah",
+    "Jawa Timur",
+    "Jawa Barat",
+    "DI Yogyakarta",
+    "Banten"
+  )
+
+  groupKalimantan <- c(
+    "Kalimantan Tengah",
+    "Kalimantan Timur",
+    "Kalimantan Barat",
+    "Kalimantan Selatan",
+    "Kalimantan Utara"
+  )
+
+  groupSulawesi <- c(
+    "Sulawesi Tengah",
+    "Sulawesi Tenggara",
+    "Sulawesi Barat",
+    "Sulawesi Utara",
+    "Sulawesi Selatan",
+    "Gorontalo"
+  )
+
+  groupSumatra <- c(
+    "Aceh",
+    "Sumatera Barat",
+    "Jambi",
+    "Bengkulu",
+    "Kepulauan Bangka Belitung",
+    "Sumatera Utara",
+    "Riau",
+    "Sumatera Selatan",
+    "Lampung",
+    "Kepulauan Riau"
+  )
+
+  groupBaliNT <- c("Bali", "Nusa Tenggara Timur", "Nusa Tenggara Barat")
+
+  groupMalukuPapua <- c(
+    "Maluku Utara",
+    "Maluku",
+    "Papua",
+    "Papua Barat"
+  )
 
   dataIslandGrouped <- data %>%
     dplyr::mutate(
@@ -146,16 +145,14 @@ popDistribution %>%
 
 keyBPS <- Sys.getenv("keyBPS")
 
-urlBPS <- "https://webapi.bps.go.id/v1/api/list"
-
-idVar <- "533"
+idGRDP <- "533"
 
 respGRDPraw <- GET(
-  url = urlBPS,
+  "https://webapi.bps.go.id/v1/api/list",
   query = list(
     model = "data",
     domain = "0000",
-    var = idVar,
+    var = idGRDP,
     key = keyBPS
   )
 )
@@ -185,28 +182,37 @@ idYear <- respGRDPparsed$tahun %>% as_tibble() %>% anchor_regex()
 
 idQuarter <- respGRDPparsed$turtahun %>% as_tibble() %>% anchor_regex()
 
-GRDPraw <- as_tibble(respGRDPparsed$datacontent)
+grdpRaw <- as_tibble(respGRDPparsed$datacontent)
 
-GRDPclean <- GRDPraw %>%
+grdpLong <- grdpRaw %>%
   pivot_longer(
     cols = everything(),
     names_to = "id_composite",
     values_to = "expenditure"
-  ) %>%
+  )
+
+grdpSep <- grdpLong %>%
   separate(
     col = id_composite,
     into = c("id_province", "id_composite"),
-    sep = idVar
-  ) %>%
+    sep = idGRDP
+  )
+
+# Restore `id_composite` that has been inadvertently cut when separating it
+# into two columns earlier because the variable id, 533, is the same with a
+# combination of year and quarter ids for observations in the July to
+# September period in 2015
+grdpIdCompRestored <- grdpSep %>%
   mutate(
-    # Get length of `id_composite` to find the ones inadvertently cut as the
-    # variable id, namely 533, coincides with a year + quarter IDs for
-    # observations in the July to September period of 2015
     len_composite = str_length(id_composite),
     id_composite = case_when(
-      near(len_composite, 6) ~ paste0(id_composite, idVar),
+      near(len_composite, 6) ~ paste0(id_composite, idGRDP),
       TRUE ~ id_composite
-    ),
+    )
+  )
+
+grdpClean <- grdpIdCompRestored %>%
+  mutate(
     id_component = case_when(
       str_detect(id_composite, "^6") ~ str_sub(id_composite, 1, 3),
       TRUE ~ str_sub(id_composite, 1, 4)
@@ -226,7 +232,7 @@ GRDPclean <- GRDPraw %>%
   ) %>%
   select(province, component, year, quarter, expenditure)
 
-GRDPannual <- GRDPclean %>%
+grdpAnnual <- grdpClean %>%
   filter(
     component == "PDRB",
     quarter == "Tahunan",
@@ -240,7 +246,7 @@ GRDPannual <- GRDPclean %>%
   select(-c(component, quarter)) %>%
   rename("grdp" = "expenditure")
 
-GRDPisland <- GRDPannual %>%
+grdpIsland <- grdpAnnual %>%
   add_island_group() %>%
   group_by(year, island) %>%
   mutate(grdp_island = sum(grdp, na.rm = TRUE)) %>%
@@ -250,7 +256,7 @@ GRDPisland <- GRDPannual %>%
   ungroup() %>%
   relocate(island)
 
-GDP <- GRDPclean %>%
+gdp <- grdpClean %>%
   filter(
     component == "PDRB",
     quarter == "Tahunan",
@@ -259,12 +265,12 @@ GDP <- GRDPclean %>%
   select(year, expenditure) %>%
   rename("total" = "expenditure")
 
-GDPdistribution <- GRDPisland %>%
-  left_join(GDP) %>%
+gdpDistribution <- grdpIsland %>%
+  left_join(gdp) %>%
   mutate(gdp_share = grdp_island / total * 100) %>%
   select(-c(grdp_island, total))
 
-GDPdistribution %>%
+gdpDistribution %>%
   write_csv(here(dirYear, dirProject, "result", "gdp-distribution.csv"))
 
 
@@ -286,14 +292,14 @@ migrationIn <- migration %>%
 
 ## Incoming lifetime migrants and GRDP ----
 
-GRDPmigration <- GRDPannual %>%
+grdpMigration <- grdpAnnual %>%
   filter(year == "2020") %>%
   left_join(migrationIn) %>%
   left_join(pop2020total) %>%
   rename("population" = "2020", "migrant_incoming_share" = "in_share") %>%
   add_island_group()
 
-GRDPperCapita <- GRDPmigration %>%
+grdpPerCapita <- grdpMigration %>%
   mutate(grdp_per_capita = grdp / population) %>%
   select(
     province,
@@ -305,5 +311,5 @@ GRDPperCapita <- GRDPmigration %>%
     grdp_per_capita
   )
 
-GRDPperCapita %>%
+grdpPerCapita %>%
   write_csv(here(dirYear, dirProject, "result", "migration-grdp.csv"))
