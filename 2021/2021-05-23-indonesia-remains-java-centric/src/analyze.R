@@ -187,22 +187,16 @@ grdpRaw <- as_tibble(respGRDPparsed$datacontent)
 grdpLong <- grdpRaw %>%
   pivot_longer(
     cols = everything(),
-    names_to = "id_composite",
+    names_to = c("id_province", "id_composite"),
+    names_sep = idGRDP,
     values_to = "expenditure"
-  )
-
-grdpSep <- grdpLong %>%
-  separate(
-    col = id_composite,
-    into = c("id_province", "id_composite"),
-    sep = idGRDP
   )
 
 # Restore `id_composite` that has been inadvertently cut when separating it
 # into two columns earlier because the variable id, 533, is the same with a
 # combination of year and quarter ids for observations in the July to
 # September period in 2015
-grdpIdCompRestored <- grdpSep %>%
+grdpIdCompRestored <- grdpLong %>%
   mutate(
     len_composite = str_length(id_composite),
     id_composite = case_when(
