@@ -33,6 +33,7 @@ cciRaw <- read_excel(
 )
 
 cciCompleteCategory <- cciRaw %>%
+  # Get the categories into a single column, namely `...4`
   mutate(...4 = case_when(is.na(...4) ~ ...2, TRUE ~ ...4)) %>%
   rename("category_id" = "...4", "category_en" = "...123") %>%
   relocate(category_id, category_en)
@@ -94,7 +95,7 @@ cciColumnDate <- cciColumnMonthFormatted %>%
   mutate(date = paste0(year, month)) %>%
   select(date, column_name)
 
-# Rename columns with using `cciColumnDate`
+# Rename columns using `cciColumnDate`
 cciColumnNamed <- cciNoEmptyRowCol %>%
   slice(-c(1, 2)) %>%  # Remove rows containing year and month values
   rename(deframe(cciColumnDate))
@@ -157,7 +158,8 @@ rsiColumnMonth <- rsiNoEmptyRow %>%
   ) %>%
   filter(!is.na(month))
 
-# Turn the month values from abbreviated month names to `-%m-01`
+# Turn the month values from abbreviated month names to `-%m-01`. The full month
+# names in retail sales index data are in Indonesian and have asterisk prefixes
 rsiColumnMonthFormatted <- rsiColumnMonth %>%
   mutate(
     month = str_remove_all(month, "[:punct:]"),
@@ -192,7 +194,7 @@ rsiColumnDate <- rsiColumnMonthFormatted %>%
   mutate(date = paste0(year, month)) %>%
   select(date, column_name)
 
-# Rename columns with using `rsiColumnDate`
+# Rename columns using `rsiColumnDate`
 rsiColumnNamed <- rsiNoEmptyRow %>%
   slice(-c(1, 2)) %>% # Remove rows containing year and month values
   rename(deframe(rsiColumnDate))
@@ -262,15 +264,9 @@ popRaw <- as_tibble(respPopParsed$datacontent)
 popLong <- popRaw %>%
   pivot_longer(
     cols = everything(),
-    names_to = "id_composite",
+    names_to = c("id_province", "id_composite"),
+    names_sep = idPop,
     values_to = "population"
-  )
-
-popSep <- popLong %>%
-  separate(
-    col = id_composite,
-    into = c("id_province", "id_composite"),
-    sep = idPop
   )
 
 provinceName <- read_csv(here(dirYear, dirProject, "data", "province-name.csv"))
@@ -291,7 +287,7 @@ regionGroup <- provinceName %>%
     bps_id = paste0("^", bps_id, "$")
   )
 
-popClean <- popSep %>%
+popClean <- popLong %>%
   mutate(
     province = str_replace_all(id_province, deframe(provinceNameEn)),
     region = str_replace_all(id_province, deframe(regionGroup[, -2])),

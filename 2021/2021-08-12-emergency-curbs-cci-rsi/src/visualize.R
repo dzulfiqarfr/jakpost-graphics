@@ -213,7 +213,6 @@ plotMobilityRegion <- ggplot(
 ) +
   geom_hline(yintercept = 0, lwd = 12/22) +
   geom_line(lwd = 1, show.legend = FALSE) +
-
   geom_text_repel(
     data = tibble(
       x = ymd("2020-04-01"),
@@ -353,7 +352,7 @@ plotMobilityCovid <- ggplot(
   ) +
   scale_x_log10(
     breaks = c(4000, 10000, 40000, 100000),
-    labels = c(4000, "10,000", "40,000", "100,000"),
+    labels = c("4,000", "10,000", "40,000", "100,000"),
     limits = c(4000, 100000)
   ) +
   scale_y_continuous(
