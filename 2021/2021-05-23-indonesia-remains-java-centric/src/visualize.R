@@ -117,7 +117,7 @@ plotPop +
   plotGDP +
   plot_annotation(
     title = "Population and economic development remain concentrated in Java",
-    subtitle = "Population and GDP distribution by island (percent)",
+    subtitle = "Population and real GDP distribution by island (percent)",
     caption = paste0(
       "Source: Statistics Indonesia (BPS); author's analysis<br>",
       "Chart: Dzulfiqar Fathur Rahman"
@@ -231,7 +231,7 @@ ggplot(
   labs(
     title = "Expecting higher income",
     subtitle = paste0(
-      "GRDP per capita (2020) and incoming lifetime migrants relative ",
+      "Real GRDP per capita (2020) and incoming lifetime migrants relative ",
       "to population (2019) by province"
     ),
     x = "GRDP per capita<br>(million rupiah, log scale)",

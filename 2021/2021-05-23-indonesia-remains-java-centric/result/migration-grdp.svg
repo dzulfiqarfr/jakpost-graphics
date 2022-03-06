@@ -87,7 +87,7 @@
 <polygon points='300.31,116.95 355.73,116.95 355.64,116.95 355.99,116.93 356.33,116.86 356.65,116.74 356.96,116.57 357.23,116.35 357.46,116.09 357.64,115.79 357.78,115.47 357.86,115.13 357.89,114.79 357.89,114.79 357.89,111.23 357.89,111.23 357.86,110.88 357.78,110.55 357.64,110.23 357.46,109.93 357.23,109.67 356.96,109.45 356.65,109.28 356.33,109.16 355.99,109.09 355.73,109.07 300.31,109.07 300.57,109.09 300.22,109.07 299.88,109.11 299.54,109.21 299.23,109.36 298.94,109.56 298.69,109.80 298.48,110.08 298.32,110.38 298.21,110.71 298.16,111.06 298.15,111.23 298.15,114.79 298.16,114.61 298.16,114.96 298.21,115.30 298.32,115.63 298.48,115.94 298.69,116.22 298.94,116.46 299.23,116.66 299.54,116.81 299.88,116.90 300.22,116.95 ' style='stroke-width: 0.00; stroke: none; fill: #FFFFFF;' />
 <text x='298.15' y='116.95' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='59.74px' lengthAdjust='spacingAndGlyphs'>West Papua</text>
 <line x1='259.70' y1='196.05' x2='225.07' y2='196.05' style='stroke-width: 1.07; stroke: #757575;' />
-<polygon points='258.26,199.99 272.28,199.99 272.20,199.99 272.54,199.97 272.88,199.90 273.21,199.78 273.51,199.61 273.78,199.39 274.01,199.13 274.19,198.83 274.33,198.51 274.41,198.18 274.44,197.83 274.44,197.83 274.44,194.27 274.44,194.27 274.41,193.93 274.33,193.59 274.19,193.27 274.01,192.98 273.78,192.71 273.51,192.50 273.21,192.32 272.88,192.20 272.54,192.13 272.28,192.11 258.26,192.11 258.52,192.13 258.18,192.11 257.83,192.16 257.50,192.25 257.18,192.40 256.90,192.60 256.65,192.84 256.44,193.12 256.28,193.43 256.17,193.76 256.11,194.10 256.10,194.27 256.10,197.83 256.11,197.66 256.11,198.00 256.17,198.35 256.28,198.68 256.44,198.98 256.65,199.26 256.90,199.50 257.18,199.70 257.50,199.85 257.83,199.95 258.18,199.99 ' style='stroke-width: nan; stroke: none; fill: #FFFFFF;' />
+<polygon points='258.26,199.99 272.28,199.99 272.19,199.99 272.54,199.97 272.88,199.90 273.21,199.78 273.51,199.61 273.78,199.39 274.01,199.13 274.19,198.83 274.33,198.51 274.41,198.18 274.44,197.83 274.44,197.83 274.44,194.27 274.44,194.27 274.41,193.93 274.33,193.59 274.19,193.27 274.01,192.98 273.78,192.72 273.51,192.50 273.21,192.32 272.88,192.20 272.54,192.13 272.28,192.11 258.26,192.11 258.52,192.13 258.17,192.12 257.83,192.16 257.50,192.25 257.18,192.40 256.90,192.60 256.65,192.84 256.44,193.12 256.27,193.43 256.16,193.76 256.11,194.10 256.10,194.27 256.10,197.83 256.11,197.66 256.11,198.00 256.16,198.35 256.27,198.68 256.44,198.98 256.65,199.26 256.90,199.50 257.18,199.70 257.50,199.85 257.83,199.95 258.17,199.99 ' style='stroke-width: nan; stroke: none; fill: #FFFFFF;' />
 <text x='256.10' y='199.99' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='18.34px' lengthAdjust='spacingAndGlyphs'>Bali</text>
 </g>
 <g clip-path='url(#cpMC4wMHw1NzYuMDB8MC4wMHwzMjQuMDA=)'>
@@ -127,20 +127,21 @@
 <text x='51.69' y='111.07' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='55.04px' lengthAdjust='spacingAndGlyphs'>Kalimantan</text>
 <text x='51.69' y='123.82' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='44.02px' lengthAdjust='spacingAndGlyphs'>Sulawesi</text>
 <text x='51.69' y='136.58' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='80.74px' lengthAdjust='spacingAndGlyphs'>Maluku &amp; Papua</text>
-<text x='7.09' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='36.12px' lengthAdjust='spacingAndGlyphs'>GRDP</text>
-<text x='46.67' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='18.06px' lengthAdjust='spacingAndGlyphs'>per</text>
-<text x='68.20' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='33.34px' lengthAdjust='spacingAndGlyphs'>capita</text>
-<text x='105.01' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='36.12px' lengthAdjust='spacingAndGlyphs'>(2020)</text>
-<text x='144.60' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='20.84px' lengthAdjust='spacingAndGlyphs'>and</text>
-<text x='168.91' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='50.01px' lengthAdjust='spacingAndGlyphs'>incoming</text>
-<text x='222.40' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='39.59px' lengthAdjust='spacingAndGlyphs'>lifetime</text>
-<text x='265.45' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='47.92px' lengthAdjust='spacingAndGlyphs'>migrants</text>
-<text x='316.84' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='40.28px' lengthAdjust='spacingAndGlyphs'>relative</text>
-<text x='360.59' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='10.42px' lengthAdjust='spacingAndGlyphs'>to</text>
-<text x='374.48' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='57.66px' lengthAdjust='spacingAndGlyphs'>population</text>
-<text x='435.62' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='36.12px' lengthAdjust='spacingAndGlyphs'>(2019)</text>
-<text x='475.20' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='13.20px' lengthAdjust='spacingAndGlyphs'>by</text>
-<text x='491.87' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='47.23px' lengthAdjust='spacingAndGlyphs'>province</text>
+<text x='7.09' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='25.70px' lengthAdjust='spacingAndGlyphs'>Real</text>
+<text x='36.26' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='36.12px' lengthAdjust='spacingAndGlyphs'>GRDP</text>
+<text x='75.85' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='18.06px' lengthAdjust='spacingAndGlyphs'>per</text>
+<text x='97.37' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='33.34px' lengthAdjust='spacingAndGlyphs'>capita</text>
+<text x='134.19' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='36.12px' lengthAdjust='spacingAndGlyphs'>(2020)</text>
+<text x='173.77' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='20.84px' lengthAdjust='spacingAndGlyphs'>and</text>
+<text x='198.09' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='50.01px' lengthAdjust='spacingAndGlyphs'>incoming</text>
+<text x='251.57' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='39.59px' lengthAdjust='spacingAndGlyphs'>lifetime</text>
+<text x='294.63' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='47.92px' lengthAdjust='spacingAndGlyphs'>migrants</text>
+<text x='346.01' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='40.28px' lengthAdjust='spacingAndGlyphs'>relative</text>
+<text x='389.77' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='10.42px' lengthAdjust='spacingAndGlyphs'>to</text>
+<text x='403.66' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='57.66px' lengthAdjust='spacingAndGlyphs'>population</text>
+<text x='464.79' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='36.12px' lengthAdjust='spacingAndGlyphs'>(2019)</text>
+<text x='504.38' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='13.20px' lengthAdjust='spacingAndGlyphs'>by</text>
+<text x='521.04' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='47.23px' lengthAdjust='spacingAndGlyphs'>province</text>
 <text x='7.09' y='17.11' style='font-size: 14.00px; font-weight: bold; font-family: Arial;' textLength='66.87px' lengthAdjust='spacingAndGlyphs'>Expecting</text>
 <text x='77.85' y='17.11' style='font-size: 14.00px; font-weight: bold; font-family: Arial;' textLength='42.76px' lengthAdjust='spacingAndGlyphs'>higher</text>
 <text x='124.50' y='17.11' style='font-size: 14.00px; font-weight: bold; font-family: Arial;' textLength='49.00px' lengthAdjust='spacingAndGlyphs'>income</text>
