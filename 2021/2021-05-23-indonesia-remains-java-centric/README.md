@@ -3,7 +3,7 @@
 This project seeks to describe the relationship between economic development and population concentration in Java between 1971 and 2020. You can read the article on [this link](https://www.thejakartapost.com/news/2021/05/23/indonesia-remains-java-centric-despite-jokowis-infrastructure-campaign.html).
 
 
-## Data
+# Data
 
 Data | Source |  
 ---- | ------ |  
@@ -15,7 +15,7 @@ Migration | [BPS](https://bps.go.id/publication/2020/12/02/725d484ca73434e95d4d4
 The 2020 population and migration data are stored in PDFs, so I had to extract them using Tabula. I cleaned these data using Google Sheets. For the GRDP data, I got it using BPS's application programming interface (API) through R.
 
 
-## Changelog
+# Changelog
 
 The population and GDP distribution chart:  
 - improved title, subtitle, caption and axis texts; and  
