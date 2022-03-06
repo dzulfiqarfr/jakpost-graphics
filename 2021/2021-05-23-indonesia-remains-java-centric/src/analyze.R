@@ -2,7 +2,6 @@
 
 library(conflicted)
 library(here)
-conflict_prefer("here", "here")
 library(tidyverse)
 conflict_prefer("filter", "dplyr")
 library(httr)
@@ -44,14 +43,14 @@ popAll <- pop2010 %>%
     values_to = "population"
   )
 
-popTotal <- popAll %>%
+popNational <- popAll %>%
   filter(province == "INDONESIA") %>%
   select(-province) %>%
   rename("total" = "population")
 
-popAllTotal <- popAll %>%
+popAllNational <- popAll %>%
   filter(province != "INDONESIA") %>%
-  left_join(popTotal)
+  left_join(popNational)
 
 add_island_group <- function(data) {
 
@@ -124,7 +123,7 @@ add_island_group <- function(data) {
 
 }
 
-popIsland <- add_island_group(popAllTotal)
+popIsland <- add_island_group(popAllNational)
 
 popDistribution <- popIsland %>%
   group_by(year, island) %>%
@@ -230,8 +229,11 @@ grdpAnnual <- grdpClean %>%
   filter(
     component == "PDRB",
     quarter == "Tahunan",
+    year != 2021,
     !str_detect(province, "34")
   ) %>%
+  # Ensure consistent province names to allow island grouping with
+  # `add_island_group()` later
   mutate(
     province = str_replace_all(province, "KEP\\.", "Kepulauan"),
     province = str_to_title(province),
@@ -250,7 +252,7 @@ grdpIsland <- grdpAnnual %>%
   ungroup() %>%
   relocate(island)
 
-gdp <- grdpClean %>%
+gdpNational <- grdpClean %>%
   filter(
     component == "PDRB",
     quarter == "Tahunan",
@@ -260,7 +262,7 @@ gdp <- grdpClean %>%
   rename("total" = "expenditure")
 
 gdpDistribution <- grdpIsland %>%
-  left_join(gdp) %>%
+  left_join(gdpNational) %>%
   mutate(gdp_share = grdp_island / total * 100) %>%
   select(-c(grdp_island, total))
 
@@ -286,15 +288,16 @@ migrationIn <- migration %>%
 
 ## Incoming lifetime migrants and GRDP ----
 
-grdpMigration <- grdpAnnual %>%
-  filter(year == "2020") %>%
-  left_join(migrationIn) %>%
+grdpPerCap <- grdpAnnual %>%
+  filter(year == 2020) %>%
   left_join(pop2020total) %>%
-  rename("population" = "2020", "migrant_incoming_share" = "in_share") %>%
-  add_island_group()
+  rename("population" = "2020") %>%
+  mutate(grdp_per_cap = grdp / population) # In million rupiah
 
-grdpPerCapita <- grdpMigration %>%
-  mutate(grdp_per_capita = grdp / population) %>%
+grdpMigrationIn <- grdpPerCap %>%
+  left_join(migrationIn) %>%
+  rename("migrant_incoming_share" = "in_share") %>%
+  add_island_group() %>%
   select(
     province,
     island,
@@ -302,8 +305,8 @@ grdpPerCapita <- grdpMigration %>%
     population,
     grdp,
     migrant_incoming_share,
-    grdp_per_capita
+    grdp_per_cap
   )
 
-grdpPerCapita %>%
+grdpMigrationIn %>%
   write_csv(here(dirYear, dirProject, "result", "migration-grdp.csv"))
