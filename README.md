@@ -8,7 +8,7 @@ In each project directory, you’ll find roughly four subdirectories, namely dat
 - data: data (both raw and cleaned) for analysis;  
 - doc: documents, including PDFs that contain tables or technical notes on the analysis;  
 - src: scripts to analyze the data and visualize the results; and  
-- result: analysis results in CSVs and the visualizations in PNGs.
+- result: analysis results in CSVs and the visualizations in SVGs and PNGs.
 
 I used a combination of R, Google Sheets, Tabula and Datawrapper to work on these articles. I collected the data from both official and private sources.
 
