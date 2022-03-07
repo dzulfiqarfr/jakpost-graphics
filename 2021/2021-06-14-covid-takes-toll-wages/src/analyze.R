@@ -2,7 +2,6 @@
 
 library(conflicted)
 library(here)
-conflict_prefer("here", "here")
 library(tidyverse)
 conflict_prefer("lag", "dplyr")
 conflict_prefer("filter", "dplyr")
@@ -23,7 +22,7 @@ i_am(paste(dirYear, dirProject, "src", "analyze.R", sep = "/"))
 
 keyBPS <- Sys.getenv("keyBPS")
 
-idVarWage <- "1521"
+idWage <- "1521"
 
 bps_request <- function(idVar, key) {
 
@@ -38,14 +37,14 @@ bps_request <- function(idVar, key) {
   )
 
   respParsed <- respRaw %>%
-    httr::content("text") %>%
+    httr::content(type = "text") %>%
     jsonlite::fromJSON()
 
   return(respParsed)
 
 }
 
-respWage <- bps_request(idVar = idVarWage, key = keyBPS)
+respWage <- bps_request(idVar = idWage, key = keyBPS)
 
 anchor_regex <- function(data) {
 
@@ -71,33 +70,26 @@ wageRaw <- as_tibble(respWage$datacontent)
 wageLong <- wageRaw %>%
   pivot_longer(
     cols = everything(),
-    names_to = "id_composite",
+    names_to = c("id_sector", "id_date"),
+    names_sep = idWage,
     values_to = "wage"
   )
 
-wageSep <- wageLong %>%
-  separate(
-    col = id_composite,
-    into = c("id_sector", "id_date"),
-    sep = idVarWage
-  )
-
-idSectorEn <- read_csv(here(dirYear, dirProject, "data", "id-sector.csv"))
+idSectorEn <- read_csv(here(dirYear, dirProject, "data", "isic.csv"))
 
 idSectorEn <- idSectorEn %>% mutate(id = paste0("^", id, "$"))
 
-wageClean <- wageSep %>%
+wageClean <- wageLong %>%
   mutate(
     sector = str_replace_all(id_sector, deframe(idSector)),
     sector = str_replace_all(sector, deframe(idSectorEn)),
-    # Remove the `0` prefix, which means empty `turvar`, to allow a more
-    # efficient string subsetting to get the `date`
+    # Remove 0s in `id_date`, which means empty `turvar`
     id_date = str_remove_all(id_date, "^0"),
     year = str_sub(id_date, 1, 3),
     year = str_replace_all(year, deframe(idYearWage)),
     month = str_sub(id_date, 4, 6),
-    month = str_replace_all(month, c("^189$" = "02-01", "^190$" = "08-01")),
-    date = paste0(year, "-", month),
+    month = str_replace_all(month, c("^189$" = "-02-01", "^190$" = "-08-01")),
+    date = paste0(year, month),
     date = ymd(date)
   ) %>%
   select(sector, date, wage)
@@ -105,11 +97,14 @@ wageClean <- wageSep %>%
 
 ## Consumer price index ----
 
-indicatorCPI <- WDIsearch("consumer price index") %>%
-  as_tibble() %>%
-  filter(name == "Consumer price index (2010 = 100)")
+indicatorCPI <- WDIsearch("consumer price index")
 
-cpiRaw <- WDI(indicatorCPI$indicator, country = "ID")
+indicatorCPI2010 <- indicatorCPI %>%
+  as_tibble() %>%
+  filter(name == "Consumer price index (2010 = 100)") %>%
+  pull(indicator)
+
+cpiRaw <- WDI(indicatorCPI2010, country = "ID")
 
 cpiClean <- cpiRaw %>%
   as_tibble() %>%
@@ -127,7 +122,10 @@ wageCPI <- wageClean %>%
   left_join(cpiClean)
 
 wageReal <- wageCPI %>%
-  mutate(cpi_decimal = cpi / 100, wage_real = wage_nominal / cpi_decimal) %>%
+  mutate(
+    cpi_decimal = cpi / 100,
+    wage_real = wage_nominal / cpi_decimal
+  ) %>%
   select(sector, date, year, cpi, cpi_decimal, wage_nominal, wage_real)
 
 wageGrowth <- wageReal %>%
@@ -164,12 +162,13 @@ provinceNameEn <- read_csv(
     dirYear,
     dirProject,
     "data",
-    "province-name.csv"
+    "province.csv"
   )
 )
 
 provinceNameEn <- provinceNameEn %>%
-  mutate(province_id = paste0("^", province_id, "$"))
+  select(-bps_id) %>%
+  mutate(province_idn = paste0("^", province_idn, "$"))
 
 wageMinClean <- wageMin %>%
   select(-c(starts_with("growth"), `2020-08-01`)) %>%
@@ -186,9 +185,9 @@ wageMinClean %>%
 
 ## Unemployment rate ----
 
-idVarWorkforce <- "529"
+idWorkforce <- "529"
 
-respWorkforce <- bps_request(idVar = idVarWorkforce, key = keyBPS)
+respWorkforce <- bps_request(idVar = idWorkforce, key = keyBPS)
 
 idCategory <- respWorkforce$vervar %>% as_tibble() %>% anchor_regex()
 
@@ -199,21 +198,15 @@ workforceRaw <- as_tibble(respWorkforce$datacontent)
 workforceLong <- workforceRaw %>%
   pivot_longer(
     cols = everything(),
-    names_to = "id_composite",
+    names_to = c("id_category", "id_date"),
+    names_sep = idWorkforce,
     values_to = "value"
   )
 
-workforceSep <- workforceLong %>%
-  separate(
-    col = id_composite,
-    into = c("id_category", "id_date"),
-    sep = idVarWorkforce
-  )
-
-workforceClean <- workforceSep %>%
+workforceClean <- workforceLong %>%
   mutate(
     category = str_replace_all(id_category, deframe(idCategory)),
-    # Remove `0` prefix in `id_date` for the same reason we did with `wageSep`
+    # Remove 0s in `id_date`, which means empty `turvar`
     id_date = str_remove_all(id_date, "^0"),
     year = case_when(
       str_detect(id_date, "^1") ~ str_sub(id_date, 1, 3),
@@ -226,14 +219,14 @@ workforceClean <- workforceSep %>%
     ),
     month = str_replace_all(
       month,
-      c("189" = "02-01", "190" = "08-01", "191" = "12-01")
+      c("189" = "-02-01", "190" = "-08-01", "191" = "-12-01")
     ),
-    date = paste0(year, "-", month),
+    date = paste0(year, month),
     date = ymd(date)
   ) %>%
   select(category, date, value)
 
-unempClean <- workforceClean %>%
+unemp <- workforceClean %>%
   mutate(year = year(date)) %>%
   filter(
     category == "d. Tingkat Pengangguran Terbuka (%)",
@@ -243,15 +236,15 @@ unempClean <- workforceClean %>%
   select(date, value) %>%
   rename("unemployment_rate" = "value")
 
-unempClean %>%
+unemp %>%
   write_csv(here(dirYear, dirProject, "result", "unemployment-rate.csv"))
 
 
 ## Growth in value added to GDP by sector ----
 
-idVarGrowth <- "104"
+idGrowth <- "104"
 
-respGrowth <- bps_request(idVar = idVarGrowth, key = keyBPS)
+respGrowth <- bps_request(idVar = idGrowth, key = keyBPS)
 
 idSector <- respGrowth$vervar %>% as_tibble() %>% anchor_regex()
 
@@ -262,11 +255,11 @@ idYearGrowth <- respGrowth$tahun %>% as_tibble() %>% anchor_regex()
 idQuarterGrowth <- respGrowth$turtahun %>% as_tibble() %>% anchor_regex()
 
 idDateGrowth <-  c(
-  "^31$" = "01-01",
-  "^32$" = "04-01",
-  "^33$" = "07-01",
-  "^34$" = "10-01",
-  "^35$" = "12-01"
+  "^31$" = "-01-01",
+  "^32$" = "-04-01",
+  "^33$" = "-07-01",
+  "^34$" = "-10-01",
+  "^35$" = "-12-01"
 )
 
 growthRaw <- as_tibble(respGrowth$datacontent)
@@ -274,18 +267,12 @@ growthRaw <- as_tibble(respGrowth$datacontent)
 growthLong <- growthRaw %>%
   pivot_longer(
     cols = everything(),
-    names_to = "id_composite",
+    names_to = c("id_sector", "id_composite"),
+    names_sep = idGrowth,
     values_to = "growth"
   )
 
-growthSep <- growthLong %>%
-  separate(
-    col = id_composite,
-    into = c("id_sector", "id_date"),
-    sep = idVarGrowth
-  )
-
-growthClean <- growthSep %>%
+growthClean <- growthLong %>%
   mutate(
     sector = str_replace_all(id_sector, deframe(idSector)),
     sector = str_remove_all(sector, "&lt;b&gt;"),
@@ -294,13 +281,13 @@ growthClean <- growthSep %>%
       sector,
       c("M,N" = "M, N", "R,S,T,U" = "R, S, T, U")
     ),
-    id_indicator = str_sub(id_date, 1, 1),
+    id_indicator = str_sub(id_composite, 1, 1),
     indicator = str_replace_all(id_indicator, deframe(idIndicator)),
-    id_year = str_sub(id_date, 2, 4),
+    id_year = str_sub(id_composite, 2, 4),
     year = str_replace_all(id_year, deframe(idYearGrowth)),
-    id_quarter = str_sub(id_date, 5, 6),
+    id_quarter = str_sub(id_composite, 5, 6),
     quarter = str_replace_all(id_quarter, idDateGrowth),
-    date = paste0(year, "-", quarter)
+    date = paste0(year, quarter)
   ) %>%
   select(indicator, sector, date, growth)
 
@@ -319,7 +306,7 @@ growthSector <- growthClean %>%
     str_detect(indicator, "y-on-y"),
     sector_prefix %in% lettersCap,
     !(sector %in% sectorsDrop),
-    date == "2020-12-01"
+    date == "2020-12-01" # Full-year growth
   ) %>%
   mutate(
     sector_prefix = case_when(

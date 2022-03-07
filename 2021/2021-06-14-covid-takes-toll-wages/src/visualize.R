@@ -2,13 +2,12 @@
 
 library(conflicted)
 library(here)
-conflict_prefer("here", "here")
 library(tidyverse)
 conflict_prefer("filter", "dplyr")
 library(lubridate)
+library(ggtext)
 library(dfrtheme)
 library(patchwork)
-library(ggtext)
 
 dirYear <- "2021"
 dirProject <- "2021-06-14-covid-takes-toll-wages"
@@ -18,13 +17,18 @@ i_am(paste(dirYear, dirProject, "src", "visualize.R", sep = "/"))
 
 # Plot ----
 
+colorDataPrimary <- "#009688"
+
 ## Real wage growth ----
 
 wageGrowth <- read_csv(here(dirYear, dirProject, "result", "wage-growth.csv"))
 
-plotWage <- ggplot(wageGrowth, aes(x = date, y = wage_real_growth)) +
-  geom_hline(yintercept = 0, lwd = 12/22, color = "black") +
-  geom_line(lwd = 1, color = "#6078A8FF") +
+plotWage <- ggplot(
+  data = wageGrowth,
+  mapping = aes(x = date, y = wage_real_growth)
+) +
+  geom_hline(yintercept = 0, lwd = 12/22) +
+  geom_line(lwd = 1, color = colorDataPrimary) +
   geom_vline(
     xintercept = ymd("2020-03-01"),
     color = "#757575",
@@ -34,14 +38,14 @@ plotWage <- ggplot(wageGrowth, aes(x = date, y = wage_real_growth)) +
   geom_text(
     data = tibble(x = ymd("2020-03-01"), y = 20, label = "COVID-19 pandemic"),
     aes(x = x, y = y, label = label),
-    color = "#757575",
     size = dfr_convert_font_size(),
+    color = "#757575",
     hjust = 1,
     nudge_x = -25,
     nudge_y = -2.5
   ) +
   scale_x_continuous(
-    breaks = seq(ymd("2016-02-01"), ymd("2020-02-01"), by = "1 year"),
+    breaks = seq(ymd("2016-02-01"), ymd("2020-02-01"), "1 year"),
     labels = c("Feb\n2016", "'17", "'18", "'19", "'20")
   ) +
   scale_y_continuous(
@@ -65,8 +69,11 @@ plotWage <- ggplot(wageGrowth, aes(x = date, y = wage_real_growth)) +
 
 unemp <- read_csv(here(dirYear, dirProject, "result", "unemployment-rate.csv"))
 
-plotUnemp <- ggplot(unemp, aes(x = date, y = unemployment_rate)) +
-  geom_line(lwd = 1, color = "#6078A8FF") +
+plotUnemp <- ggplot(
+  data = unemp,
+  mapping = aes(x = date, y = unemployment_rate)
+) +
+  geom_line(lwd = 1, color = colorDataPrimary) +
   geom_vline(
     xintercept = ymd("2020-03-01"),
     color = "#757575",
@@ -74,7 +81,7 @@ plotUnemp <- ggplot(unemp, aes(x = date, y = unemployment_rate)) +
     lty = "dashed"
   ) +
   scale_x_continuous(
-    breaks = seq(ymd("2016-02-01"), ymd("2020-02-01"), by = "1 year"),
+    breaks = seq(ymd("2016-02-01"), ymd("2020-02-01"), "1 year"),
     labels = c("Feb\n2016", "'17", "'18", "'19", "'20")
   ) +
   scale_y_continuous(
@@ -101,7 +108,7 @@ plotUnemp <- ggplot(unemp, aes(x = date, y = unemployment_rate)) +
 plotWage +
   plotUnemp +
   plot_annotation(
-    title = "Pandemic hits wage, employment",
+    title = "Falling wages",
     caption = paste0(
       "\\*At 2010 prices<br>",
       "Source: Statistics Indonesia (BPS); World Bank; ",
@@ -112,7 +119,7 @@ plotWage +
   )
 
 ggsave(
-  here(dirYear, dirProject, "result", "wage-unemployment.png"),
+  here(dirYear, dirProject, "result", "wage-unemployment.svg"),
   width = 8,
   height = 4.5
 )
@@ -131,10 +138,10 @@ wageValueAddedGrowth <- read_csv(
 
 filterSector <- c(
   "Construction",
-  "Transportation and warehouse",
-  "Accommodation and food and beverage services",
+  "Transportation and storage",
+  "Accommodation and food service activities",
   "Information and communication",
-  "Healthcare and social activity services"
+  "Healthcare and social work activities"
 )
 
 annotationSector <- wageValueAddedGrowth %>%
@@ -143,9 +150,8 @@ annotationSector <- wageValueAddedGrowth %>%
     sector = str_replace_all(
       sector,
       c(
-        "Transportation and warehouse" =  "Transportation and warehousing",
-        "Accommodation and food and beverage services" = "Accommodation and<br>F&B services",
-        "Healthcare and social activity services" = "Healthcare and<br>social services",
+        "Accommodation and food service activities" = "Accommodation and<br>food service activities",
+        "Healthcare and social work activities" = "Healthcare and<br>social work activities",
         "Information and communication" = "Information and<br>communication"
       )
     )
@@ -153,42 +159,34 @@ annotationSector <- wageValueAddedGrowth %>%
 
 
 ggplot(
-  wageValueAddedGrowth,
-  aes(x = value_added_growth, y = wage_real_growth)
+  data = wageValueAddedGrowth,
+  mapping = aes(x = value_added_growth, y = wage_real_growth)
 ) +
-  geom_vline(
-    xintercept = 0,
-    color = "black",
-    lwd = 12/22,
-    lty = "solid"
-  ) +
-  geom_hline(
-    yintercept = 0,
-    color = "black",
-    lwd = 12/22,
-    lty = "solid"
-  ) +
+  geom_vline(xintercept = 0, lwd = 12/22) +
+  geom_hline(yintercept = 0, lwd = 12/22) +
   geom_point(
+    size = 4.5,
     pch = 21,
     color = "white",
-    fill = "#486090FF",
-    size = 4.5,
-    alpha = 0.75
+    fill = colorDataPrimary,
+    alpha = 0.75,
+    stroke = 0.5
   ) +
   geom_smooth(
     method = "lm",
     se = FALSE,
+    color = "black",
     lwd = 0.75,
-    color = "#757575",
     lty = "dashed"
   ) +
   geom_richtext(
     data = annotationSector,
-    aes(label = sector),
+    mapping = aes(label = sector),
     size = dfr_convert_font_size(),
     color = "#757575",
     hjust = 0,
     nudge_x = 0.5,
+    label.padding = unit(0, "lines"),
     label.size = 0,
     label.color = NA
   ) +
@@ -199,10 +197,10 @@ ggplot(
     position = "right"
   ) +
   labs(
-    title = "Decline in wage follows contraction across all sectors",
+    title = "Wages fall across sectors",
     subtitle = paste0(
       "Average net wage\\* and gross value added\\* ",
-      "annual change in 2020, by sector (percent)"
+      "annual change in 2020 by sector (percent)"
     ),
     x = "Gross value added",
     y = "Average net wage",
@@ -215,7 +213,7 @@ ggplot(
   dfr_theme()
 
 ggsave(
-  here(dirYear, dirProject, "result", "wage-value-added-growth.png"),
+  here(dirYear, dirProject, "result", "wage-value-added-growth.svg"),
   width = 8,
   height = 4.5
 )
@@ -231,6 +229,7 @@ wageMinClean <- wageMin %>%
     across(.cols = c(wage_minimum_2021, wage_nominal), .fns = ~ .x / 1000000),
     province = fct_reorder(province, wage_minimum_2021),
     year = year(date),
+    year = as_factor(year),
     category = case_when(
       year == 2021 & wage_nominal > wage_minimum_2021 ~ "Higher than wage floor",
       year == 2021 & wage_nominal < wage_minimum_2021  ~ "Lower than wage floor"
@@ -240,41 +239,44 @@ wageMinClean <- wageMin %>%
   fill(category, .direction = "up") %>%
   ungroup()
 
-ggplot(wageMinClean, aes(y = province)) +
+ggplot(data = wageMinClean, mapping = aes(y = province)) +
   geom_point(
-    aes(x = wage_nominal, fill = as.factor(year)),
+    mapping = aes(x = wage_nominal, fill = year),
+    size = 3,
     pch = 21,
     color = "white",
-    size = 3,
-    alpha = 0.75
+    alpha = 0.75,
+    stroke = 0.5
   ) +
   geom_point(
-    aes(x = wage_minimum_2021),
+    mapping = aes(x = wage_minimum_2021),
+    size = 3,
     pch = 21,
     color = "white",
     fill = "#A8A8A8FF",
-    size = 3,
-    alpha = 0.75
+    alpha = 0.75,
+    stroke = 0.5
   ) +
-  geom_text(
+  geom_label(
     data = tibble(
-      x = 2.981379,
-      y = "East Kalimantan",
+      x = 2.877449,
+      y = "South Kalimantan",
       label = "Wage floor",
       category = "Higher than wage floor"
     ),
-    aes(x = x, y = y, label = label),
+    mapping = aes(x = x, y = y, label = label),
     size = dfr_convert_font_size(),
+    color = "#A8A8A8FF",
     hjust = 1,
     nudge_x = -0.175,
-    color = "#A8A8A8FF",
-    fontface = "bold"
+    label.padding = unit(0, "lines"),
+    label.size = 0
   ) +
   scale_x_continuous(breaks = seq(1, 5), limits = c(1, 5)) +
-  scale_fill_manual(values = c("2020" = "#90A8C0FF", "2021" = "#304890FF")) +
+  scale_fill_manual(values = c("2020" = "#B2DFDB", "2021" = "#26A69A")) +
   facet_wrap(~ category, ncol = 2, scales = "free_y") +
   labs(
-    title = "Wage falls below minimum level in some provinces",
+    title = "Wage in several provinces fall below the minimum wage",
     subtitle = paste0(
       "Average net wage\\* and minimum wage in 2021 ",
       "by province (million rupiah)"
@@ -290,13 +292,15 @@ ggplot(wageMinClean, aes(y = province)) +
   dfr_theme() +
   theme(
     axis.text.y = element_text(hjust = 0),
-    panel.grid.major.y = element_blank(),
-    legend.position = c(0.02, 1.025),
-    legend.justification = c(0, 1)
+    legend.position = c(0.035, 0.95),
+    legend.justification = c(0, 1),
+    legend.background = element_rect(fill = "white", color = NA),
+    legend.key.width = unit(0.25, "lines"),
+    panel.grid.major.y = element_blank()
   )
 
 ggsave(
-  here(dirYear, dirProject, "result", "wage-minimum.png"),
-  width = 8,
-  height = 5.5
+  here(dirYear, dirProject, "result", "wage-minimum.svg"),
+  width = 8.5,
+  height = 6
 )

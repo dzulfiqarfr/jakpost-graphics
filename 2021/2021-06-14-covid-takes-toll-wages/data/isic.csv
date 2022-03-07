@@ -1,0 +1,19 @@
+id,sector
+A,Agriculture; forestry and fishing
+B,Mining and quarrying
+C,Manufacturing
+D,"Electricity, gas, steam and air conditioning supply"
+E,"Water supply; sewerage, waste management and remediation activities"
+F,Construction
+G,Wholesale and retail trade; repair of motor vehicles and motorcycles
+H,Transportation and storage
+I,Accommodation and food service activities
+J,Information and communication
+K,Financial and insurance activities
+L,Real estate activities
+"M, N","Professional, scientific, technical, administrative and support service activities"
+O,Public administration and defence; compulsory social security
+P,Education
+Q,Human health and social work activities
+"R, S, T, U",Other
+Rata-Rata,Overall

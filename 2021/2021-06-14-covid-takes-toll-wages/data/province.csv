@@ -1,0 +1,36 @@
+bps_id,province_idn,province_eng
+1100,Aceh,Aceh
+1200,Sumatera Utara,North Sumatra
+1300,Sumatera Barat,West Sumatra
+1400,Riau,Riau
+1500,Jambi,Jambi
+1600,Sumatera Selatan,South Sumatra
+1700,Bengkulu,Bengkulu
+1800,Lampung,Lampung
+1900,Kepulauan Bangka Belitung,Bangka Belitung Islands
+2100,Kepulauan Riau,Riau Islands
+3100,DKI Jakarta,Jakarta
+3200,Jawa Barat,West Java
+3300,Jawa Tengah,Central Java
+3400,D.I. Yogyakarta,Yogyakarta
+3500,Jawa Timur,East Java
+3600,Banten,Banten
+5100,Bali,Bali
+5200,Nusa Tenggara Barat,West Nusa Tenggara
+5300,Nusa Tenggara Timur,East Nusa Tenggara
+6100,Kalimantan Barat,West Kalimantan
+6200,Kalimantan Tengah,Central Kalimantan
+6300,Kalimantan Selatan,South Kalimantan
+6400,Kalimantan Timur,East Kalimantan
+6500,Kalimantan Utara,North Kalimantan
+7100,Sulawesi Utara,North Sulawesi
+7200,Sulawesi Tengah,Central Sulawesi
+7300,Sulawesi Selatan,South Sulawesi
+7400,Sulawesi Tenggara,Southeast Sulawesi
+7500,Gorontalo,Gorontalo
+7600,Sulawesi Barat,West Sulawesi
+8100,Maluku,Maluku
+8200,Maluku Utara,North Maluku
+9100,Papua Barat,West Papua
+9400,Papua,Papua
+9999,Indonesia,Indonesia
