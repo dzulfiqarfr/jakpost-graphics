@@ -10,6 +10,6 @@ In each project directory, you’ll find roughly four subdirectories, namely dat
 - src: scripts to analyze the data and visualize the results; and  
 - result: analysis results in CSVs and the visualizations in SVGs and PNGs.
 
-I used a combination of R, Google Sheets, Tabula and Datawrapper to work on these articles. I collected the data from both official and private sources.
+I used a combination of R, Google Sheets, Tabula, Datawrapper and Inkscape to work on these articles. I collected the data from both official and private sources.
 
 The code in this repo improves the original analysis and visualizations where necessary. So there are some differences in analysis results and visualizations between this repo and the published articles on JakPost. Find the details on the README of each project directory.
