@@ -309,7 +309,7 @@ ggplot(data = mortgageMillion, mapping = aes(x = term, y = payment)) +
   geom_smooth(
     method = "lm",
     se = FALSE,
-    color = "#757575",
+    color = "black",
     lwd = 0.75,
     lty = "dashed"
   ) +
