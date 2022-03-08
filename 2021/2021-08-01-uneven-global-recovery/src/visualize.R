@@ -2,8 +2,8 @@
 
 library(conflicted)
 library(here)
-conflict_prefer("here", "here")
 library(tidyverse)
+conflict_prefer("filter", "dplyr")
 library(dfrtheme)
 library(ggbeeswarm)
 library(ggtext)
@@ -25,6 +25,7 @@ weoRevisionPrep <- weoRevision %>%
   mutate(
     country = str_replace(country, "Indonesia", "<b>Indonesia</b>"),
     country = fct_reorder(country, gdp_growth_forecast_revision),
+    # Add category so we can split the chart with `facet_wrap()`
     revision = case_when(
       gdp_growth_forecast_revision > 0 ~ "Upward",
       TRUE ~ "Downward"
@@ -32,30 +33,28 @@ weoRevisionPrep <- weoRevision %>%
     revision = fct_rev(revision)
   )
 
+paletteRevision <- c("Upward" = "#324B64FF", "Downward" = "#C87D4BFF")
+
 ggplot(
-  weoRevisionPrep,
-  aes(x = gdp_growth_forecast_revision, y = country, fill = revision)
+  data = weoRevisionPrep,
+  mapping = aes(x = gdp_growth_forecast_revision, y = country, fill = revision)
 ) +
   geom_segment(
-    aes(xend = 0, yend = country, color = revision),
+    mapping = aes(xend = 0, yend = country, color = revision),
     lwd = 3,
     alpha = 0.25,
     show.legend = FALSE
   ) +
-  geom_vline(
-    xintercept = 0,
-    lwd = 12/22,
-    color = "black"
-  ) +
+  geom_vline(xintercept = 0, lwd = 12/22) +
   geom_point(
+    size = 3,
     pch = 21,
     color = "white",
-    size = 3,
     show.legend = FALSE
   ) +
   scale_x_continuous(breaks = seq(-4, 4, 2), limits = c(-4, 4)) +
-  scale_fill_manual(values = c("Upward" = "#324B64FF", "Downward" = "#C87D4BFF")) +
-  scale_color_manual(values = c("Upward" = "#324B64FF", "Downward" = "#C87D4BFF")) +
+  scale_fill_manual(values = paletteRevision) +
+  scale_color_manual(values = paletteRevision) +
   facet_wrap(~ revision, scales = "free_y") +
   labs(
     title = "Indonesia among countries with sluggish growth outlook",
@@ -78,7 +77,7 @@ ggplot(
   )
 
 ggsave(
-  here(dirYear, dirProject, "result", "weo-revision.png"),
+  here(dirYear, dirProject, "result", "weo-revision.svg"),
   width = 8,
   height = 4.75
 )
@@ -104,13 +103,13 @@ vaxIncomeGroupPrep <- vaxIncomeGroup %>%
     income = fct_reorder(income, people_vaccinated_per_hundred)
   )
 
-vaxIncomeGroupPrep %>%
-  group_by(income) %>%
-  summarize(median(people_vaccinated_per_hundred)) %>%
-  ungroup()
+# Get the median vaccination rate by income group
+#> vaxIncomeGroupPrep %>%
+#>   group_by(income) %>%
+#>   summarize(median(people_vaccinated_per_hundred)) %>%
+#>   ungroup()
 
-annotationIndonesia <- vaxIncomeGroupPrep %>%
-  filter(location == "Indonesia")
+annotationIndonesia <- vaxIncomeGroupPrep %>% filter(location == "Indonesia")
 
 annotationOtherCountry <- vaxIncomeGroupPrep %>%
   filter(
@@ -118,64 +117,64 @@ annotationOtherCountry <- vaxIncomeGroupPrep %>%
   )
 
 ggplot(
-  vaxIncomeGroupPrep,
-  aes(x = income, y = people_vaccinated_per_hundred)
+  data = vaxIncomeGroupPrep,
+  mapping = aes(x = income, y = people_vaccinated_per_hundred)
 ) +
   geom_quasirandom(
+    size = 4.5,
     pch = 21,
     color = "white",
     fill = "#90A8C0FF",
-    size = 4.5,
     alpha = 0.75
   ) +
   geom_point(
     data = annotationIndonesia,
-    pch = 21,
     size = 4.5,
+    pch = 21,
     color = "white",
     fill = "#304890FF",
     alpha = 0.75
   ) +
   geom_label(
     data = annotationOtherCountry,
-    aes(label = location),
+    mapping = aes(label = location),
     size = dfr_convert_font_size(),
+    color = "#757575",
     hjust = 0,
     nudge_x = 0.025,
     nudge_y = 5,
     label.padding = unit(0, "lines"),
-    label.size = 0,
-    color = "#757575"
+    label.size = 0
   ) +
   geom_text_repel(
     data = annotationIndonesia,
-    aes(label = location),
+    mapping = aes(label = location),
     size = dfr_convert_font_size(),
     color = "#304890FF",
+    fontface = "bold",
     hjust = 1,
     nudge_x = -0.25,
     segment.curvature = -0.1,
     segment.ncp = 3,
-    segment.angle = 20,
-    fontface = "bold"
+    segment.angle = 20
   ) +
   geom_richtext(
     data = tibble(x = "High income", y = 59.4, label = "Median"),
-    aes(x = x, y = y, label = label),
+    mapping = aes(x = x, y = y, label = label),
     size = dfr_convert_font_size(),
+    fontface = "bold",
     hjust = 1,
     nudge_x = -0.475,
     label.padding = unit(0, "lines"),
     label.size = 0,
-    label.color = NA,
-    fontface = "bold"
+    label.color = NA
   ) +
   stat_summary(
     geom = "crossbar",
     fun = median,
+    color = "black",
     lwd = 0.25,
-    lty = "dashed",
-    color = "black"
+    lty = "dashed"
   ) +
   scale_y_continuous(
     breaks = seq(0, 125, 25),
@@ -187,7 +186,7 @@ ggplot(
     title = "Vaccine rollout is much faster in richer countries",
     subtitle = paste0(
       "Share of population vaccinated against COVID-19 ",
-      "at latest date available\\*, by income group<br>",
+      "at latest date available\\* by income group<br>",
       "(percent)"
     ),
     x = NULL,
@@ -206,7 +205,7 @@ ggplot(
   )
 
 ggsave(
-  here(dirYear, dirProject, "result", "vaccination-rate-income-group.png"),
+  here(dirYear, dirProject, "result", "vaccination-rate-income-group.svg"),
   width = 8,
   height = 4.5
 )

@@ -2,7 +2,6 @@
 
 library(conflicted)
 library(here)
-conflict_prefer("here", "here")
 library(tidyverse)
 conflict_prefer("filter", "dplyr")
 conflict_prefer("last", "dplyr")
@@ -32,13 +31,13 @@ weoRaw <- read_excel(
 weoColumnNamed <- weoRaw %>%
   select_if(function(x) !all(is.na(x))) %>%
   rename(
-    "country" = 1,
-    "actual_2019" = 2,
-    "actual_2020" = 3,
-    "forecast_2021" = 4,
-    "forecast_2022" = 5,
-    "revision_2021" = 6,
-    "revision_2022" = 7
+    country = 1,
+    actual_2019 = 2,
+    actual_2020 = 3,
+    forecast_2021 = 4,
+    forecast_2022 = 5,
+    revision_2021 = 6,
+    revision_2022 = 7
   )
 
 weoClean <- weoColumnNamed %>%
@@ -80,10 +79,10 @@ vaxRaw <- fread(
 )
 
 vaxClean <- vaxRaw %>%
-  filter(!str_detect(iso_code, "^OWID")) %>%
+  filter(!str_detect(iso_code, "^OWID")) %>% # Remove aggregates
   mutate(year = year(date), month = month(date)) %>%
   group_by(iso_code) %>%
-  filter(year == 2021, month < 8) %>% # Set cutoff date to Aug. 1, 2021
+  filter(year == 2021, month < 8) %>%
   filter(!is.na(people_vaccinated_per_hundred)) %>% # Remove NAs first
   filter(date == last(date)) %>% # Then get the latest observation
   ungroup() %>%
