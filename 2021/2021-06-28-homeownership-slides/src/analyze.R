@@ -104,7 +104,7 @@ priceRaw <- read_excel(
 priceNoEmptyRow <- priceRaw %>%
   select(-c(1, 3)) %>%  # Remove row number and joined city-house-type columns
   slice(-c(1:3)) %>%  # Remove the first three empty rows
-  rename("city" = "...2", "house_type" = "...4") %>%
+  rename(city = ...2, house_type = ...4) %>%
   filter(!is.na(...5)) # Remove empty rows between data
 
 priceCityFilled <- priceNoEmptyRow %>%
@@ -233,7 +233,7 @@ mortgagePayment <- read_csv(
 
 mortgagePaymentOverall <- mortgagePayment %>%
   select(province, overall) %>%
-  rename("payment" = "overall")
+  rename(payment = overall)
 
 mortgageTerm <- read_csv(
   here(
@@ -246,7 +246,7 @@ mortgageTerm <- read_csv(
 
 mortgageTermOverall <- mortgageTerm %>%
   select(province, overall) %>%
-  rename("term" = "overall")
+  rename(term = overall)
 
 mortgageOverall <- mortgagePaymentOverall %>%
   left_join(mortgageTermOverall, by = "province")

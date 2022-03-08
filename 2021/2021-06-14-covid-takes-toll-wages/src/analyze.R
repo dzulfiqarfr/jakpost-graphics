@@ -52,8 +52,7 @@ anchor_regex <- function(data) {
     stop("`data` must contain `val` column.")
   }
 
-  dataAnchored <- data %>%
-    dplyr::mutate(val = paste0("^", val, "$"))
+  dataAnchored <- data %>% dplyr::mutate(val = paste0("^", val, "$"))
 
   return(dataAnchored)
 
@@ -108,7 +107,7 @@ cpiRaw <- WDI(indicatorCPI2010, country = "ID")
 
 cpiClean <- cpiRaw %>%
   as_tibble() %>%
-  rename("cpi" = "FP.CPI.TOTL") %>%
+  rename(cpi = FP.CPI.TOTL) %>%
   select(year, cpi) %>%
   arrange(year) %>%
   filter(year >= 2015)
@@ -118,7 +117,7 @@ cpiClean <- cpiRaw %>%
 
 wageCPI <- wageClean %>%
   mutate(year = year(date)) %>%
-  rename("wage_nominal" = "wage") %>%
+  rename(wage_nominal = wage) %>%
   left_join(cpiClean)
 
 wageReal <- wageCPI %>%
@@ -234,7 +233,7 @@ unemp <- workforceClean %>%
     between(year, 2016, 2020)
   ) %>%
   select(date, value) %>%
-  rename("unemployment_rate" = "value")
+  rename(unemployment_rate = value)
 
 unemp %>%
   write_csv(here(dirYear, dirProject, "result", "unemployment-rate.csv"))
@@ -318,7 +317,7 @@ growthSector <- growthClean %>%
     year = year(date)
   ) %>%
   select(sector, year, growth) %>%
-  rename("value_added_growth" = "growth")
+  rename(value_added_growth = growth)
 
 
 ## Real wage and value added by sector growth

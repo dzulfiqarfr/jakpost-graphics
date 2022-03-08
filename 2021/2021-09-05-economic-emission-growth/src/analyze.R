@@ -30,12 +30,12 @@ emissionGDP <- read_csv(
 
 emissionGDPrenamed <- emissionGDP %>%
   rename(
-    "country" = "Entity",
-    "iso3c" = "Code",
-    "year" = "Year",
-    "gdp_per_cap" = "GDP per capita, PPP (constant 2017 international $)",
-    "emission_production_per_cap" = "Per capita CO2 emissions",
-    "emission_consumption_per_cap" = "Per capita consumption-based CO2 emissions"
+    country = Entity,
+    iso3c = Code,
+    year = Year,
+    gdp_per_cap = `GDP per capita, PPP (constant 2017 international $)`,
+    emission_production_per_cap = `Per capita CO2 emissions`,
+    emission_consumption_per_cap = `Per capita consumption-based CO2 emissions`
   )
 
 # Remove regional, group aggregates
@@ -53,7 +53,7 @@ emissionRaw <- read_excel(
 )
 
 emissionNoEmptyRow <- emissionRaw %>%
-  rename("year" = "MtCO2/yr", "United States" = "USA") %>%
+  rename(year = `MtCO2/yr`, `United States` = USA) %>%
   mutate(year = as.integer(year)) %>% # Coerce row containing text to `NA`
   filter(!is.na(year)) # Remove that row and empty rows
 
@@ -85,7 +85,7 @@ populationRaw <- read_excel(
 )
 
 populationRenamed <- populationRaw %>%
-  rename("iso3n" = "ISO 3166-1 numeric code", "country" = "Location") %>%
+  rename(iso3n = `ISO 3166-1 numeric code`, country = Location) %>%
   select(-Note)
 
 populationCoded <- populationRenamed %>%
@@ -143,9 +143,9 @@ emissionGDPindex <- emissionGDP2020 %>%
 
 emissionGDPindexLong <- emissionGDPindex %>%
   rename(
-    "GDP" = "gdp_index",
-    "Production-based emission" = "emission_production_index",
-    "Consumption-based emission" = "emission_consumption_index"
+    GDP = gdp_index,
+    `Production-based emission` = emission_production_index,
+    `Consumption-based emission` = emission_consumption_index
   ) %>%
   pivot_longer(
     cols = -c(country, year),
@@ -194,9 +194,9 @@ materialRaw <- read_csv(
 
 materialRenamed <- materialRaw %>%
   rename(
-    "country" = "COUNTRY NAME",
-    "year" = "YEAR",
-    "material_footprint_per_cap" = "VALUE"
+    country = `COUNTRY NAME`,
+    year = YEAR,
+    material_footprint_per_cap = VALUE
   ) %>%
   select(-`INDICATOR NAME (unit)`)
 

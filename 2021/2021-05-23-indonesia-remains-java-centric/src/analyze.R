@@ -33,7 +33,7 @@ pop2020 <- read_csv(
 
 pop2020total <- pop2020 %>%
   select(province, total) %>%
-  rename("2020" = "total")
+  rename(`2020` = total)
 
 popAll <- pop2010 %>%
   left_join(pop2020total) %>%
@@ -46,7 +46,7 @@ popAll <- pop2010 %>%
 popNational <- popAll %>%
   filter(province == "INDONESIA") %>%
   select(-province) %>%
-  rename("total" = "population")
+  rename(total = population)
 
 popAllNational <- popAll %>%
   filter(province != "INDONESIA") %>%
@@ -240,7 +240,7 @@ grdpAnnual <- grdpClean %>%
     province = str_replace_all(province, c("Dki" = "DKI", "Di" = "DI"))
   ) %>%
   select(-c(component, quarter)) %>%
-  rename("grdp" = "expenditure")
+  rename(grdp = expenditure)
 
 grdpIsland <- grdpAnnual %>%
   add_island_group() %>%
@@ -259,7 +259,7 @@ gdpNational <- grdpClean %>%
     str_detect(province, "34")
   ) %>%
   select(year, expenditure) %>%
-  rename("total" = "expenditure")
+  rename(total = expenditure)
 
 gdpDistribution <- grdpIsland %>%
   left_join(gdpNational) %>%
@@ -291,12 +291,12 @@ migrationIn <- migration %>%
 grdpPerCap <- grdpAnnual %>%
   filter(year == 2020) %>%
   left_join(pop2020total) %>%
-  rename("population" = "2020") %>%
+  rename(population = `2020`) %>%
   mutate(grdp_per_cap = grdp / population) # In million rupiah
 
 grdpMigrationIn <- grdpPerCap %>%
   left_join(migrationIn) %>%
-  rename("migrant_incoming_share" = "in_share") %>%
+  rename(migrant_incoming_share = in_share) %>%
   add_island_group() %>%
   select(
     province,

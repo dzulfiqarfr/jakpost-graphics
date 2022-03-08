@@ -26,7 +26,7 @@ importNoEmptyRow <- importRaw %>%
   select(-c(1, ncol(.))) %>%  # Remove column containing row numbers
   select_if(function(x) !all(is.na(x))) %>%
   filter(!is.na((...4))) %>% # Remove empty rows
-  rename("category_idn" = "...3", "category_eng" = "...154")
+  rename(category_idn = ...3, category_eng = ...154)
 
 # Create a tibble containing column names and month, which is stored in the
 # second row
@@ -118,7 +118,7 @@ importCategory <- importColumnNamed %>%
   fill(category_main, category_second) %>%
   relocate(category_main, category_second) %>%
   select(-category_idn) %>%
-  rename("category_third" = "category_eng")
+  rename(category_third = category_eng)
 
 importLong <- importCategory %>%
   pivot_longer(
