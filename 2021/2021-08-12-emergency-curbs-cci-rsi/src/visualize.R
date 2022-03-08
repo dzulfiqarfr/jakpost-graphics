@@ -2,7 +2,6 @@
 
 library(conflicted)
 library(here)
-conflict_prefer("here", "here")
 library(tidyverse)
 conflict_prefer("filter", "dplyr")
 library(lubridate)
@@ -30,7 +29,10 @@ cci <- read_csv(
   )
 )
 
-plotCCI <- ggplot(cci, aes(x = date, y = consumer_confidence_index)) +
+plotCCI <- ggplot(
+  data = cci,
+  mapping = aes(x = date, y = consumer_confidence_index)
+) +
   geom_hline(yintercept = 100, lwd = 12/22) +
   geom_line(lwd = 1, color = "#2477B3") +
   geom_richtext(
@@ -39,21 +41,21 @@ plotCCI <- ggplot(cci, aes(x = date, y = consumer_confidence_index)) +
       y = c(110, 90),
       label = c("Optimistic &#8593;", "Pessimistic &#8595;")
     ),
-    aes(x = x, y = y, label = label),
+    mapping = aes(x = x, y = y, label = label),
     size = dfr_convert_font_size(),
-    hjust = 0,
     color = "#757575",
+    hjust = 0,
     label.padding = unit(0, "lines"),
     label.size = NA
   ) +
   geom_text(
     data = tibble(x = ymd("2020-03-01"), y = 140, label = "COVID-19 pandemic"),
-    aes(x = x, y = y, label = label),
+    mapping = aes(x = x, y = y, label = label),
     size = dfr_convert_font_size(),
+    color = "#757575",
     hjust = 1,
     nudge_x = -25,
-    nudge_y = -5,
-    color = "#757575"
+    nudge_y = -5
   ) +
   geom_text_repel(
     data = tibble(
@@ -61,25 +63,25 @@ plotCCI <- ggplot(cci, aes(x = date, y = consumer_confidence_index)) +
       y = 70,
       label = "Large-scale\nsocial restrictions"
     ),
-    aes(x = x, y = y, label = label),
+    mapping = aes(x = x, y = y, label = label),
     size = dfr_convert_font_size(),
+    color = "#757575",
     hjust = 1,
-    nudge_x = -175,
-    color = "#757575"
+    nudge_x = -175
   ) +
   geom_text_repel(
     data = tibble(x = ymd("2021-08-01"), y = 130, label = "Emergency\ncurbs"),
-    aes(x = x, y = y, label = label),
+    mapping = aes(x = x, y = y, label = label),
     size = dfr_convert_font_size(),
+    color = "#757575",
     hjust = 1,
-    nudge_x = -75,
-    color = "#757575"
+    nudge_x = -75
   ) +
   geom_vline(
     xintercept = ymd("2020-03-01"),
+    color = "#757575",
     lwd = 0.5,
-    lty = "dashed",
-    color = "#757575"
+    lty = "dashed"
   ) +
   annotate(
     geom = "rect",
@@ -100,7 +102,7 @@ plotCCI <- ggplot(cci, aes(x = date, y = consumer_confidence_index)) +
     alpha = 0.25
   ) +
   scale_x_date(
-    breaks = seq(ymd("2017-01-01"), ymd("2021-01-01"), by = "1 year"),
+    breaks = seq(ymd("2017-01-01"), ymd("2021-01-01"), "1 year"),
     labels = c("2017", str_c("'", seq(18, 21)))
   ) +
   scale_y_continuous(
@@ -124,11 +126,14 @@ plotCCI <- ggplot(cci, aes(x = date, y = consumer_confidence_index)) +
 
 rsi <- read_csv(here(dirYear, dirProject, "result", "retail-sales-index.csv"))
 
-plotRSI <- ggplot(rsi, aes(x = date, y = retail_sales_index_growth)) +
+plotRSI <- ggplot(
+  data = rsi,
+  mapping = aes(x = date, y = retail_sales_index_growth)
+  ) +
   geom_hline(yintercept = 0, lwd = 12/22) +
   geom_line(lwd = 1, color = "#2477B3") +
   scale_x_date(
-    breaks = seq(ymd("2017-01-01"), ymd("2021-01-01"), by = "1 year"),
+    breaks = seq(ymd("2017-01-01"), ymd("2021-01-01"), "1 year"),
     labels = c("2017", str_c("'", seq(18, 21)))
   ) +
   geom_vline(
@@ -190,7 +195,7 @@ plotCCI +
   )
 
 ggsave(
-  here(dirYear, dirProject, "result", "consumer-confidence-retail-sales.png"),
+  here(dirYear, dirProject, "result", "consumer-confidence-retail-sales.svg"),
   width = 8.5,
   height = 4.75
 )
@@ -208,8 +213,12 @@ mobilityRegion <- read_csv(
 )
 
 plotMobilityRegion <- ggplot(
-  mobilityRegion,
-  aes(x = date, y = mobility_region_7day_moving_average, color = region)
+  data = mobilityRegion,
+  mapping = aes(
+    x = date,
+    y = mobility_region_7day_moving_average,
+    color = region
+  )
 ) +
   geom_hline(yintercept = 0, lwd = 12/22) +
   geom_line(lwd = 1, show.legend = FALSE) +
@@ -219,19 +228,19 @@ plotMobilityRegion <- ggplot(
       y = -35,
       label = "Large-scale\nsocial restrictions"
     ),
-    aes(x = x, y = y, label = label),
+    mapping = aes(x = x, y = y, label = label),
     size = dfr_convert_font_size(),
+    color = "#757575",
     hjust = 0,
-    nudge_x = 50,
-    color = "#757575"
+    nudge_x = 50
   ) +
   geom_text_repel(
     data = tibble(x = ymd("2021-08-01"), y = -25, label = "Emergency curbs"),
-    aes(x = x, y = y, label = label),
+    mapping = aes(x = x, y = y, label = label),
     size = dfr_convert_font_size(),
+    color = "#757575",
     hjust = 1,
-    nudge_x = -50,
-    color = "#757575"
+    nudge_x = -50
   ) +
   geom_text(
     data = tibble(
@@ -239,11 +248,11 @@ plotMobilityRegion <- ggplot(
       y = c(4, -18.5),
       label = c("Other", "Java & Bali")
     ),
-    aes(x = x, y = y, label = label),
+    mapping = aes(x = x, y = y, label = label),
     size = dfr_convert_font_size(),
-    hjust = 0.5,
     color = c("#55CBF2", "#2477B3"),
-    fontface = "bold"
+    fontface = "bold",
+    hjust = 0.5
   ) +
   geom_vline(
     xintercept = ymd("2020-03-02"),
@@ -271,16 +280,16 @@ plotMobilityRegion <- ggplot(
   ) +
   geom_label(
     data = tibble(x = ymd("2020-03-01"), y = 7.5, label = "COVID-19 pandemic"),
-    aes(x = x, y = y, label = label),
+    mapping = aes(x = x, y = y, label = label),
     size = dfr_convert_font_size(),
+    color = "#757575",
     hjust = 0,
     nudge_x = 5,
-    color = "#757575",
     label.padding = unit(0, "lines"),
     label.size = 0
   ) +
   scale_x_date(
-    breaks = seq(ymd("2020-03-01"), ymd("2021-08-01"), by = "3 month"),
+    breaks = seq(ymd("2020-03-01"), ymd("2021-08-01"), "3 month"),
     labels = c("Mar\n2020", "Jun", "Sep", "Dec", "Mar\n'21", "Jun")
   ) +
   scale_y_continuous(
@@ -289,10 +298,7 @@ plotMobilityRegion <- ggplot(
     position = "right"
   ) +
   scale_color_manual(
-    values = c(
-      "Java & Bali" = "#2477B3",
-      "Other" = "#55CBF2"
-    )
+    values = c("Java & Bali" = "#2477B3", "Other" = "#55CBF2")
   ) +
   labs(
     subtitle = "Change in visitors by region\\* (percent)",
@@ -321,8 +327,11 @@ annotationProvince <- mobilityCovid %>%
   filter(province %in% c("Bali", "Jakarta", "Gorontalo", "Aceh"))
 
 plotMobilityCovid <- ggplot(
-  mobilityCovid,
-  aes(x = cases_per_million_people, y = mobility_province_7day_moving_average)
+  data = mobilityCovid,
+  mapping = aes(
+    x = cases_per_million_people,
+    y = mobility_province_7day_moving_average
+  )
 ) +
   geom_hline(yintercept = 0, lwd = 12/22) +
   geom_point(
@@ -334,17 +343,17 @@ plotMobilityCovid <- ggplot(
   ) +
   geom_smooth(
     method = "lm",
-    color = "black",
     se = FALSE,
+    color = "black",
     lty = "dashed",
     lwd = 0.75
   ) +
   geom_label(
     data = annotationProvince,
-    aes(label = province),
+    mapping = aes(label = province),
     size = dfr_convert_font_size(),
-    hjust = 1,
     color = "#757575",
+    hjust = 1,
     nudge_x = 0.025,
     nudge_y = 5,
     label.padding = unit(0, "lines"),
@@ -390,7 +399,7 @@ plotMobilityRegion +
   )
 
 ggsave(
-  here(dirYear, dirProject, "result", "mobility-covid.png"),
+  here(dirYear, dirProject, "result", "mobility-covid.svg"),
   width = 8.75,
   height = 5.25
 )

@@ -2,7 +2,6 @@
 
 library(conflicted)
 library(here)
-conflict_prefer("here", "here")
 library(tidyverse)
 conflict_prefer("filter", "dplyr")
 conflict_prefer("between", "dplyr")
@@ -35,7 +34,7 @@ cciRaw <- read_excel(
 cciCompleteCategory <- cciRaw %>%
   # Get the categories into a single column, namely `...4`
   mutate(...4 = case_when(is.na(...4) ~ ...2, TRUE ~ ...4)) %>%
-  rename("category_id" = "...4", "category_en" = "...123") %>%
+  rename(category_id = ...4, category_en = ...123) %>%
   relocate(category_id, category_en)
 
 cciNoEmptyRowCol <- cciCompleteCategory %>%
@@ -43,8 +42,8 @@ cciNoEmptyRowCol <- cciCompleteCategory %>%
   select_if(function(x) !all(is.na(x))) %>%
   select(-c(`Tabel 1.`, `Table 1.`, ...2)) # Remove columns with no values
 
-# Create a tibble of long data containing year values, which are stored in the
-# second row, and the column names
+# Create a tibble containing year values, which are stored in the first row,
+# and the column names
 cciColumnYear <- cciNoEmptyRowCol %>%
   slice(1) %>%
   pivot_longer(
@@ -54,7 +53,8 @@ cciColumnYear <- cciNoEmptyRowCol %>%
   ) %>%
   filter(!is.na(year))
 
-# Repeat the same operation to create another tibble for month values
+# Repeat the same operation to create another tibble for month values, which
+# are stored in the second row
 cciColumnMonth <- cciNoEmptyRowCol %>%
   slice(2) %>%
   pivot_longer(
@@ -64,7 +64,7 @@ cciColumnMonth <- cciNoEmptyRowCol %>%
   ) %>%
   filter(!is.na(month))
 
-# Turn the month values from abbreviated month names to `-%m-01`
+# Turn the month values from abbreviated month names to `-%m-01` format
 cciColumnMonthFormatted <- cciColumnMonth %>%
   mutate(
     month = str_replace_all(
@@ -113,7 +113,7 @@ cciClean <- cciLong %>%
   mutate(year = year(date)) %>%
   filter(str_detect(category_en, "CCI"), year >= 2017) %>%
   select(date, index) %>%
-  rename("consumer_confidence_index" = "index")
+  rename(consumer_confidence_index = index)
 
 cciClean %>%
   write_csv(here(dirYear, dirProject, "result", "consumer-confidence-index.csv"))
@@ -130,14 +130,14 @@ rsiRaw <- read_excel(
 rsiNoEmptyRow <- rsiRaw %>%
   filter(!is.na(...2)) %>%
   rename(
-    "category_id" = "Tabel 2. Pertumbuhan Tahunan Penjualan Riil (%, yoy)",
-    "category_en" = "Table 2. Annual Growth of Retail Sales Index (%, yoy)"
+    category_id = `Tabel 2. Pertumbuhan Tahunan Penjualan Riil (%, yoy)`,
+    category_en = `Table 2. Annual Growth of Retail Sales Index (%, yoy)`
   ) %>%
   relocate(category_id, category_en)
 
 # Repeat the same steps taken when cleaning the consumer confidence data.
 # Create a tibble of long data containing year values, which are stored in the
-# second row, and the column names
+# first row, and the column names
 rsiColumnYear <- rsiNoEmptyRow %>%
   slice(1) %>%
   pivot_longer(
@@ -148,7 +148,8 @@ rsiColumnYear <- rsiNoEmptyRow %>%
   ) %>%
   filter(!is.na(year))
 
-# Repeat the same operation to create another tibble for month values
+# Repeat the same operation to create another tibble for month values, which
+# are stored in the second row
 rsiColumnMonth <- rsiNoEmptyRow %>%
   slice(2) %>%
   pivot_longer(
@@ -158,8 +159,7 @@ rsiColumnMonth <- rsiNoEmptyRow %>%
   ) %>%
   filter(!is.na(month))
 
-# Turn the month values from abbreviated month names to `-%m-01`. The full month
-# names in retail sales index data are in Indonesian and have asterisk prefixes
+# Turn the month values from abbreviated month names to `-%m-01` format
 rsiColumnMonthFormatted <- rsiColumnMonth %>%
   mutate(
     month = str_remove_all(month, "[:punct:]"),
@@ -212,7 +212,7 @@ rsiClean <- rsiLong %>%
   mutate(year = year(date)) %>%
   filter(str_detect(category_en, "TOTAL"), year >= 2017, !is.na(index)) %>%
   select(date, index) %>%
-  rename("retail_sales_index_growth" = "index")
+  rename(retail_sales_index_growth = index)
 
 rsiClean %>%
   write_csv(here(dirYear, dirProject, "result", "retail-sales-index.csv"))
@@ -237,8 +237,6 @@ respPopRaw <- GET(
 respPopParsed <- respPopRaw %>%
   content(type = "text") %>%
   fromJSON()
-
-respPopParsed %>% str()
 
 anchor_regex <- function(data) {
 
@@ -269,7 +267,7 @@ popLong <- popRaw %>%
     values_to = "population"
   )
 
-provinceName <- read_csv(here(dirYear, dirProject, "data", "province-name.csv"))
+provinceName <- read_csv(here(dirYear, dirProject, "data", "province.csv"))
 
 provinceNameEn <- provinceName %>%
   select(-province_idn) %>%
@@ -299,7 +297,11 @@ popClean <- popLong %>%
   select(province, region, sex, year, population)
 
 popSubset <- popClean %>%
-  filter(province != "Indonesia", sex == "Jumlah ", year == 2020) %>%
+  filter(
+    province != "Indonesia",
+    sex == "Jumlah ",
+    year == 2020
+  ) %>%
   select(-sex)
 
 popWeight <- popSubset %>%
@@ -331,9 +333,9 @@ mobilityIDN <- mobilityRaw %>%
   as_tibble() %>%
   filter(country_region == "Indonesia") %>%
   rename(
-    "country" = "country_region",
-    "province" = "sub_region_1",
-    "mobility" = "retail_and_recreation_percent_change_from_baseline"
+    country = country_region,
+    province = sub_region_1,
+    mobility = retail_and_recreation_percent_change_from_baseline
   ) %>%
   mutate(province = na_if(province, ""))
 
@@ -417,7 +419,7 @@ covidRaw <- read_csv(here(dirYear, dirProject, "data", "covid.csv"))
 
 covidClean <- covidRaw %>%
   select(key, jumlah_kasus) %>%
-  rename("cases" = "jumlah_kasus") %>%
+  rename(cases = jumlah_kasus) %>%
   filter(key != "PROVINSI JAWA TENGAH") %>% # This contains a bug
   mutate(
     province = str_to_title(key),
@@ -441,7 +443,7 @@ covidCasesPerMillion <- covidPop %>%
     cases_per_million_people = cases / population * 1000
   ) %>%
   select(province_eng, cases_per_million_people) %>%
-  rename("province" = "province_eng")
+  rename(province = province_eng)
 
 
 ## Mobility and COVID-19 confirmed cases per million, by province ----
