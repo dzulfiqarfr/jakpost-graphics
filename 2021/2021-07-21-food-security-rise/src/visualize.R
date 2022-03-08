@@ -2,7 +2,6 @@
 
 library(conflicted)
 library(here)
-conflict_prefer("here", "here")
 library(tidyverse)
 conflict_prefer("filter", "dplyr")
 library(dfrtheme)
@@ -16,49 +15,55 @@ i_am(paste(dirYear, dirProject, "src", "visualize.R", sep = "/"))
 
 # Plot ----
 
-foodSecurity <- read_csv(here(dirYear, dirProject, "result", "food-security.csv"))
+foodSecurity <- read_csv(
+  here(
+    dirYear,
+    dirProject,
+    "result",
+    "food-security.csv"
+  )
+)
 
-foodSecuritySubset <- foodSecurity %>% filter(year != 2019)
+foodSecurityPrep <- foodSecurity %>% mutate(year = as_factor(year))
 
-ggplot(
-  foodSecuritySubset,
-  aes(x = food_security_index)
-) +
+paletteYear <- c("2020" = "#2477B3", "2018" = "#90A4AE")
+
+ggplot(data = foodSecurityPrep, mapping = aes(x = food_security_index)) +
   geom_histogram(
-    aes(fill = as_factor(year), color = as_factor(year)),
+    mapping = aes(fill = year, color = year),
     position = "identity",
     binwidth = 5,
     alpha = 0.5
   ) +
   geom_vline(
     xintercept = c(59.58, 51.29),
+    color = "#757575",
     lwd = 0.5,
-    lty = "dashed",
-    color = "#757575"
+    lty = "dashed"
   ) +
   geom_label(
     data = tibble(
       x = c(51.29, 59.58),
-      y = c(150, 120),
+      y = c(150, 115),
       label = c("Food security threshold for cities", "For regencies")
     ),
-    aes(x = x, y = y, label = label),
+    mapping = aes(x = x, y = y, label = label),
     size = dfr_convert_font_size(),
-    vjust = 0,
+    color = "#757575",
+    fill = "white",
     hjust = 1,
+    vjust = 0,
     nudge_x = -1,
     nudge_y = -10,
-    color = "#757575",
     label.padding = unit(0, "lines"),
-    label.size = 0,
-    fill = "white"
+    label.size = 0
   ) +
   geom_richtext(
     data = tibble(x = 10, y = 30, label = "More food secure &#9658;"),
-    aes(x = x, y = y, label = label),
+    mapping = aes(x = x, y = y, label = label),
     size = dfr_convert_font_size(),
-    hjust = 0,
     color = "#757575",
+    hjust = 0,
     label.padding = unit(0, "lines"),
     label.size = 0,
     label.color = NA
@@ -70,8 +75,8 @@ ggplot(
     expand = c(0, 0),
     position = "right"
   ) +
-  scale_color_manual(values = c("2020" = "#2477B3", "2018" = "#90A4AE")) +
-  scale_fill_manual(values = c("2020" = "#2477B3", "2018" = "#90A4AE")) +
+  scale_color_manual(values = paletteYear) +
+  scale_fill_manual(values = paletteYear) +
   labs(
     title = "More regions becoming food secure",
     subtitle = "Distribution of cities and regencies by food security index",
@@ -86,15 +91,15 @@ ggplot(
   theme(
     axis.line.x = element_line(color = "black"),
     axis.ticks.x = element_line(color = "black"),
-    panel.grid.major.x = element_blank(),
     legend.justification = c(0, 1),
     legend.position = c(0.1, 0.875),
-    legend.key.size = unit(0.75, "lines"),
-    legend.background = element_rect(fill = "white", color = NA)
+    legend.key.size = unit(1, "lines"),
+    legend.background = element_rect(fill = "white", color = NA),
+    panel.grid.major.x = element_blank()
   )
 
 ggsave(
-  here(dirYear, dirProject, "result", "food-security.png"),
+  here(dirYear, dirProject, "result", "food-security.svg"),
   width = 8,
   height = 4.5
 )
