@@ -144,7 +144,7 @@ ggplot() +
       y = 50,
       label = "Shaded areas\nrepresent inequality"
       ),
-    mapping = es(x = x, y = y, label = label),
+    mapping = aes(x = x, y = y, label = label),
     size = dfr_convert_font_size(),
     color = "#757575",
     hjust = 1,
