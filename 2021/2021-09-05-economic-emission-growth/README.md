@@ -17,7 +17,7 @@ Material footprint per capita | [UN](https://wesr.unep.org/downloader) |
 # Changelog
 
 The GDP and emission per capita chart:
-- removed China from the chart. As an outlier, it could hide trends in other countries;  
+- removed Turkey and China from the chart. As an outlier, China could hide trends in other countries;  
 - removed the line to annotate the signing of Paris Agreement because it was not really relevant and added clutter instead;  
 - used a more concise text annotation;  
 - moved the legend to the top of the chart; and  
