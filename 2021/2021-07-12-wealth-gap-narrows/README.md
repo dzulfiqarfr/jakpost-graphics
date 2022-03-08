@@ -7,7 +7,7 @@ This article seeks to describe how the pandemic affected both wealth distributio
 
 Data | Source |  
 ---- | ------ |  
-Wealth estimates | [Credit Suisses](https://www.credit-suisse.com/about-us/en/reports-research/global-wealth-report.html) |  
+Wealth estimates | [Credit Suisse](https://www.credit-suisse.com/about-us/en/reports-research/global-wealth-report.html) |  
 
 
 # Changelog
