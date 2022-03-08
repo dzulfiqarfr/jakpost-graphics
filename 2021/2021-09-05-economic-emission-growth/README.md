@@ -8,7 +8,7 @@ This article seeks to describe the lack of progress in decoupling economic devel
 Data | Source |  
 ---- | ------ |  
 Gross domestic product (GDP) and emission per capita | [Our World in Data](https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions#can-we-make-progress-in-reducing-emissions) |  
-2020 emission | [Le Quéré et al. 2021])(https://www.icos-cp.eu/gcp-covid19) |  
+2020 emission | [Le Quéré et al. 2021](https://www.icos-cp.eu/gcp-covid19) |  
 Population | [United Nations (UN)](https://population.un.org/wpp/) |  
 Human development index (HDI) | [UN](https://hdr.undp.org/en/content/human-development-report-office-statistical-data-api) |  
 Material footprint per capita | [UN](https://wesr.unep.org/downloader) |  
