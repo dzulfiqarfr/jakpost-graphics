@@ -6,6 +6,7 @@ This article seeks to explain how the Delta wave reversed the recover among cons
 # Data
 
 Data | Source |  
+---- | ------ |  
 Consumer confidence index | [Bank Indonesia (BI)](https://www.bi.go.id/id/publikasi/laporan/Pages/SK-Juli-2021.aspx) |  
 Retail sales index | [BI](https://www.bi.go.id/id/publikasi/laporan/Pages/SPE_Juni_2021.aspx) |  
 Mobility to retail and recreation places | [Google](https://www.google.com/covid19/mobility/) |  
