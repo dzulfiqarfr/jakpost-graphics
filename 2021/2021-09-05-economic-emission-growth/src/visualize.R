@@ -165,7 +165,7 @@ ggplot(data = phdiLong, mapping = aes(x = year, y = index)) +
     x = NULL,
     y = NULL,
     caption = paste0(
-      "Source: UN; Global Carbon Project; Our World in Data; ",
+      "Source: United Nations; Global Carbon Project; Our World in Data; ",
       "author's analysis<br>",
       "Chart: Dzulfiqar Fathur Rahman"
     )

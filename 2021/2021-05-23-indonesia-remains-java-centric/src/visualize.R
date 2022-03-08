@@ -172,7 +172,6 @@ ggplot(
   data = grdpMigration,
   mapping = aes(x = grdp_per_cap, y = migrant_incoming_share)
 ) +
-  geom_hline(yintercept = 0, lwd = 12/22) +
   geom_point(
     mapping = aes(fill = island),
     size = 4.5,
@@ -216,6 +215,7 @@ ggplot(
   scale_y_continuous(
     breaks = seq(0, 50, 10),
     limits = c(0, 50),
+    expand = c(0, 0),
     position = "right"
   ) +
   scale_fill_manual(
@@ -243,6 +243,8 @@ ggplot(
   ) +
   dfr_theme() +
   theme(
+    axis.ticks.x = element_line(color = "black"),
+    axis.line.x = element_line(color = "black"),
     legend.justification = c(0, 1),
     legend.position = c(0.05, 0.95),
     legend.key.size = unit(0.75, "lines"),

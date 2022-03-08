@@ -334,7 +334,7 @@ ggplot(data = mortgageMillion, mapping = aes(x = term, y = payment)) +
   labs(
     title = "Payments in Jakarta, Yogyakarta are unusually high",
     subtitle = paste0(
-      "Mortgage average monthly payments and terms in 2019 ",
+      "Mortgages: average monthly payments and terms in 2019 ",
       "by province\\*"
     ),
     x = "Terms<br>(years)",
