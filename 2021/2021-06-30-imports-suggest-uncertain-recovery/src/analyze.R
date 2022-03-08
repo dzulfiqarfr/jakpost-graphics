@@ -2,7 +2,6 @@
 
 library(conflicted)
 library(here)
-conflict_prefer("here", "here")
 library(tidyverse)
 conflict_prefer("lag", "dplyr")
 conflict_prefer("filter", "dplyr")
@@ -23,7 +22,7 @@ importRaw <- read_excel(
   na = ""
 )
 
-importNoEmptyRows <- importRaw %>%
+importNoEmptyRow <- importRaw %>%
   select(-c(1, ncol(.))) %>%  # Remove column containing row numbers
   select_if(function(x) !all(is.na(x))) %>%
   filter(!is.na((...4))) %>% # Remove empty rows
@@ -31,7 +30,7 @@ importNoEmptyRows <- importRaw %>%
 
 # Create a tibble containing column names and month, which is stored in the
 # second row
-columnMonth <- importNoEmptyRows %>%
+columnMonth <- importNoEmptyRow %>%
   select(-starts_with("category")) %>%
   slice(2) %>%
   pivot_longer(
@@ -78,11 +77,7 @@ columnNameReplacement <- columnMonth %>%
   mutate(date = paste0(year, month)) %>%
   select(date, column_name)
 
-columnFirstLast <- columnNameReplacement %>%
-  filter(date %in% c(first(date), last(date))) %>%
-  pull(date)
-
-importColumnNamed <- importNoEmptyRows %>%
+importColumnNamed <- importNoEmptyRow %>%
   rename(deframe(columnNameReplacement)) %>%
   slice(-c(1:2)) %>% # Remove rows containing year and month
   relocate(category_idn, category_eng)
@@ -90,18 +85,18 @@ importColumnNamed <- importNoEmptyRows %>%
 importCategory <- importColumnNamed %>%
   mutate(
     across(
-      cols = starts_with("category"),
-      .fns = ~str_remove_all(.x, "[\\p{No}]") # Remove superscripts
+      .cols = starts_with("category"),
+      .fns = ~ str_remove_all(.x, "[\\p{No}]") # Remove superscripts
     ),
-    across(cols = starts_with("category"), .fns = ~str_trim(.x)),
+    across(.cols = starts_with("category"), .fns = ~ str_squish(.x)),
     # Main categories are prefixed with roman numerals
     category_main = case_when(
       str_detect(category_eng, "^I++\\.|IV\\.|V\\.") ~ category_eng
     ),
     across(
-      cols = starts_with("category"),
+      .cols = starts_with("category"),
       # Remove roman numeral prefixes
-      .fns = ~str_remove_all(.x, "^I++\\.|IV\\.|V\\.")
+      .fns = ~ str_remove_all(.x, "^I++\\.|IV\\.|V\\.")
     ),
     # Second categories, which consist of raw materials and capital goods,
     # are prefixed with capital letters from A to D
@@ -109,8 +104,8 @@ importCategory <- importColumnNamed %>%
       str_detect(category_eng, "^[A-D]\\.") ~ category_eng
     ),
     across(
-      cols = starts_with("category"),
-      .fns = ~str_remove_all(.x, "^[A-D]\\.") # Remove capital letter prefixes
+      .cols = starts_with("category"),
+      .fns = ~ str_remove_all(.x, "^[A-D]\\.") # Remove capital letter prefixes
     ),
     # The are rows with total imports for the main categories, hence add
     # the main category labels to `category_second` column for those rows
@@ -118,7 +113,7 @@ importCategory <- importColumnNamed %>%
       is.na(category_second) ~ category_main,
       TRUE ~ category_second
     ),
-    across(cols = c(category_main, category_second), .fns = ~str_trim(.x))
+    across(.cols = starts_with("category"), .fns = ~ str_squish(.x))
   ) %>%
   fill(category_main, category_second) %>%
   relocate(category_main, category_second) %>%
@@ -127,9 +122,10 @@ importCategory <- importColumnNamed %>%
 
 importLong <- importCategory %>%
   pivot_longer(
-    cols = columnFirstLast[1]:columnFirstLast[2],
+    cols = pull(columnNameReplacement, date),
     names_to = "date",
-    values_to = "import"
+    values_to = "import",
+    values_transform = list(import = as.double)
   )
 
 categoryRawCapitalGoods <- c(
@@ -137,21 +133,19 @@ categoryRawCapitalGoods <- c(
   "Capital goods"
 )
 
-importGrouped <- importLong %>%
+importClean <- importLong %>%
   filter(
     category_second %in% categoryRawCapitalGoods,
-    # Remove totals by second category as we will calculate it using
-    # `group_by()` and `mutate()` later so we don't have to create a new tibble
-    # and join the tibble
+    # Remove totals by second category as we will calculate later so we don't
+    # have to create a new tibble
     !(category_third %in% categoryRawCapitalGoods),
     !str_detect(category_third, "^o/w"), # Remove these nested categories
     !str_detect(date, "annual")
   ) %>%
   mutate(
-    date = ymd(date),
-    import = as.double(import),
+    date = as.Date(date),
     category_second = str_remove_all(category_second, " and auxiliary goods"),
-    # Make subcategories to simplify the third categories
+    # Make fourth categories (subcategories) to simplify the third categories
     category_fourth = case_when(
       str_detect(category_third, "Food and beverages") ~ "Food and beverages",
       str_detect(category_third, "Industrial supplies") ~ "Industrial supplies",
@@ -163,7 +157,7 @@ importGrouped <- importLong %>%
   select(category_second, category_third, category_fourth, date, import)
 
 # Calculate the sum of imports grouped by the fourth category
-importCategoryFourth <- importGrouped %>%
+importCategoryFourth <- importClean %>%
   group_by(category_fourth, date) %>%
   mutate(import_total_category_fourth = sum(import)) %>%
   ungroup(category_fourth) %>%
@@ -196,14 +190,12 @@ importContributionChangeClean <- importContributionChange %>%
   mutate(year = year(date)) %>%
   filter(!is.na(contribution_change_category_second), year >= 2018) %>%
   select(
-    c(
       category_second,
       category_fourth,
       date,
       import_total_category_fourth,
       import_change_yoy,
       contribution_change_category_second
-    )
   )
 
 importContributionChangeClean %>%

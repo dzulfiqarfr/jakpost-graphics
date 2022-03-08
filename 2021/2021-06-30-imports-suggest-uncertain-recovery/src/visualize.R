@@ -2,7 +2,6 @@
 
 library(conflicted)
 library(here)
-conflict_prefer("here", "here")
 library(tidyverse)
 library(lubridate)
 library(dfrtheme)
@@ -46,30 +45,26 @@ importRawMaterial <- importContributionChangeSplit %>%
   )
 
 plotImportRawMaterial <- ggplot(
-  importRawMaterial,
-  aes(x = date, y = contribution_change_category_second)
+  data = importRawMaterial,
+  mapping = aes(x = date, y = contribution_change_category_second)
 ) +
   geom_col(
-    aes(fill = category_fourth),
+    mapping = aes(fill = category_fourth),
+    position = "stack",
     color = "white",
     width = 25,
-    lwd = 0.25,
-    position = "stack"
+    lwd = 0.25
   ) +
-  geom_hline(
-    yintercept = 0,
-    lwd = 12/22,
-    color = "black"
-  ) +
+  geom_hline(yintercept = 0, lwd = 12/22) +
   geom_vline(
     xintercept = ymd("2020-03-01"),
+    color = "#757575",
     lwd = 0.5,
-    lty = "dashed",
-    color = "#757575"
+    lty = "dashed"
   ) +
   geom_text(
     data = tibble(x = ymd("2020-03-01"), y = 40, label = "COVID-19 pandemic"),
-    aes(x = x, y = y, label = label),
+    mapping = aes(x = x, y = y, label = label),
     size = dfr_convert_font_size(),
     color = "#757575",
     hjust = 1,
@@ -77,7 +72,7 @@ plotImportRawMaterial <- ggplot(
     nudge_y = -5
   ) +
   scale_x_date(
-    breaks = seq(ymd("2018-01-01"), ymd("2021-01-01"), by = "1 year"),
+    breaks = seq(ymd("2018-01-01"), ymd("2021-01-01"), "1 year"),
     label = c("Jan\n2018", "'19", "'20", "'21")
   ) +
   scale_y_continuous(
@@ -133,29 +128,25 @@ importCapitalGoods <- importContributionChangeSplit %>%
   )
 
 plotImportCapitalGoods <- ggplot(
-  importCapitalGoods,
-  aes(x = date, y = contribution_change_category_second)
+  data = importCapitalGoods,
+  mapping = aes(x = date, y = contribution_change_category_second)
 ) +
   geom_col(
-    aes(fill = category_fourth),
+    mapping = aes(fill = category_fourth),
+    position = "stack",
     color = "white",
     width = 25,
-    lwd = 0.25,
-    position = "stack"
+    lwd = 0.25
   ) +
-  geom_hline(
-    yintercept = 0,
-    lwd = 12/22,
-    color = "black"
-  ) +
+  geom_hline(yintercept = 0, lwd = 12/22) +
   geom_vline(
     xintercept = ymd("2020-03-01"),
+    color = "#757575",
     lwd = 0.5,
-    lty = "dashed",
-    color = "#757575"
+    lty = "dashed"
   ) +
   scale_x_date(
-    breaks = seq(ymd("2018-01-01"), ymd("2021-01-01"), by = "1 year"),
+    breaks = seq(ymd("2018-01-01"), ymd("2021-01-01"), "1 year"),
     label = c("Jan\n2018", "'19", "'20", "'21")
   ) +
   scale_y_continuous(
@@ -204,7 +195,7 @@ plotImportRawMaterial +
   )
 
 ggsave(
-  here(dirYear, dirProject, "result", "import-contribution-change.png"),
+  here(dirYear, dirProject, "result", "import-contribution-change.svg"),
   width = 8,
   height = 4.5
 )
