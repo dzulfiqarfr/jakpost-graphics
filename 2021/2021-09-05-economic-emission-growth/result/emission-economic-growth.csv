@@ -1,0 +1,466 @@
+country,year,category,index
+India,1990,GDP,100
+India,1990,Production-based emission,100
+India,1990,Consumption-based emission,100
+India,1991,GDP,99.01642630973491
+India,1991,Production-based emission,104.31660360885391
+India,1991,Consumption-based emission,101.6770485874508
+India,1992,GDP,102.3734972414168
+India,1992,Production-based emission,108.90541048003386
+India,1992,Consumption-based emission,107.61447139227802
+India,1993,GDP,105.14446863397092
+India,1993,Production-based emission,110.34271274195588
+India,1993,Consumption-based emission,106.59535804657155
+India,1994,GDP,109.98772719906546
+India,1994,Production-based emission,114.44498720253034
+India,1994,Consumption-based emission,109.88968762904668
+India,1995,GDP,116.06991801184088
+India,1995,Production-based emission,119.34767628374946
+India,1995,Consumption-based emission,113.09804279558473
+India,1996,GDP,122.48906771129289
+India,1996,Production-based emission,126.90989013013483
+India,1996,Consumption-based emission,118.42661770571846
+India,1997,GDP,125.08952836782335
+India,1997,Production-based emission,129.6524915004615
+India,1997,Consumption-based emission,121.53024711310043
+India,1998,GDP,130.40438661468718
+India,1998,Production-based emission,129.95498477468146
+India,1998,Consumption-based emission,121.5983728921938
+India,1999,GDP,139.39983277298035
+India,1999,Production-based emission,138.34838917348534
+India,1999,Consumption-based emission,131.3017559665424
+India,2000,GDP,142.21722689454194
+India,2000,Production-based emission,139.74506038447876
+India,2000,Consumption-based emission,127.76027266967347
+India,2001,GDP,146.52267803432687
+India,2001,Production-based emission,139.32966226799718
+India,2001,Consumption-based emission,128.93639312715393
+India,2002,GDP,149.54818979265949
+India,2002,Production-based emission,141.1803377790254
+India,2002,Consumption-based emission,129.31098579816876
+India,2003,GDP,158.66121546104995
+India,2003,Production-based emission,143.8324424570811
+India,2003,Consumption-based emission,133.98627257448413
+India,2004,GDP,168.48814011534571
+India,2004,Production-based emission,150.32442501145883
+India,2004,Consumption-based emission,140.1863164312893
+India,2005,GDP,178.98823631605322
+India,2005,Production-based emission,155.9234796854192
+India,2005,Consumption-based emission,143.58060362059962
+India,2006,GDP,190.44936183804455
+India,2006,Production-based emission,163.0826162006014
+India,2006,Consumption-based emission,152.04765875546988
+India,2007,GDP,201.96807090903155
+India,2007,Production-based emission,173.1889283173468
+India,2007,Consumption-based emission,162.27406981818478
+India,2008,GDP,205.17451257797936
+India,2008,Production-based emission,183.82433323900048
+India,2008,Consumption-based emission,170.64736083189135
+India,2009,GDP,218.2053269813209
+India,2009,Production-based emission,199.831021512663
+India,2009,Consumption-based emission,179.93269316456065
+India,2010,GDP,233.57210474165643
+India,2010,Production-based emission,205.21570523716179
+India,2010,Consumption-based emission,182.82433367830416
+India,2011,GDP,242.66732318096524
+India,2011,Production-based emission,213.15985995632118
+India,2011,Consumption-based emission,187.85398945535852
+India,2012,GDP,252.77605046923912
+India,2012,Production-based emission,231.44407251419193
+India,2012,Consumption-based emission,202.99264494098642
+India,2013,GDP,265.7562889951392
+India,2013,Production-based emission,239.5734494790097
+India,2013,Consumption-based emission,202.43019834701946
+India,2014,GDP,282.1977788802092
+India,2014,Production-based emission,254.43454526721248
+India,2014,Consumption-based emission,217.60169531304737
+India,2015,GDP,301.37808199526876
+India,2015,Production-based emission,259.5559384356052
+India,2015,Consumption-based emission,224.70770420259902
+India,2016,GDP,322.72236364775563
+India,2016,Production-based emission,272.5698055748845
+India,2016,Consumption-based emission,234.40855146807814
+India,2017,GDP,341.0071064903105
+India,2017,Production-based emission,276.9562826515901
+India,2017,Consumption-based emission,239.61369997207748
+India,2018,GDP,359.53428669937296
+India,2018,Production-based emission,289.0996629581241
+India,2018,Consumption-based emission,247.91106254259358
+India,2019,GDP,370.29394132373625
+India,2019,Production-based emission,288.95981446214785
+India,2019,Consumption-based emission,NA
+India,2020,GDP,337.446161055182
+India,2020,Production-based emission,259.2481596895317
+India,2020,Consumption-based emission,NA
+Indonesia,1990,GDP,100
+Indonesia,1990,Production-based emission,100
+Indonesia,1990,Consumption-based emission,100
+Indonesia,1991,GDP,105.07105895975857
+Indonesia,1991,Production-based emission,118.11582512911355
+Indonesia,1991,Consumption-based emission,113.1053165251237
+Indonesia,1992,GDP,110.02182974439434
+Indonesia,1992,Production-based emission,130.89494201920425
+Indonesia,1992,Consumption-based emission,126.88813760676652
+Indonesia,1993,GDP,115.25911577220064
+Indonesia,1993,Production-based emission,138.99813339054822
+Indonesia,1993,Consumption-based emission,131.4666166700754
+Indonesia,1994,GDP,121.9896957012429
+Indonesia,1994,Production-based emission,138.72513058935328
+Indonesia,1994,Consumption-based emission,132.29376240156404
+Indonesia,1995,GDP,129.99491006797837
+Indonesia,1995,Production-based emission,138.8622688660375
+Indonesia,1995,Consumption-based emission,133.68236141490308
+Indonesia,1996,GDP,138.077899989875
+Indonesia,1996,Production-based emission,154.02548660284438
+Indonesia,1996,Consumption-based emission,146.52625275913175
+Indonesia,1997,GDP,142.48240740119374
+Indonesia,1997,Production-based emission,167.08025374794636
+Indonesia,1997,Consumption-based emission,154.95503862950432
+Indonesia,1998,GDP,122.03538971506521
+Indonesia,1998,Production-based emission,126.72329573437902
+Indonesia,1998,Consumption-based emission,86.29591394002925
+Indonesia,1999,GDP,121.29654253305621
+Indonesia,1999,Production-based emission,141.15906131639926
+Indonesia,1999,Consumption-based emission,128.13743569138188
+Indonesia,2000,GDP,125.52034360237849
+Indonesia,2000,Production-based emission,151.6950914547663
+Indonesia,2000,Consumption-based emission,138.20649561147084
+Indonesia,2001,GDP,128.32594883906322
+Indonesia,2001,Production-based emission,167.49499588134555
+Indonesia,2001,Consumption-based emission,150.05490455932738
+Indonesia,2002,GDP,132.2920367183044
+Indonesia,2002,Production-based emission,170.69625015158098
+Indonesia,2002,Consumption-based emission,163.57627416027668
+Indonesia,2003,GDP,136.7589207655345
+Indonesia,2003,Production-based emission,173.50172806234633
+Indonesia,2003,Consumption-based emission,168.6821559793379
+Indonesia,2004,GDP,141.72451244191805
+Indonesia,2004,Production-based emission,183.72713915119382
+Indonesia,2004,Consumption-based emission,175.87292739016976
+Indonesia,2005,GDP,147.80391505822502
+Indonesia,2005,Production-based emission,183.14989668399602
+Indonesia,2005,Consumption-based emission,176.7021076892411
+Indonesia,2006,GDP,153.8749820860985
+Indonesia,2006,Production-based emission,182.36613157382416
+Indonesia,2006,Consumption-based emission,181.15864040334228
+Indonesia,2007,GDP,161.48635904777984
+Indonesia,2007,Production-based emission,195.77116318413545
+Indonesia,2007,Consumption-based emission,196.3697376639989
+Indonesia,2008,GDP,168.94708321699596
+Indonesia,2008,Production-based emission,214.05988665107313
+Indonesia,2008,Consumption-based emission,219.62020562181328
+Indonesia,2009,GDP,174.4333495583784
+Indonesia,2009,Production-based emission,226.1752292173892
+Indonesia,2009,Consumption-based emission,233.6969782865513
+Indonesia,2010,GDP,182.82755866003063
+Indonesia,2010,Production-based emission,213.72403868968632
+Indonesia,2010,Consumption-based emission,226.59430159105497
+Indonesia,2011,GDP,191.50879351059712
+Indonesia,2011,Production-based emission,250.21012130671534
+Indonesia,2011,Consumption-based emission,261.61998577825756
+Indonesia,2012,GDP,200.33061835745772
+Indonesia,2012,Production-based emission,255.74644275915745
+Indonesia,2012,Consumption-based emission,276.4758170160417
+Indonesia,2013,GDP,208.64720019854647
+Indonesia,2013,Production-based emission,197.11943782682255
+Indonesia,2013,Consumption-based emission,224.88956395357715
+Indonesia,2014,GDP,216.2400226715628
+Indonesia,2014,Production-based emission,197.21679078270245
+Indonesia,2014,Consumption-based emission,224.96783101585427
+Indonesia,2015,GDP,223.92749061769877
+Indonesia,2015,Production-based emission,236.86695938357522
+Indonesia,2015,Consumption-based emission,260.20610089954357
+Indonesia,2016,GDP,232.34456073198024
+Indonesia,2016,Production-based emission,262.2297751723843
+Indonesia,2016,Consumption-based emission,282.8332348049737
+Indonesia,2017,GDP,241.2693736428618
+Indonesia,2017,Production-based emission,242.20378217820956
+Indonesia,2017,Consumption-based emission,263.60417078641524
+Indonesia,2018,GDP,250.89077370670623
+Indonesia,2018,Production-based emission,260.02296223172954
+Indonesia,2018,Consumption-based emission,279.39219825455694
+Indonesia,2019,GDP,260.6038698669716
+Indonesia,2019,Production-based emission,275.43968948471445
+Indonesia,2019,Consumption-based emission,NA
+Indonesia,2020,GDP,252.50653707666046
+Indonesia,2020,Production-based emission,247.8670793721549
+Indonesia,2020,Consumption-based emission,NA
+Singapore,1990,GDP,100
+Singapore,1990,Production-based emission,100
+Singapore,1990,Consumption-based emission,100
+Singapore,1991,GDP,103.69548431100095
+Singapore,1991,Production-based emission,98.82693604191776
+Singapore,1991,Consumption-based emission,101.23401470286235
+Singapore,1992,GDP,107.30782611069696
+Singapore,1992,Production-based emission,102.49416932961553
+Singapore,1992,Consumption-based emission,111.02431874091548
+Singapore,1993,GDP,116.62037560621525
+Singapore,1993,Production-based emission,104.67823695234692
+Singapore,1993,Consumption-based emission,108.72479325976654
+Singapore,1994,GDP,125.56172583693672
+Singapore,1994,Production-based emission,122.16483422960647
+Singapore,1994,Consumption-based emission,113.8053193907569
+Singapore,1995,GDP,130.5757959656138
+Singapore,1995,Production-based emission,80.72646515666786
+Singapore,1995,Consumption-based emission,108.41521229760546
+Singapore,1996,GDP,134.74243608098482
+Singapore,1996,Production-based emission,92.27960575068627
+Singapore,1996,Consumption-based emission,118.57599934963461
+Singapore,1997,GDP,141.13395937544698
+Singapore,1997,Production-based emission,105.29072673378582
+Singapore,1997,Consumption-based emission,126.51438403340707
+Singapore,1998,GDP,133.42493492619624
+Singapore,1998,Production-based emission,85.20052435856094
+Singapore,1998,Consumption-based emission,104.35467530137146
+Singapore,1999,GDP,139.9393855490556
+Singapore,1999,Production-based emission,85.77987332404673
+Singapore,1999,Consumption-based emission,108.06286931580802
+Singapore,2000,GDP,149.96856754496147
+Singapore,2000,Production-based emission,82.49190341057748
+Singapore,2000,Consumption-based emission,124.99564313580049
+Singapore,2001,GDP,144.41692877782526
+Singapore,2001,Production-based emission,82.49814770509911
+Singapore,2001,Consumption-based emission,104.12768615964218
+Singapore,2002,GDP,148.70691755483833
+Singapore,2002,Production-based emission,78.19363467106389
+Singapore,2002,Consumption-based emission,104.10605143777883
+Singapore,2003,GDP,157.76110842621281
+Singapore,2003,Production-based emission,81.54937623477369
+Singapore,2003,Consumption-based emission,110.06512122753205
+Singapore,2004,GDP,171.09714726901393
+Singapore,2004,Production-based emission,76.31599768963687
+Singapore,2004,Consumption-based emission,114.02363835293421
+Singapore,2005,GDP,179.42097878866772
+Singapore,2005,Production-based emission,58.15360297440178
+Singapore,2005,Consumption-based emission,134.63003101404007
+Singapore,2006,GDP,189.55247045828312
+Singapore,2006,Production-based emission,66.52078625713048
+Singapore,2006,Consumption-based emission,157.80436344386592
+Singapore,2007,GDP,198.2217943640929
+Singapore,2007,Production-based emission,70.59587424365532
+Singapore,2007,Consumption-based emission,99.65046120174841
+Singapore,2008,GDP,191.46049374640546
+Singapore,2008,Production-based emission,82.00460979549794
+Singapore,2008,Consumption-based emission,104.6446663158713
+Singapore,2009,GDP,185.9971005930003
+Singapore,2009,Production-based emission,123.39792103509907
+Singapore,2009,Consumption-based emission,93.95234886501925
+Singapore,2010,GDP,209.27334952329977
+Singapore,2010,Production-based emission,75.06789954297071
+Singapore,2010,Consumption-based emission,94.14298175296737
+Singapore,2011,GDP,217.94518032402613
+Singapore,2011,Production-based emission,39.12125552059174
+Singapore,2011,Consumption-based emission,87.2723427793669
+Singapore,2012,GDP,222.1513932258947
+Singapore,2012,Production-based emission,61.00219123648646
+Singapore,2012,Consumption-based emission,95.37364685877372
+Singapore,2013,GDP,229.1565617273807
+Singapore,2013,Production-based emission,67.8115556159306
+Singapore,2013,Consumption-based emission,92.99411881833403
+Singapore,2014,GDP,235.10811016911612
+Singapore,2014,Production-based emission,67.96545131910439
+Singapore,2014,Consumption-based emission,91.23976037938462
+Singapore,2015,GDP,239.27871129205477
+Singapore,2015,Production-based emission,75.58320989734734
+Singapore,2015,Consumption-based emission,85.94357176588787
+Singapore,2016,GDP,244.0572642920178
+Singapore,2016,Production-based emission,48.45787772523285
+Singapore,2016,Consumption-based emission,78.91039215369523
+Singapore,2017,GDP,254.86368104681048
+Singapore,2017,Production-based emission,46.55841508749123
+Singapore,2017,Consumption-based emission,79.77878425611905
+Singapore,2018,GDP,262.5413919500128
+Singapore,2018,Production-based emission,45.235532850556595
+Singapore,2018,Consumption-based emission,80.73339288344755
+Singapore,2019,GDP,263.04586742952023
+Singapore,2019,Production-based emission,45.64677563869235
+Singapore,2019,Consumption-based emission,NA
+Singapore,2020,GDP,249.6424425140647
+Singapore,2020,Production-based emission,NA
+Singapore,2020,Consumption-based emission,NA
+Turkey,1990,GDP,100
+Turkey,1990,Production-based emission,100
+Turkey,1990,Consumption-based emission,100
+Turkey,1991,GDP,99.03274229337995
+Turkey,1991,Production-based emission,102.52536907165266
+Turkey,1991,Consumption-based emission,96.62410032057689
+Turkey,1992,GDP,102.32481482519553
+Turkey,1992,Production-based emission,104.64775365488444
+Turkey,1992,Consumption-based emission,110.28552023000874
+Turkey,1993,GDP,108.39460330254471
+Turkey,1993,Production-based emission,107.42935486020517
+Turkey,1993,Consumption-based emission,101.03017986541025
+Turkey,1994,GDP,101.70030569803058
+Turkey,1994,Production-based emission,103.51885810386605
+Turkey,1994,Consumption-based emission,89.71590580076332
+Turkey,1995,GDP,107.98252452343063
+Turkey,1995,Production-based emission,110.08370740036358
+Turkey,1995,Consumption-based emission,94.8021841582452
+Turkey,1996,GDP,114.12326749693742
+Turkey,1996,Production-based emission,119.49924695071086
+Turkey,1996,Consumption-based emission,88.10474169596564
+Turkey,1997,GDP,120.84070215678528
+Turkey,1997,Production-based emission,124.9780072107003
+Turkey,1997,Consumption-based emission,92.31265184441835
+Turkey,1998,GDP,121.81474958385017
+Turkey,1998,Production-based emission,123.04798147587638
+Turkey,1998,Consumption-based emission,92.31311966914487
+Turkey,1999,GDP,116.02783480163295
+Turkey,1999,Production-based emission,118.73695712179423
+Turkey,1999,Consumption-based emission,91.8532744619843
+Turkey,2000,GDP,122.20299375839892
+Turkey,2000,Production-based emission,129.32112830943208
+Turkey,2000,Consumption-based emission,105.51688365839172
+Turkey,2001,GDP,113.46811244910793
+Turkey,2001,Production-based emission,118.36349208607089
+Turkey,2001,Consumption-based emission,82.88045978503796
+Turkey,2002,GDP,119.01707840653124
+Turkey,2002,Production-based emission,120.72478703502338
+Turkey,2002,Consumption-based emission,90.40549933437991
+Turkey,2003,GDP,124.0782154594417
+Turkey,2003,Production-based emission,127.35073942654161
+Turkey,2003,Consumption-based emission,95.13384107364702
+Turkey,2004,GDP,134.35937735028998
+Turkey,2004,Production-based emission,129.83688843263596
+Turkey,2004,Consumption-based emission,102.97898254960324
+Turkey,2005,GDP,144.51653968769895
+Turkey,2005,Production-based emission,138.47591599823116
+Turkey,2005,Consumption-based emission,111.41395995591215
+Turkey,2006,GDP,152.63930183925154
+Turkey,2006,Production-based emission,145.78762632140098
+Turkey,2006,Consumption-based emission,116.44498249669306
+Turkey,2007,GDP,158.436523439293
+Turkey,2007,Production-based emission,159.9598683725864
+Turkey,2007,Consumption-based emission,130.52120983317883
+Turkey,2008,GDP,157.82983415830984
+Turkey,2008,Production-based emission,156.33236977530578
+Turkey,2008,Consumption-based emission,127.27713275172098
+Turkey,2009,GDP,148.31598958883322
+Turkey,2009,Production-based emission,157.36848719362933
+Turkey,2009,Consumption-based emission,117.62198641653579
+Turkey,2010,GDP,158.57887254420012
+Turkey,2010,Production-based emission,154.69760455148392
+Turkey,2010,Consumption-based emission,126.13756177160285
+Turkey,2011,GDP,173.65969661427198
+Turkey,2011,Production-based emission,164.51130641778784
+Turkey,2011,Consumption-based emission,131.8271785005827
+Turkey,2012,GDP,179.03116785572823
+Turkey,2012,Production-based emission,168.6114342912726
+Turkey,2012,Consumption-based emission,132.33331609849978
+Turkey,2013,GDP,190.9633868427316
+Turkey,2013,Production-based emission,161.82326853372584
+Turkey,2013,Consumption-based emission,131.11401559843466
+Turkey,2014,GDP,197.01328037777583
+Turkey,2014,Production-based emission,166.67394606198303
+Turkey,2014,Consumption-based emission,131.0208012534423
+Turkey,2015,GDP,205.54026687918477
+Turkey,2015,Production-based emission,172.82326500745972
+Turkey,2015,Consumption-based emission,132.1847802382356
+Turkey,2016,GDP,208.9161905542405
+Turkey,2016,Production-based emission,178.88658562560232
+Turkey,2016,Consumption-based emission,135.12882152817
+Turkey,2017,GDP,221.021347035594
+Turkey,2017,Production-based emission,186.61553263106435
+Turkey,2017,Consumption-based emission,137.98640896334632
+Turkey,2018,GDP,224.179553945448
+Turkey,2018,Production-based emission,181.1899288752268
+Turkey,2018,Consumption-based emission,131.3860862306074
+Turkey,2019,GDP,223.27981818360848
+Turkey,2019,Production-based emission,172.82133239439653
+Turkey,2019,Consumption-based emission,NA
+Turkey,2020,GDP,224.75205917180793
+Turkey,2020,Production-based emission,156.36039013382089
+Turkey,2020,Consumption-based emission,NA
+United States,1990,GDP,100
+United States,1990,Production-based emission,100
+United States,1990,Consumption-based emission,100
+United States,1991,GDP,98.56580547936264
+United States,1991,Production-based emission,98.09531059304713
+United States,1991,Consumption-based emission,97.52209477645705
+United States,1992,GDP,100.63235065970801
+United States,1992,Production-based emission,99.14539078290981
+United States,1992,Consumption-based emission,100.05050243756696
+United States,1993,GDP,102.04800421284881
+United States,1993,Production-based emission,100.08281032143668
+United States,1993,Consumption-based emission,100.25737837058766
+United States,1994,GDP,104.86547567020101
+United States,1994,Production-based emission,100.80357216697439
+United States,1994,Consumption-based emission,101.16492570170091
+United States,1995,GDP,106.4057264182487
+United States,1995,Production-based emission,100.8395248885968
+United States,1995,Consumption-based emission,101.18719652347303
+United States,1996,GDP,109.14269000972554
+United States,1996,Production-based emission,103.0923887141849
+United States,1996,Consumption-based emission,103.14549041685225
+United States,1997,GDP,112.63225789013363
+United States,1997,Production-based emission,103.19984335337872
+United States,1997,Consumption-based emission,103.81040969400854
+United States,1998,GDP,116.3159229728243
+United States,1998,Production-based emission,102.74770458614233
+United States,1998,Consumption-based emission,105.52622065537783
+United States,1999,GDP,120.4535049431502
+United States,1999,Production-based emission,102.90216323102952
+United States,1999,Consumption-based emission,107.31920311052224
+United States,2000,GDP,124.03724801654295
+United States,2000,Production-based emission,104.67466194383522
+United States,2000,Consumption-based emission,110.75455242850364
+United States,2001,GDP,124.04177410568444
+United States,2001,Production-based emission,101.92268774339466
+United States,2001,Consumption-based emission,108.12848069542883
+United States,2002,GDP,125.03671795583857
+United States,2002,Production-based emission,101.69749465648283
+United States,2002,Consumption-based emission,109.21236588428333
+United States,2003,GDP,127.51360260521132
+United States,2003,Production-based emission,101.64367151920348
+United States,2003,Consumption-based emission,109.61082557512938
+United States,2004,GDP,131.138407099699
+United States,2004,Production-based emission,102.70584720430958
+United States,2004,Consumption-based emission,111.92912404220866
+United States,2005,GDP,134.5001433250473
+United States,2005,Production-based emission,102.19160736980292
+United States,2005,Consumption-based emission,111.56689481502511
+United States,2006,GDP,137.01254617118056
+United States,2006,Production-based emission,99.90787668162207
+United States,2006,Consumption-based emission,110.51621351765681
+United States,2007,GDP,138.26191643865877
+United States,2007,Production-based emission,100.22648355296953
+United States,2007,Consumption-based emission,109.85112238293308
+United States,2008,GDP,136.7732502670936
+United States,2008,Production-based emission,96.07034536422219
+United States,2008,Consumption-based emission,104.08540478954637
+United States,2009,GDP,132.1401444118936
+United States,2009,Production-based emission,88.13121411285498
+United States,2009,Consumption-based emission,94.60867299288283
+United States,2010,GDP,134.40819819013927
+United States,2010,Production-based emission,90.6539159200633
+United States,2010,Consumption-based emission,97.17749916513904
+United States,2011,GDP,135.50423401085087
+United States,2011,Production-based emission,87.81057442193267
+United States,2011,Consumption-based emission,95.43074139832336
+United States,2012,GDP,137.53976222427823
+United States,2012,Production-based emission,84.02739945811987
+United States,2012,Consumption-based emission,91.1460852749114
+United States,2013,GDP,139.1061979026531
+United States,2013,Production-based emission,85.67715871862629
+United States,2013,Consumption-based emission,91.89921460881794
+United States,2014,GDP,141.57788927462192
+United States,2014,Production-based emission,85.80204224520304
+United States,2014,Consumption-based emission,91.80516314383406
+United States,2015,GDP,144.86170553051483
+United States,2015,Production-based emission,82.92516190344283
+United States,2015,Consumption-based emission,89.22107018272865
+United States,2016,GDP,146.27702276428232
+United States,2016,Production-based emission,80.54741012665436
+United States,2016,Consumption-based emission,86.7889135535787
+United States,2017,GDP,148.74518628150403
+United States,2017,Production-based emission,79.45009358919619
+United States,2017,Consumption-based emission,85.95477249134417
+United States,2018,GDP,152.3978908803037
+United States,2018,Production-based emission,81.53589562283796
+United States,2018,Consumption-based emission,88.11303678184511
+United States,2019,GDP,154.98410030753718
+United States,2019,Production-based emission,78.95364875509513
+United States,2019,Consumption-based emission,NA
+United States,2020,GDP,149.05716140072585
+United States,2020,Production-based emission,NA
+United States,2020,Consumption-based emission,NA
