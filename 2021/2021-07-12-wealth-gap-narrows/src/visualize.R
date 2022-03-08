@@ -2,7 +2,6 @@
 
 library(conflicted)
 library(here)
-conflict_prefer("here", "here")
 library(tidyverse)
 conflict_prefer("filter", "dplyr")
 library(dfrtheme)
@@ -31,25 +30,21 @@ wealthWeightedGrowthPrep <- wealthWeightedGrowth %>%
   mutate(category = fct_reorder(category, weighted_growth))
 
 ggplot(
-  wealthWeightedGrowthPrep,
-  aes(x = year, y = weighted_growth)
+  data = wealthWeightedGrowthPrep,
+  mapping = aes(x = year, y = weighted_growth)
 ) +
   geom_col(
-    aes(fill = category),
+    mapping = aes(fill = category),
     color = "white",
     lwd = 0.25,
     width = 0.65
   ) +
-  geom_hline(
-    yintercept = 0,
-    lwd = 12/22,
-    color = "black"
-  ) +
+  geom_hline(yintercept = 0, lwd = 12/22) +
   geom_vline(
     xintercept = c(2008, 2020),
+    color = "#757575",
     lwd = 0.5,
-    lty = "dashed",
-    color = "#757575"
+    lty = "dashed"
   ) +
   geom_text(
     data = tibble(
@@ -57,7 +52,7 @@ ggplot(
       y = c(45, 45),
       label = c("Global financial crisis", "COVID-19 pandemic")
     ),
-    aes(x = x, y = y, label = label),
+    mapping = aes(x = x, y = y, label = label),
     size = dfr_convert_font_size(),
     color = "#757575",
     vjust = 1,
@@ -97,16 +92,16 @@ ggplot(
   dfr_theme() +
   theme(
     axis.ticks.x = element_line(color = "#E0E0E0"),
-    panel.grid.major.x = element_blank(),
     legend.justification = c(0, 0),
     legend.position = "top",
-    legend.key.size = unit(1, "lines")
+    legend.key.size = unit(1, "lines"),
+    panel.grid.major.x = element_blank()
   )
 
 ggsave(
-  here(dirYear, dirProject, "result", "wealth-contribution-growth.png"),
-  width = 7.5,
-  height = 4.25
+  here(dirYear, dirProject, "result", "wealth-contribution-growth.svg"),
+  width = 8,
+  height = 4.5
 )
 
 
@@ -137,15 +132,19 @@ areaShrinkInequality <- wealthDisCumulative %>%
   select(contains("cumulative")) %>%
   mutate(decile = seq(10, 100, 10)) %>%
   rename(
-    "wealth_dis_cum_2019" = "wealth_distribution_cumulative...5",
-    "wealth_dis_cum_2020" = "wealth_distribution_cumulative...10"
+    wealth_dis_cum_2019 = wealth_distribution_cumulative...5,
+    wealth_dis_cum_2020 = wealth_distribution_cumulative...10
   )
 
 
 ggplot() +
   geom_label(
-    data = tibble(x = 80, y = 50, label = "Shaded areas\nrepresent inequality"),
-    aes(x = x, y = y, label = label),
+    data = tibble(
+      x = 80,
+      y = 50,
+      label = "Shaded areas\nrepresent inequality"
+      ),
+    mapping = es(x = x, y = y, label = label),
     size = dfr_convert_font_size(),
     color = "#757575",
     hjust = 1,
@@ -155,7 +154,7 @@ ggplot() +
   ) +
   geom_ribbon(
     data = areaInequality,
-    aes(
+    mapping = aes(
       x = decile,
       ymin = wealth_distribution_cumulative,
       ymax = perfect_distribution
@@ -165,18 +164,22 @@ ggplot() +
   ) +
   geom_ribbon(
     data = areaShrinkInequality,
-    aes(x = decile, ymin = wealth_dis_cum_2019, ymax = wealth_dis_cum_2020),
+    mapping = aes(
+      x = decile,
+      ymin = wealth_dis_cum_2019,
+      ymax = wealth_dis_cum_2020
+    ),
     fill = "#36B3D9",
     alpha = 0.15
   ) +
-  geom_hline(
-    yintercept = 0,
-    lwd = 12/22,
-    color = "black"
-  ) +
+  geom_hline(yintercept = 0, lwd = 12/22) +
   geom_line(
     data = wealthDisCumulativePrep,
-    aes(x = decile, y = wealth_distribution_cumulative, color = year),
+    mapping = aes(
+      x = decile,
+      y = wealth_distribution_cumulative,
+      color = year
+      ),
     lwd = 1
   ) +
   geom_abline(
@@ -187,7 +190,7 @@ ggplot() +
   ) +
   geom_text(
     data = tibble(x = 55, y = 60, label = "Equality"),
-    aes(x = x, y = y, label = label),
+    mapping = aes(x = x, y = y, label = label),
     size = dfr_convert_font_size(),
     color = "black",
     nudge_y = 2.5,
@@ -195,22 +198,19 @@ ggplot() +
   ) +
   geom_label_repel(
     data = tibble(x = 82.5, y = 22.5, label = "Inequality shrinks"),
-    aes(x = x, y = y, label = label),
+    mapping = aes(x = x, y = y, label = label),
     size = dfr_convert_font_size(),
-    hjust = 1,
     color = "#36B3D9",
+    hjust = 1,
     nudge_y = -22.5,
     nudge_x = -2.5,
+    label.size = NA,
+    label.padding = unit(0, "lines"),
     segment.curvature = 0.25,
     segment.ncp = 3,
-    segment.angle = 20,
-    label.size = NA,
-    label.padding = unit(0, "lines")
+    segment.angle = 20
   ) +
-  scale_x_continuous(
-    breaks = seq(10, 100, 10),
-    limits = c(10, 100)
-  ) +
+  scale_x_continuous(breaks = seq(10, 100, 10), limits = c(10, 100)) +
   scale_y_continuous(
     breaks = seq(-25, 100, 25),
     limits = c(-25, 100),
@@ -236,7 +236,7 @@ ggplot() +
   )
 
 ggsave(
-  here(dirYear, dirProject, "result", "wealth-distribution.png"),
-  width = 7.5,
-  height = 4.25
+  here(dirYear, dirProject, "result", "wealth-distribution.svg"),
+  width = 8,
+  height = 4.5
 )

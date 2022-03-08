@@ -6,7 +6,6 @@ options(java.parameters = "-Xmx1000m")
 
 library(conflicted)
 library(here)
-conflict_prefer("here", "here")
 library(tidyverse)
 conflict_prefer("filter", "dplyr")
 conflict_prefer("lag", "dplyr")
@@ -92,6 +91,7 @@ wealthEstYear <- wealthEstDataTypeCorrect %>%
 
 wealthEstClean <- wealthEstYear %>% filter(country == "Indonesia")
 
+# Define a function to calculate the contribution to growth
 weight_growth <- function(data, col, colName) {
 
   col <- rlang::enquo(col)
@@ -213,17 +213,17 @@ wealthDisColumnNamed <- wealthDisColumnCorrect %>%
     function(data)
       rename(
         data,
-        "country" = 1,
-        "decile_1" = 2,
-        "decile_2" = 3,
-        "decile_3" = 4,
-        "decile_6" = 7,
-        "decile_7" = 8,
-        "decile_8" = 9,
-        "decile_9" = 10,
-        "top_10" = 11,
-        "top_5" = 12,
-        "top_1" = 13
+        country = 1,
+        decile_1 = 2,
+        decile_2 = 3,
+        decile_3 = 4,
+        decile_6 = 7,
+        decile_7 = 8,
+        decile_8 = 9,
+        decile_9 = 10,
+        top_10 = 11,
+        top_5 = 12,
+        top_1 = 13
       )
   )
 
@@ -254,6 +254,7 @@ wealthDisCumulative <- wealthDisSubset %>%
   mutate(
     category = str_replace_all(category, "top", "decile"),
     wealth_distribution_cumulative = cumsum(wealth_distribution),
+    # Round the numbers so they do not exceed 100
     wealth_distribution_cumulative = case_when(
       wealth_distribution_cumulative > 100 ~ 100,
       TRUE ~ wealth_distribution_cumulative
