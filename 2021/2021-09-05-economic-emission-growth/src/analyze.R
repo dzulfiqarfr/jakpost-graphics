@@ -131,7 +131,7 @@ emissionGDP2020 <- emissionGDPnoAgg %>%
 # Take countries to compare with Indonesia, index data to 1990 se we can see
 # the decoupling (or not) trend
 emissionGDPindex <- emissionGDP2020 %>%
-  filter(iso3c %in% c("IDN", "SGP", "IND", "USA", "TUR")) %>%
+  filter(iso3c %in% c("IDN", "SGP", "IND", "USA")) %>%
   group_by(country) %>%
   mutate(
     gdp_index = gdp_per_cap / first(gdp_per_cap) * 100,

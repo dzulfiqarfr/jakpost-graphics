@@ -89,7 +89,7 @@ ggplot(data = emissionGDPprep) +
       "\\*Production-based CO2 emissions in 2020 are estimates<br>",
       paste0(
         "Source: Our World in Data; Le Quere et al. 2021; ",
-        "Global Carbon Project; UN; author's analysis<br>"
+        "Global Carbon Project; United Nations; author's analysis<br>"
       ),
       "Chart: Dzulfiqar Fathur Rahman"
     )
@@ -108,7 +108,7 @@ ggplot(data = emissionGDPprep) +
 
 ggsave(
   here(dirYear, dirProject, "result", "emission-economic-growth.svg"),
-  width = 13.5,
+  width = 9.5,
   height = 4.5
 )
 
