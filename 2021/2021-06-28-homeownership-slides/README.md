@@ -11,7 +11,7 @@ Homeownership | [Statistics Indonesia (BPS)](https://bps.go.id/indicator/29/849/
 Residential property price index | [Bank Indonesia](https://www.bi.go.id/id/publikasi/laporan/Pages/SHPR-Triwulan-II-2021.aspx) |  
 Mortgage | [BPS](https://bps.go.id/publication/2020/08/31/6a9e70d6154fde75499239e6/statistik-perumahan-dan-permukiman-2019.html) |  
 
-I used Tabula to extract the mortgage data from the PDF.
+I used Tabula to extract the mortgage data from the PDF and cleaned it using Google Sheets.
 
 
 # Changelog
@@ -23,12 +23,12 @@ The homeownership chart:
 
 The house price index chart:  
 - used a more descriptive subtitle;  
-- used a more descriptive axis texts;  
+- used more descriptive axis texts;  
 - changed the color palette;  
 - moved the labels adjacent to the lines; and  
 - added minor visual improvements.
 
 The mortgage chart:  
-- used more descriptive title and subtitle;  
+- used a more descriptive title and subtitle;  
 - changed the color palette; and  
 - added minor visual improvements.

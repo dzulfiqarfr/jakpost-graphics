@@ -12,7 +12,7 @@ Population (2020) | [BPS](https://www.bps.go.id/pressrelease/2021/01/21/1854/has
 Gross regional domestic product (GRDP) | [BPS](https://www.bps.go.id/indicator/171/533/1/-seri-2010-2-pdrb-atas-dasar-harga-konstan-menurut-pengeluaran-2010-100-.html) |  
 Migration | [BPS](https://bps.go.id/publication/2020/12/02/725d484ca73434e95d4d4b9d/profil-migran-hasil-survei-sosial-ekonomi-nasional-2019.html) |  
 
-The 2020 population and migration data are stored in PDFs, so I had to extract them using Tabula. I cleaned these data using Google Sheets. For the GRDP data, I got it using BPS's application programming interface (API) through R.
+The 2020 population and migration data are stored in PDFs, so I had to extract them using Tabula. I cleaned these data using Google Sheets.
 
 
 # Changelog

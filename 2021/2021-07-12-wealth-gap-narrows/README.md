@@ -18,7 +18,7 @@ The wealth distribution chart:
 - expanded the y scale to better reflect the negative share of the bottom 10 percent; and  
 - added minor visual improvements.
 
-The contribution to wealth growth by asset chart:  
-- removed the line to represent the growth;  
+The chart on contribution to wealth growth by asset:  
+- removed the line to represent the wealth growth;  
 - used a more descriptive subtitle; and  
 - added minor visual improvements.

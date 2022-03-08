@@ -1,6 +1,6 @@
 # Overview
 
-This article seeks to explain how the Delta wave reversed the recover among consumers and businesses by looking at consumer confidence and retail sales, as well as mobility and COVID-19 cases. Read the article on [this link](https://www.thejakartapost.com/news/2021/08/12/emergency-curbs-reverse-recovery-in-consumer-confidence-retail-sales.html).
+This article seeks to explain how the Delta wave reverses recovery among consumers and businesses by looking at consumer confidence and retail sales, as well as mobility and COVID-19 cases. Read the article on [this link](https://www.thejakartapost.com/news/2021/08/12/emergency-curbs-reverse-recovery-in-consumer-confidence-retail-sales.html).
 
 
 # Data
@@ -22,5 +22,5 @@ The chart on consumer confidence and retail sales:
 
 The chart on mobility to retail and recreation places and COVID-19 cases:  
 - used more descriptive subtitles;  
-- corrected the cases per capita data. The original chart incorrectly included cases per 100 people, when it actually was per 100,000 people; and  
+- changed the cases per capita data to per 1 million people. The original chart incorrectly stated that the data was cases per 100 people, when it actually was per 100,000 people; and  
 - added minor visual improvements.

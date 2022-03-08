@@ -21,14 +21,14 @@ Since the average net wage and minimum wage by province data are stored in a PDF
 The chart on real average net wage growth and unemployment rate:  
 - used a more descriptive subtitle for the wage growth chart;  
 - used fewer axis texts for both charts;  
-- added a footnote to tell that wages are adjusted for inflation based on 2010 prices; and  
+- added a footnote to tell that wages were adjusted for inflation based on 2010 prices; and  
 - added minor visual improvements.
 
 The chart on real wage and gross value added growth by sector:  
 - used a more descriptive subtitle;  
 - used more concise axis titles;  
 - used the full-year gross value added growth data for 2020, instead of quarterly data;  
-- also added a footnote to tell that wages are adjusted for inflation based on 2010 prices; and  
+- also added a footnote to tell that wages were adjusted for inflation based on 2010 prices; and  
 - added minor visual improvements.
 
 The chart on nominal wages and minimum wages by province:  

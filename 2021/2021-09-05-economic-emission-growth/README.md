@@ -24,7 +24,7 @@ The GDP and emission per capita chart:
 - added minor visual improvements.
 
 The HDI chart:  
-- removed the share to annotate the 1998 Asian financial crisis as it was not really relevant;  
+- removed the shade to annotate the 1998 Asian financial crisis as it was not really relevant;  
 - used a color legend instead of placing labels adjacent to the lines;  
 - used a simpler axis break; and  
 - added minor visual improvements.
