@@ -2,12 +2,10 @@
 
 library(conflicted)
 library(here)
-conflict_prefer("here", "here")
 library(tidyverse)
 conflict_prefer("filter", "dplyr")
 library(httr)
 library(jsonlite)
-library(lubridate)
 library(readxl)
 
 dirYear <- "2021"
@@ -22,14 +20,14 @@ i_am(paste(dirYear, dirProject, "src", "analyze.R", sep = "/"))
 
 keyBPS <- Sys.getenv("keyBPS")
 
-idVarOwnership <- "849"
+idOwnership <- "849"
 
 respOwnershipRaw <- GET(
   "https://webapi.bps.go.id/v1/api/list",
   query = list(
     model = "data",
     domain = "0000",
-    var = idVarOwnership,
+    var = idOwnership,
     key = keyBPS
   )
 )
@@ -38,7 +36,8 @@ respOwnershipParsed <- respOwnershipRaw %>%
   content(type = "text") %>%
   fromJSON()
 
-idYear <- respOwnershipParsed$tahun %>%
+idYear <- respOwnershipParsed %>%
+  .[["tahun"]] %>%
   as_tibble() %>%
   mutate(val = paste0("^", val, "$"))
 
@@ -47,56 +46,51 @@ ownershipRaw <- as_tibble(respOwnershipParsed$datacontent)
 ownershipLong <- ownershipRaw %>%
   pivot_longer(
     cols = everything(),
-    names_to = "id_composite",
+    names_to = c("id_province", "id_date"),
+    names_sep = idOwnership,
     values_to = "homeownership"
   )
 
-ownershipSep <- ownershipLong %>%
-  separate(
-    col = id_composite,
-    into = c("id_province", "id_date"),
-    sep = idVarOwnership
-  )
-
-provinceName <- read_csv(
-  here(dirYear, dirProject, "data", "province-name.csv")
-)
+provinceName <- read_csv(here(dirYear, dirProject, "data", "province.csv"))
 
 provinceNameEn <- provinceName %>%
   select(-province_idn) %>%
   mutate(bps_id = paste0("^", bps_id, "$"))
 
-ownershipClean <- ownershipSep %>%
+ownershipClean <- ownershipLong %>%
   mutate(
     province = str_replace_all(id_province, deframe(provinceNameEn)),
+    # Remove leading 0s in `id_date`, which means empty `turvar`
     id_date = str_remove_all(id_date, "^0"),
+    # Also remove trailing 0s in `id_date`, which means empty `turtahun`
     id_date = str_remove_all(id_date, "0$"),
     year = str_replace_all(id_date, deframe(idYear)),
     year = as.integer(year)
   ) %>%
   select(province, year, homeownership)
 
-# Get provinces with incomplete observations
-provinceIncomplete <- ownershipClean %>%
-  count(province, sort = TRUE) %>%
-  filter(n < max(n)) %>%
-  pull(province)
-
-# Remove provinces with incomplete observations and drop Papua due to
-# methodological difference
-ownershipSubset <- ownershipClean %>%
-  filter(!(province %in% provinceIncomplete), province != "Papua") %>%
+# Subset provinces with the highest and lowest ownership, as well as the
+# national figure. Then index the data to better see the trend
+ownershipIndex <- ownershipClean %>%
+  filter(
+    province %in% c("Bengkulu", "Jambi", "Bali", "Jakarta", "Indonesia")
+  ) %>%
   group_by(province) %>%
   filter(between(year, 1999, 2020)) %>%
-  ungroup()
-
-ownershipIndex <- ownershipSubset %>%
-  group_by(province) %>%
   mutate(homeownership_index = homeownership / first(homeownership) * 100) %>%
-  ungroup()
+  ungroup() %>%
+  select(-homeownership)
 
 ownershipIndex %>%
   write_csv(here(dirYear, dirProject, "result", "homeownership-index.csv"))
+
+ownershipBottom10 <- ownershipClean %>%
+  filter(year == 2020) %>%
+  arrange(homeownership) %>%
+  head(10)
+
+ownershipBottom10 %>%
+  write_csv(here(dirYear, dirProject, "result", "homeownership-bottom-10.csv"))
 
 
 ## House price index ----
@@ -107,13 +101,13 @@ priceRaw <- read_excel(
   na = c("", "-")
 )
 
-priceNoEmptyRows <- priceRaw %>%
+priceNoEmptyRow <- priceRaw %>%
   select(-c(1, 3)) %>%  # Remove row number and joined city-house-type columns
   slice(-c(1:3)) %>%  # Remove the first three empty rows
   rename("city" = "...2", "house_type" = "...4") %>%
   filter(!is.na(...5)) # Remove empty rows between data
 
-priceCityFilled <- priceNoEmptyRows %>%
+priceCityFilled <- priceNoEmptyRow %>%
   mutate(
     city = case_when(
       city == "(Termasuk Jabodebek" | city == "dan Banten)" ~ "GABUNGAN 16 KOTA",
@@ -135,7 +129,8 @@ columnYear <- priceCityFilled %>%
   mutate(year = parse_number(year)) %>%
   filter(!is.na(year))
 
-# Repeat the same operation to create a tibble containing the quarter/period
+# Also create another tibble containing column names and quarter or period,
+# which is stored in the second row
 columnQuarter <- priceCityFilled %>%
   slice(2) %>%
   select(-c(city, house_type)) %>%
@@ -160,11 +155,11 @@ columnQuarter <- priceCityFilled %>%
 columnDate <- columnQuarter %>%
   left_join(columnYear, by = "column_name") %>%
   fill(year) %>%
-  mutate(date = ymd(paste0(year, date))) %>%
+  mutate(date = as.Date(paste0(year, date))) %>%
   select(date, column_name)
 
-# Add a growth category. This will help avoid duplicated column names
-# when we use the date tibble to replace the `...*` column names later
+# Add a growth category. This will help avoid duplicated column names when we
+# use the date tibble to replace the `...*` column names later
 growthCategory <- columnDate %>%
   filter(date == first(date)) %>%
   mutate(
@@ -182,29 +177,23 @@ columnNameReplacement <- columnDate %>%
   mutate(replacement = paste0(date, "_", growth)) %>%
   select(replacement, column_name)
 
-# Get the first and last column names other than `city` and `house_type`
-columnDateFirstLast <- columnNameReplacement %>%
-  filter(replacement %in% c(first(replacement), last(replacement))) %>%
-  pull(replacement)
+# Use the date with growth category tibble to rename the columns
+priceColumnNamed <- priceCityFilled %>%
+  rename(deframe(columnNameReplacement)) %>%
+  slice(-c(1:2)) # Remove rows containing year and quarter
+
+priceLong <- priceColumnNamed %>%
+  fill(city) %>%
+  pivot_longer(
+    cols = pull(columnNameReplacement, replacement),
+    names_to = c("date", "growth"),
+    names_sep = "_",
+    values_to = "house_price_index_growth"
+  )
 
 houseTypeEn <- c("Kecil" = "Small", "Menengah" = "Medium", "Besar" = "Large")
 
-# Use the date with growth category tibble to rename the columns, while
-# cleaning the data
-priceClean <- priceCityFilled %>%
-  rename(deframe(columnNameReplacement)) %>%
-  slice(-c(1:2)) %>% # Remove rows containing year and quarter
-  fill(city) %>%
-  pivot_longer(
-    cols = columnDateFirstLast[1]:columnDateFirstLast[2],
-    names_to = "date",
-    values_to = "house_price_index_growth"
-  ) %>%
-  separate(
-    col = date,
-    into = c("date", "growth"),
-    sep = "_"
-  ) %>%
+priceClean <- priceLong %>%
   mutate(
     city = str_to_title(city),
     city = str_replace_all(city, "Gabungan 16 Kota", "Overall"),
@@ -221,7 +210,11 @@ priceClean <- priceCityFilled %>%
   select(city, house_type, date, growth, house_price_index_growth)
 
 priceSubset <- priceClean %>%
-  filter(house_type == "Total", growth == "year-on-year")
+  filter(
+    city %in% c("Manado", "Jabodebek-Banten", "Bandar Lampung", "Overall"),
+    house_type == "Total",
+    growth == "year-on-year"
+  )
 
 priceSubset %>%
   write_csv(here(dirYear, dirProject, "result", "house-price-index.csv"))
@@ -243,7 +236,12 @@ mortgagePaymentOverall <- mortgagePayment %>%
   rename("payment" = "overall")
 
 mortgageTerm <- read_csv(
-  here(dirYear, dirProject, "data", "bps-mortgage-term-2019-cleaned.csv")
+  here(
+    dirYear,
+    dirProject,
+    "data",
+    "bps-mortgage-term-2019-cleaned.csv"
+  )
 )
 
 mortgageTermOverall <- mortgageTerm %>%
