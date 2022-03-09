@@ -1,6 +1,6 @@
 # Overview
 
-This article takes a look at the latest survey of the affluent on their retirement plan. Read the article on [this link](https://www.thejakartapost.com/business/2021/12/10/majority-of-affluent-indonesians-plan-to-retire-early.html).
+This article takes a look at the latest survey of the affluent on their retirement plan and compare it with the general population. Read the article on [this link](https://www.thejakartapost.com/business/2021/12/10/majority-of-affluent-indonesians-plan-to-retire-early.html).
 
 
 # Data
