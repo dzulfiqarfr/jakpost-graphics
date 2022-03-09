@@ -24,7 +24,7 @@ emissionGDP <- read_csv(
     dirYear,
     dirProject,
     "data",
-    "co2-emissions-and-gdp.csv"
+    "owid-co2-emissions-and-gdp-raw.csv"
   )
 )
 
@@ -187,7 +187,7 @@ materialRaw <- read_csv(
     dirYear,
     dirProject,
     "data",
-    "unep-material-footprint.csv"
+    "unep-material-footprint-raw.csv"
   ),
   skip = 3 # Skip table title and notes
 )

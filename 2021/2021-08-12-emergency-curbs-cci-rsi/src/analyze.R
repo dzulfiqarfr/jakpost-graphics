@@ -26,7 +26,7 @@ i_am(paste(dirYear, dirProject, "src", "analyze.R", sep = "/"))
 ## Consumer confidence index ----
 
 cciRaw <- read_excel(
-  here(dirYear, dirProject, "data", "bi-cci.xlsx"),
+  here(dirYear, dirProject, "data", "bi-cci-raw.xlsx"),
   sheet = "Tabel 1",
   na = c("", "-")
 )
@@ -122,7 +122,7 @@ cciClean %>%
 ## Retail sales index ----
 
 rsiRaw <- read_excel(
-  here(dirYear, dirProject, "data", "bi-rsi.xlsx"),
+  here(dirYear, dirProject, "data", "bi-rsi-raw.xlsx"),
   sheet = "Tabel 2",
   na = c("", "-")
 )

@@ -23,7 +23,7 @@ i_am(paste(dirYear, dirProject, "src", "analyze.R", sep = "/"))
 ## Revision to economic growth forecast ----
 
 weoRaw <- read_excel(
-  here(dirYear, dirProject, "data", "imf-weo.xlsx"),
+  here(dirYear, dirProject, "data", "imf-weo-2021-07-raw.xlsx"),
   sheet = "Real GDP Growth",
   na = ""
 )
