@@ -33,5 +33,6 @@ The chart on real wage and gross value added growth by sector:
 
 The chart on nominal wages and minimum wages by province:  
 - used a more descriptive subtitle;  
-- separated the chart into two panels based on whether the latest average net wage was below or above the wage floor; and  
+- separated the chart into two panels based on whether the latest average net wage was below or above the wage floor;  
+- changed the color palette to improve contrast; and  
 - added other minor visual improvements.

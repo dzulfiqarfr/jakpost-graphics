@@ -253,7 +253,7 @@ ggplot(data = wageMinClean, mapping = aes(y = province)) +
     size = 3,
     pch = 21,
     color = "white",
-    fill = "#A8A8A8FF",
+    fill = "black",
     alpha = 0.75,
     stroke = 0.5
   ) +
@@ -266,17 +266,17 @@ ggplot(data = wageMinClean, mapping = aes(y = province)) +
     ),
     mapping = aes(x = x, y = y, label = label),
     size = dfr_convert_font_size(),
-    color = "#A8A8A8FF",
+    color = "black",
     hjust = 1,
     nudge_x = -0.175,
     label.padding = unit(0, "lines"),
     label.size = 0
   ) +
   scale_x_continuous(breaks = seq(1, 5), limits = c(1, 5)) +
-  scale_fill_manual(values = c("2020" = "#B2DFDB", "2021" = "#26A69A")) +
+  scale_fill_manual(values = c("2020" = "#B2DFDB", "2021" = colorDataPrimary)) +
   facet_wrap(~ category, ncol = 2, scales = "free_y") +
   labs(
-    title = "Wage in several provinces fall below the minimum wage",
+    title = "Wage in several provinces falls below the minimum wage",
     subtitle = paste0(
       "Average net wage\\* and minimum wage in 2021 ",
       "by province (million rupiah)"
