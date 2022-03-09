@@ -60,7 +60,7 @@ ggplot(
     title = "Indonesia among countries with sluggish growth outlook",
     subtitle = paste0(
       "Revision in economic growth forecast for 2021 ",
-      "between April and July outlooks ",
+      "between April and July outlook ",
       "(percentage points)"
     ),
     x = NULL,
