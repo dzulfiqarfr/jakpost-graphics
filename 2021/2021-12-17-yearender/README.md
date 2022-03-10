@@ -11,6 +11,8 @@ COVID-19 cases and vaccination rate | [Our World in Data](https://ourworldindata
 Mobility | [Google](https://www.google.com/covid19/mobility/) |  
 Gross domestic product (GDP) growth | [Statistics Indonesia](https://bps.go.id/indicator/11/104/1/-seri-2010-laju-pertumbuhan-pdb-seri-2010.html) |  
 
+I have filtered the mobility data for Indonesia and cleaned the column names. This allows me to commit the data to this repository, otherwise the raw data will be too big.
+
 
 # Changelog
 
