@@ -27,9 +27,6 @@ guestForeignSharePrep <- guestForeignShare %>%
   head(10) %>%
   mutate(province = fct_reorder(province, foreign_guest_share))
 
-guestForeignShare %>%
-  summarize(mean(foreign_guest_share), median(foreign_guest_share))
-
 ggplot(
   data = guestForeignSharePrep,
   mapping = aes(x = foreign_guest_share, y = province)
