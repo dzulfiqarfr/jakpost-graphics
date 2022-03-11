@@ -22,17 +22,30 @@ guestForeignShare <- read_csv(
   )
 )
 
-
 guestForeignSharePrep <- guestForeignShare %>%
   arrange(desc(foreign_guest_share)) %>%
   head(10) %>%
   mutate(province = fct_reorder(province, foreign_guest_share))
 
+guestForeignShare %>%
+  summarize(mean(foreign_guest_share), median(foreign_guest_share))
+
 ggplot(
   data = guestForeignSharePrep,
   mapping = aes(x = foreign_guest_share, y = province)
 ) +
-  geom_col(width = 0.6, fill = "steelblue", color = "white") +
+  geom_col(width = 0.7, fill = "steelblue", color = "white") +
+  geom_vline(xintercept = 3.83, lwd = 0.5) +
+  geom_label(
+    data = tibble(x = 3.83, y = "Yogyakarta", label = "National average"),
+    mapping = aes(x = x, y = y, label = label),
+    size = dfr_convert_font_size(),
+    # color = "#757575",
+    hjust = 0,
+    nudge_x = 0.25,
+    label.padding = unit(0, "lines"),
+    label.size = 0
+  ) +
   scale_x_continuous(
     breaks = seq(0, 60, 10),
     limits = c(0, 60),
