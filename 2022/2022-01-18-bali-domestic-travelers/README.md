@@ -17,5 +17,5 @@ Foreign guests at nonstar hotels | [BPS](https://bps.go.id/indicator/16/326/1/ju
 
 The chart:
 - added five more provinces, so the chart covers top 10 provinces;  
-- added a line to tell the national average of the share of foreign guests;  
+- added a line to tell the national average of the share of foreign guests; and  
 - added minor visual improvements.
