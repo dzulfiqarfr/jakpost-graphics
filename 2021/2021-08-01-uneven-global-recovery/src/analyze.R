@@ -1,3 +1,9 @@
+dirYear <- "2021"
+dirProject <- "2021-08-01-uneven-global-recovery"
+
+here::i_am(paste(dirYear, dirProject, "src", "analyze.R", sep = "/"))
+
+
 # Packages ----
 
 library(conflicted)
@@ -11,11 +17,6 @@ library(lubridate)
 conflict_prefer("year", "lubridate")
 conflict_prefer("month", "lubridate")
 library(WDI)
-
-dirYear <- "2021"
-dirProject <- "2021-08-01-uneven-global-recovery"
-
-i_am(paste(dirYear, dirProject, "src", "analyze.R", sep = "/"))
 
 
 # Data ----

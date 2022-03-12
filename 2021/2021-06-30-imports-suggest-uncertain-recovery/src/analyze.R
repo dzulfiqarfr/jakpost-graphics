@@ -1,3 +1,9 @@
+dirYear <- "2021"
+dirProject <- "2021-06-30-imports-suggest-uncertain-recovery"
+
+here::i_am(paste(dirYear, dirProject, "src", "analyze.R", sep = "/"))
+
+
 # Packages ----
 
 library(conflicted)
@@ -7,11 +13,6 @@ conflict_prefer("lag", "dplyr")
 conflict_prefer("filter", "dplyr")
 library(readxl)
 library(lubridate)
-
-dirYear <- "2021"
-dirProject <- "2021-06-30-imports-suggest-uncertain-recovery"
-
-i_am(paste(dirYear, dirProject, "src", "analyze.R", sep = "/"))
 
 
 # Data ----

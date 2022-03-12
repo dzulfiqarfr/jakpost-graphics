@@ -1,3 +1,9 @@
+dirYear <- "2021"
+dirProject <- "2021-06-28-homeownership-slides"
+
+here::i_am(paste(dirYear, dirProject, "src", "analyze.R", sep = "/"))
+
+
 # Packages ----
 
 library(conflicted)
@@ -7,11 +13,6 @@ conflict_prefer("filter", "dplyr")
 library(httr)
 library(jsonlite)
 library(readxl)
-
-dirYear <- "2021"
-dirProject <- "2021-06-28-homeownership-slides"
-
-i_am(paste(dirYear, dirProject, "src", "analyze.R", sep = "/"))
 
 
 # Data ----

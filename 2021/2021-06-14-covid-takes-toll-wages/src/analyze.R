@@ -1,3 +1,9 @@
+dirYear <- "2021"
+dirProject <- "2021-06-14-covid-takes-toll-wages"
+
+here::i_am(paste(dirYear, dirProject, "src", "analyze.R", sep = "/"))
+
+
 # Packages ----
 
 library(conflicted)
@@ -9,11 +15,6 @@ library(httr)
 library(jsonlite)
 library(lubridate)
 library(WDI)
-
-dirYear <- "2021"
-dirProject <- "2021-06-14-covid-takes-toll-wages"
-
-i_am(paste(dirYear, dirProject, "src", "analyze.R", sep = "/"))
 
 
 # Data ----

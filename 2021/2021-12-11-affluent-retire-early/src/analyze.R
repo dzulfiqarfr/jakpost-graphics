@@ -1,12 +1,13 @@
+dirYear <- "2021"
+dirProject <- "2021-12-11-affluent-retire-early"
+
+here::i_am(paste(dirYear, dirProject, "src", "analyze.R", sep = "/"))
+
+
 # Packages ----
 
 library(here)
 library(tidyverse)
-
-dirYear <- "2021"
-dirProject <- "2021-12-11-affluent-retire-early"
-
-i_am(paste(dirYear, dirProject, "src", "analyze.R", sep = "/"))
 
 
 # Data ----

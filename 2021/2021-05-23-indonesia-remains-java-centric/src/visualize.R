@@ -1,3 +1,9 @@
+dirYear <- "2021"
+dirProject <- "2021-05-23-indonesia-remains-java-centric"
+
+here::i_am(paste(dirYear, dirProject, "src", "visualize.R", sep = "/"))
+
+
 # Packages ----
 
 library(conflicted)
@@ -9,11 +15,6 @@ library(nusantr)
 library(ggrepel)
 library(dfrtheme)
 library(patchwork)
-
-dirYear <- "2021"
-dirProject <- "2021-05-23-indonesia-remains-java-centric"
-
-i_am(paste(dirYear, dirProject, "src", "visualize.R", sep = "/"))
 
 
 # Plot ----

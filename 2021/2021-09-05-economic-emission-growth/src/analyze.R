@@ -1,3 +1,9 @@
+dirYear <- "2021"
+dirProject <- "2021-09-05-economic-emission-growth"
+
+here::i_am(paste(dirYear, dirProject, "src", "analyze.R", sep = "/"))
+
+
 # Packages ----
 
 library(conflicted)
@@ -8,11 +14,6 @@ library(readxl)
 library(httr)
 library(jsonlite)
 library(countrycode)
-
-dirYear <- "2021"
-dirProject <- "2021-09-05-economic-emission-growth"
-
-i_am(paste(dirYear, dirProject, "src", "analyze.R", sep = "/"))
 
 
 # Data ----

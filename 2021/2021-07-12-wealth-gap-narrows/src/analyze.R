@@ -1,3 +1,9 @@
+dirYear <- "2021"
+dirProject <- "2021-07-12-wealth-gap-narrows"
+
+here::i_am(paste(dirYear, dirProject, "src", "analyze.R", sep = "/"))
+
+
 # Packages ----
 
 # Set aside enough memory so we can iterate `tabulizer::extract_tables()`
@@ -11,11 +17,6 @@ conflict_prefer("filter", "dplyr")
 conflict_prefer("lag", "dplyr")
 library(tabulizer)
 library(fs)
-
-dirYear <- "2021"
-dirProject <- "2021-07-12-wealth-gap-narrows"
-
-i_am(paste(dirYear, dirProject, "src", "analyze.R", sep = "/"))
 
 
 # Data ----

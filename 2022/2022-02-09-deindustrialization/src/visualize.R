@@ -1,17 +1,15 @@
+dirYear <- "2022"
+dirProject <- "2022-02-09-deindustrialization"
+
+here::i_am(paste(dirYear, dirProject, "src", "visualize.R", sep = "/"))
+
+
 # Packages ----
 
 library(conflicted)
 library(here)
 library(tidyverse)
 library(dfrtheme)
-
-
-# Path ----
-
-dirYear <- "2022"
-dirProject <- "2022-02-09-deindustrialization"
-
-i_am(paste(dirYear, dirProject, "src", "visualize.R", sep = "/"))
 
 
 # Plot ----
@@ -25,10 +23,7 @@ mvaShare <- read_csv(
   )
 )
 
-ggplot(
-  data = mvaShare,
-  mapping = aes(x = year, y = mva_share)
-) +
+ggplot(data = mvaShare, mapping = aes(x = year, y = mva_share)) +
   geom_line(lwd = 1, color = "#1d81a2") +
   geom_vline(
     xintercept = c(1998, 2020),

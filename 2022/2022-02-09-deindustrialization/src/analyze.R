@@ -1,3 +1,9 @@
+dirYear <- "2022"
+dirProject <- "2022-02-09-deindustrialization"
+
+here::i_am(paste(dirYear, dirProject, "src", "analyze.R", sep = "/"))
+
+
 # Packages ----
 
 library(conflicted)
@@ -5,11 +11,6 @@ library(here)
 library(tidyverse)
 conflict_prefer("filter", "dplyr")
 library(readxl)
-
-dirYear <- "2022"
-dirProject <- "2022-02-09-deindustrialization"
-
-i_am(paste(dirYear, dirProject, "src", "analyze.R", sep = "/"))
 
 
 # Data ----

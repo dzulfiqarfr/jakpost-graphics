@@ -1,3 +1,9 @@
+dirYear <- "2022"
+dirProject <- "2022-01-04-trade-investment-china-us"
+
+here::i_am(paste(dirYear, dirProject, "src", "analyze.R", sep = "/"))
+
+
 # Packages ----
 
 library(conflicted)
@@ -7,11 +13,6 @@ conflict_prefer("filter", "dplyr")
 library(readxl)
 library(lubridate)
 library(comtradr)
-
-dirYear <- "2022"
-dirProject <- "2022-01-04-trade-investment-china-us"
-
-i_am(paste(dirYear, dirProject, "src", "analyze.R", sep = "/"))
 
 
 # Data ----

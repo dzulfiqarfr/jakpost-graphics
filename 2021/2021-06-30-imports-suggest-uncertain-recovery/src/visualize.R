@@ -1,3 +1,9 @@
+dirYear <- "2021"
+dirProject <- "2021-06-30-imports-suggest-uncertain-recovery"
+
+here::i_am(paste(dirYear, dirProject, "src", "visualize.R", sep = "/"))
+
+
 # Packages ----
 
 library(conflicted)
@@ -6,11 +12,6 @@ library(tidyverse)
 library(lubridate)
 library(dfrtheme)
 library(patchwork)
-
-dirYear <- "2021"
-dirProject <- "2021-06-30-imports-suggest-uncertain-recovery"
-
-i_am(paste(dirYear, dirProject, "src", "visualize.R", sep = "/"))
 
 
 # Plot ----

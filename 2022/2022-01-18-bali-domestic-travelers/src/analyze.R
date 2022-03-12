@@ -1,3 +1,9 @@
+dirYear <- "2022"
+dirProject <- "2022-01-18-bali-domestic-travelers"
+
+here::i_am(paste(dirYear, dirProject, "src", "analyze.R", sep = "/"))
+
+
 # Packages ----
 
 library(conflicted)
@@ -6,11 +12,6 @@ library(tidyverse)
 conflict_prefer("filter", "dplyr")
 library(httr)
 library(jsonlite)
-
-dirYear <- "2022"
-dirProject <- "2022-01-18-bali-domestic-travelers"
-
-i_am(paste(dirYear, dirProject, "src", "analyze.R", sep = "/"))
 
 
 # Data ----

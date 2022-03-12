@@ -1,3 +1,9 @@
+dirYear <- "2021"
+dirProject <- "2021-12-11-affluent-retire-early"
+
+here::i_am(paste(dirYear, dirProject, "src", "visualize.R", sep = "/"))
+
+
 # Packages ----
 
 library(conflicted)
@@ -7,11 +13,6 @@ conflict_prefer("filter", "dplyr")
 library(dfrtheme)
 library(ggrepel)
 library(patchwork)
-
-dirYear <- "2021"
-dirProject <- "2021-12-11-affluent-retire-early"
-
-i_am(paste(dirYear, dirProject, "src", "visualize.R", sep = "/"))
 
 
 # Plot ----

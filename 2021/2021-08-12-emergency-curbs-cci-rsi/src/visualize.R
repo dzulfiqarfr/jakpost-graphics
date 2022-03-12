@@ -1,3 +1,9 @@
+dirYear <- "2021"
+dirProject <- "2021-08-12-emergency-curbs-cci-rsi"
+
+here::i_am(paste(dirYear, dirProject, "src", "visualize.R", sep = "/"))
+
+
 # Packages ----
 
 library(conflicted)
@@ -9,11 +15,6 @@ library(dfrtheme)
 library(ggtext)
 library(ggrepel)
 library(patchwork)
-
-dirYear <- "2021"
-dirProject <- "2021-08-12-emergency-curbs-cci-rsi"
-
-i_am(paste(dirYear, dirProject, "src", "visualize.R", sep = "/"))
 
 
 # Plot ----

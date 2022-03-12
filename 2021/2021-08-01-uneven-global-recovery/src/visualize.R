@@ -1,3 +1,9 @@
+dirYear <- "2021"
+dirProject <- "2021-08-01-uneven-global-recovery"
+
+here::i_am(paste(dirYear, dirProject, "src", "visualize.R", sep = "/"))
+
+
 # Packages ----
 
 library(conflicted)
@@ -8,11 +14,6 @@ library(dfrtheme)
 library(ggbeeswarm)
 library(ggtext)
 library(ggrepel)
-
-dirYear <- "2021"
-dirProject <- "2021-08-01-uneven-global-recovery"
-
-i_am(paste(dirYear, dirProject, "src", "visualize.R", sep = "/"))
 
 
 # Plot ----

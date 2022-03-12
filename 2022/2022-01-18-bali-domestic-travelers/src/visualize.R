@@ -1,14 +1,15 @@
+dirYear <- "2022"
+dirProject <- "2022-01-18-bali-domestic-travelers"
+
+here::i_am(paste(dirYear, dirProject, "src", "visualize.R", sep = "/"))
+
+
 # Packages ----
 
 library(conflicted)
 library(here)
 library(tidyverse)
 library(dfrtheme)
-
-dirYear <- "2022"
-dirProject <- "2022-01-18-bali-domestic-travelers"
-
-i_am(paste(dirYear, dirProject, "src", "visualize.R", sep = "/"))
 
 
 # Plot ----
