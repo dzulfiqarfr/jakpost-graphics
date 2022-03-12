@@ -1,0 +1,19 @@
+id_bps,sector,classification
+1,Agriculture; forestry and fishing,Agriculture
+2,Mining and quarrying,Industry
+3,Manufacturing,Industry
+4,"Electricity; gas, steam and air conditioning supply",Industry
+5,"Water supply; sewerage, waste management and remediation activities",Industry
+6,Construction,Industry
+7,Wholesale and retail trade; repair of motor vehicles and motorcycles,Services
+8,Transportation and storage,Services
+9,Accommodation and food service activities,Services
+10,Information and communication,Services
+11,Financial and insurance activities,Services
+12,Real estate activities,Services
+13,"Professional, scientific and technical activities",Services
+14,Public administration and defence; compulsory social security,Services
+15,Education,Services
+16,Human health and social work activities,Services
+17,Other services,Services
+18,Overall,Overall
