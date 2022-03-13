@@ -232,7 +232,7 @@ ggplot(
   ) +
   scale_x_date(
     breaks = seq(as.Date("2012-01-01"), as.Date("2021-01-01"), "1 year"),
-    labels = c("Q1\n2012", paste("'", seq(13, 21)))
+    labels = c("Q1\n2012", paste0("'", seq(13, 21)))
   ) +
   scale_y_continuous(
     breaks = seq(-12, 24, 6),

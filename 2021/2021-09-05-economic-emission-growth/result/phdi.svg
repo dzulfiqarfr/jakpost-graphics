@@ -1,7 +1,44 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='svglite' width='576.00pt' height='306.00pt' viewBox='0 0 576.00 306.00'>
-<defs>
-  <style type='text/css'><![CDATA[
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   class="svglite"
+   width="560.90771pt"
+   height="291.86905pt"
+   viewBox="0 0 560.90771 291.86905"
+   version="1.1"
+   id="svg64159"
+   sodipodi:docname="phdi.svg"
+   inkscape:export-filename="C:\Users\dzulf\Documents\projects\jakpost-graphics\2021\2021-09-05-economic-emission-growth\result\phdi.png"
+   inkscape:export-xdpi="164.3051"
+   inkscape:export-ydpi="164.3051"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview64161"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="pt"
+     showgrid="false"
+     inkscape:zoom="1.7096354"
+     inkscape:cx="354.16908"
+     inkscape:cy="241.57197"
+     inkscape:window-width="1920"
+     inkscape:window-height="1046"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg64159" />
+  <defs
+     id="defs63993">
+    <style
+       type="text/css"
+       id="style63991"><![CDATA[
     .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
       fill: none;
       stroke: #000000;
@@ -10,95 +47,540 @@
       stroke-miterlimit: 10.00;
     }
   ]]></style>
-</defs>
-<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
-<defs>
-  <clipPath id='cpMC4wMHw1NzYuMDB8MC4wMHwzMDYuMDA='>
-    <rect x='0.00' y='0.00' width='576.00' height='306.00' />
-  </clipPath>
-</defs>
-<g clip-path='url(#cpMC4wMHw1NzYuMDB8MC4wMHwzMDYuMDA=)'>
-<rect x='0.00' y='0.000000000000057' width='576.00' height='306.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
-</g>
-<defs>
-  <clipPath id='cpNy4wOXw1NDguNjh8NDYuNTh8MjU0LjM3'>
-    <rect x='7.09' y='46.58' width='541.60' height='207.79' />
-  </clipPath>
-</defs>
-<g clip-path='url(#cpNy4wOXw1NDguNjh8NDYuNTh8MjU0LjM3)'>
-<rect x='7.09' y='46.58' width='541.60' height='207.79' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
-<polyline points='7.09,244.92 548.68,244.92 ' style='stroke-width: 1.16; stroke: #E0E0E0; stroke-linecap: butt;' />
-<polyline points='7.09,197.70 548.68,197.70 ' style='stroke-width: 1.16; stroke: #E0E0E0; stroke-linecap: butt;' />
-<polyline points='7.09,150.47 548.68,150.47 ' style='stroke-width: 1.16; stroke: #E0E0E0; stroke-linecap: butt;' />
-<polyline points='7.09,103.25 548.68,103.25 ' style='stroke-width: 1.16; stroke: #E0E0E0; stroke-linecap: butt;' />
-<polyline points='7.09,56.02 548.68,56.02 ' style='stroke-width: 1.16; stroke: #E0E0E0; stroke-linecap: butt;' />
-<polyline points='31.70,186.84 48.68,184.00 65.66,181.64 82.64,178.34 99.62,174.09 116.59,169.36 133.57,163.22 150.55,156.61 167.53,157.08 184.51,153.31 201.48,149.06 218.46,146.22 235.44,143.39 252.42,140.08 269.40,137.25 286.37,135.36 303.35,130.64 320.33,130.17 337.31,128.28 354.28,123.08 371.26,119.78 388.24,116.00 405.22,112.22 422.20,109.39 439.17,107.97 456.15,105.61 473.13,101.83 490.11,99.94 507.09,97.58 524.06,94.75 ' style='stroke-width: 2.13; stroke-linecap: butt;' />
-<polyline points='31.70,190.58 48.68,188.41 65.66,186.16 82.64,183.12 99.62,179.17 116.59,174.58 133.57,169.03 150.55,162.72 167.53,161.58 184.51,158.40 201.48,154.40 218.46,152.09 235.44,149.70 252.42,146.83 269.40,144.25 286.37,142.56 303.35,138.01 320.33,137.93 337.31,136.55 354.28,131.77 371.26,128.80 388.24,126.04 405.22,122.76 422.20,119.05 439.17,117.29 456.15,115.84 473.13,112.81 490.11,110.70 507.09,108.77 524.06,106.34 ' style='stroke-width: 2.13; stroke: #E66439; stroke-linecap: butt;' />
-<line x1='7.09' y1='174.09' x2='548.68' y2='174.09' style='stroke-width: 1.16; stroke: #757575; stroke-dasharray: 6.21,6.21; stroke-linecap: butt;' />
-<line x1='7.09' y1='103.25' x2='548.68' y2='103.25' style='stroke-width: 1.16; stroke: #757575; stroke-dasharray: 6.21,6.21; stroke-linecap: butt;' />
-<polygon points='33.86,107.18 154.94,107.18 154.85,107.18 155.20,107.17 155.54,107.10 155.87,106.98 156.17,106.80 156.44,106.58 156.67,106.32 156.85,106.03 156.99,105.71 157.07,105.37 157.10,105.02 157.10,105.02 157.10,101.47 157.10,101.47 157.07,101.12 156.99,100.78 156.85,100.46 156.67,100.17 156.44,99.91 156.17,99.69 155.87,99.52 155.54,99.39 155.20,99.32 154.94,99.31 33.86,99.31 34.12,99.32 33.78,99.31 33.43,99.35 33.10,99.45 32.78,99.60 32.50,99.79 32.25,100.04 32.04,100.31 31.88,100.62 31.77,100.95 31.71,101.29 31.70,101.47 31.70,105.02 31.71,104.85 31.71,105.20 31.77,105.54 31.88,105.87 32.04,106.18 32.25,106.46 32.50,106.70 32.78,106.90 33.10,107.04 33.43,107.14 33.78,107.18 ' style='stroke-width: 0.00; stroke: none; fill: #FFFFFF;' />
-<text x='31.70' y='107.18' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='125.40px' lengthAdjust='spacingAndGlyphs'>High human development</text>
-<polygon points='373.42,178.02 511.01,178.02 510.92,178.02 511.27,178.01 511.61,177.94 511.93,177.82 512.23,177.64 512.50,177.42 512.73,177.16 512.92,176.87 513.06,176.55 513.14,176.21 513.17,175.86 513.17,175.86 513.17,172.31 513.17,172.31 513.14,171.96 513.06,171.62 512.92,171.30 512.73,171.01 512.50,170.75 512.23,170.53 511.93,170.36 511.61,170.23 511.27,170.16 511.01,170.15 373.42,170.15 373.68,170.16 373.34,170.15 372.99,170.19 372.66,170.29 372.34,170.44 372.06,170.63 371.81,170.87 371.60,171.15 371.44,171.46 371.33,171.79 371.27,172.13 371.26,172.31 371.26,175.86 371.27,175.69 371.27,176.04 371.33,176.38 371.44,176.71 371.60,177.02 371.81,177.30 372.06,177.54 372.34,177.73 372.66,177.88 372.99,177.98 373.34,178.02 ' style='stroke-width: 0.00; stroke: none; fill: #FFFFFF;' />
-<text x='371.26' y='178.02' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='141.90px' lengthAdjust='spacingAndGlyphs'>Medium human development</text>
-</g>
-<g clip-path='url(#cpMC4wMHw1NzYuMDB8MC4wMHwzMDYuMDA=)'>
-<text x='553.61' y='248.86' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='15.30px' lengthAdjust='spacingAndGlyphs'>0.4</text>
-<text x='553.61' y='201.64' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='15.30px' lengthAdjust='spacingAndGlyphs'>0.5</text>
-<text x='553.61' y='154.41' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='15.30px' lengthAdjust='spacingAndGlyphs'>0.6</text>
-<text x='553.61' y='107.18' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='15.30px' lengthAdjust='spacingAndGlyphs'>0.7</text>
-<text x='553.61' y='59.96' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='15.30px' lengthAdjust='spacingAndGlyphs'>0.8</text>
-<polyline points='48.68,257.11 48.68,254.37 ' style='stroke-width: 1.16; stroke: #757575; stroke-linecap: butt;' />
-<polyline points='116.59,257.11 116.59,254.37 ' style='stroke-width: 1.16; stroke: #757575; stroke-linecap: butt;' />
-<polyline points='184.51,257.11 184.51,254.37 ' style='stroke-width: 1.16; stroke: #757575; stroke-linecap: butt;' />
-<polyline points='252.42,257.11 252.42,254.37 ' style='stroke-width: 1.16; stroke: #757575; stroke-linecap: butt;' />
-<polyline points='320.33,257.11 320.33,254.37 ' style='stroke-width: 1.16; stroke: #757575; stroke-linecap: butt;' />
-<polyline points='388.24,257.11 388.24,254.37 ' style='stroke-width: 1.16; stroke: #757575; stroke-linecap: butt;' />
-<polyline points='456.15,257.11 456.15,254.37 ' style='stroke-width: 1.16; stroke: #757575; stroke-linecap: butt;' />
-<polyline points='524.06,257.11 524.06,254.37 ' style='stroke-width: 1.16; stroke: #757575; stroke-linecap: butt;' />
-<text x='48.68' y='267.18' text-anchor='middle' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='24.48px' lengthAdjust='spacingAndGlyphs'>1991</text>
-<text x='116.59' y='267.18' text-anchor='middle' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='14.34px' lengthAdjust='spacingAndGlyphs'>'95</text>
-<text x='184.51' y='267.18' text-anchor='middle' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='14.34px' lengthAdjust='spacingAndGlyphs'>'99</text>
-<text x='252.42' y='267.18' text-anchor='middle' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='24.48px' lengthAdjust='spacingAndGlyphs'>2003</text>
-<text x='320.33' y='267.18' text-anchor='middle' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='14.34px' lengthAdjust='spacingAndGlyphs'>'07</text>
-<text x='388.24' y='267.18' text-anchor='middle' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='13.53px' lengthAdjust='spacingAndGlyphs'>'11</text>
-<text x='456.15' y='267.18' text-anchor='middle' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='14.34px' lengthAdjust='spacingAndGlyphs'>'15</text>
-<text x='524.06' y='267.18' text-anchor='middle' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='14.34px' lengthAdjust='spacingAndGlyphs'>'19</text>
-<line x1='35.89' y1='68.47' x2='49.72' y2='68.47' style='stroke-width: 2.13; stroke-linecap: butt;' />
-<line x1='35.89' y1='85.75' x2='49.72' y2='85.75' style='stroke-width: 2.13; stroke: #E66439; stroke-linecap: butt;' />
-<text x='57.42' y='72.40' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='18.94px' lengthAdjust='spacingAndGlyphs'>HDI</text>
-<text x='57.42' y='89.68' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='26.28px' lengthAdjust='spacingAndGlyphs'>PHDI</text>
-<text x='7.09' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='40.28px' lengthAdjust='spacingAndGlyphs'>Human</text>
-<text x='50.84' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='71.55px' lengthAdjust='spacingAndGlyphs'>development</text>
-<text x='125.86' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='29.87px' lengthAdjust='spacingAndGlyphs'>index</text>
-<text x='159.20' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='29.85px' lengthAdjust='spacingAndGlyphs'>(HDI)</text>
-<text x='192.52' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='20.84px' lengthAdjust='spacingAndGlyphs'>and</text>
-<text x='216.84' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='51.40px' lengthAdjust='spacingAndGlyphs'>planetary</text>
-<text x='271.71' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='106.26px' lengthAdjust='spacingAndGlyphs'>pressures-adjusted</text>
-<text x='381.44' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='21.53px' lengthAdjust='spacingAndGlyphs'>HDI</text>
-<text x='406.44' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='38.19px' lengthAdjust='spacingAndGlyphs'>(PHDI)</text>
-<text x='7.09' y='17.11' style='font-size: 14.00px; font-weight: bold; font-family: Arial;' textLength='28.78px' lengthAdjust='spacingAndGlyphs'>CO2</text>
-<text x='39.75' y='17.11' style='font-size: 14.00px; font-weight: bold; font-family: Arial;' textLength='72.34px' lengthAdjust='spacingAndGlyphs'>emissions,</text>
-<text x='115.98' y='17.11' style='font-size: 14.00px; font-weight: bold; font-family: Arial;' textLength='59.13px' lengthAdjust='spacingAndGlyphs'>resource</text>
-<text x='178.99' y='17.11' style='font-size: 14.00px; font-weight: bold; font-family: Arial;' textLength='24.11px' lengthAdjust='spacingAndGlyphs'>use</text>
-<text x='206.99' y='17.11' style='font-size: 14.00px; font-weight: bold; font-family: Arial;' textLength='36.55px' lengthAdjust='spacingAndGlyphs'>lower</text>
-<text x='247.44' y='17.11' style='font-size: 14.00px; font-weight: bold; font-family: Arial;' textLength='76.42px' lengthAdjust='spacingAndGlyphs'>Indonesia's</text>
-<text x='327.75' y='17.11' style='font-size: 14.00px; font-weight: bold; font-family: Arial;' textLength='45.87px' lengthAdjust='spacingAndGlyphs'>human</text>
-<text x='377.51' y='17.11' style='font-size: 14.00px; font-weight: bold; font-family: Arial;' textLength='86.31px' lengthAdjust='spacingAndGlyphs'>development</text>
-<text x='7.09' y='286.98' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='36.18px' lengthAdjust='spacingAndGlyphs'>Source:</text>
-<text x='46.18' y='286.98' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='30.35px' lengthAdjust='spacingAndGlyphs'>United</text>
-<text x='79.45' y='286.98' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='38.51px' lengthAdjust='spacingAndGlyphs'>Nations;</text>
-<text x='120.88' y='286.98' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='30.35px' lengthAdjust='spacingAndGlyphs'>Global</text>
-<text x='154.14' y='286.98' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='34.44px' lengthAdjust='spacingAndGlyphs'>Carbon</text>
-<text x='191.49' y='286.98' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='35.59px' lengthAdjust='spacingAndGlyphs'>Project;</text>
-<text x='230.00' y='286.98' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='17.50px' lengthAdjust='spacingAndGlyphs'>Our</text>
-<text x='250.42' y='286.98' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='27.23px' lengthAdjust='spacingAndGlyphs'>World</text>
-<text x='280.56' y='286.98' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='8.17px' lengthAdjust='spacingAndGlyphs'>in</text>
-<text x='291.65' y='286.98' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='25.09px' lengthAdjust='spacingAndGlyphs'>Data;</text>
-<text x='319.66' y='286.98' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='37.02px' lengthAdjust='spacingAndGlyphs'>author's</text>
-<text x='359.60' y='286.98' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='37.93px' lengthAdjust='spacingAndGlyphs'>analysis</text>
-<text x='7.09' y='296.70' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='28.59px' lengthAdjust='spacingAndGlyphs'>Chart:</text>
-<text x='38.59' y='296.70' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='41.43px' lengthAdjust='spacingAndGlyphs'>Dzulfiqar</text>
-<text x='82.94' y='296.70' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='30.35px' lengthAdjust='spacingAndGlyphs'>Fathur</text>
-<text x='116.20' y='296.70' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='39.69px' lengthAdjust='spacingAndGlyphs'>Rahman</text>
-</g>
+  </defs>
+  <rect
+     width="100%"
+     height="100%"
+     style="fill:#ffffff;stroke:none"
+     id="rect63995"
+     x="-7.5616012"
+     y="-6.9176183" />
+  <defs
+     id="defs64000">
+    <clipPath
+       id="cpMC4wMHw1NzYuMDB8MC4wMHwzMDYuMDA=">
+      <rect
+         x="0"
+         y="0"
+         width="576"
+         height="306"
+         id="rect63997" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#cpMC4wMHw1NzYuMDB8MC4wMHwzMDYuMDA=)"
+     id="g64004"
+     transform="translate(-7.5616012,-6.9176181)">
+    <rect
+       x="0"
+       y="5.6999998e-14"
+       width="576"
+       height="306"
+       style="fill:#ffffff;stroke:none;stroke-width:1.07"
+       id="rect64002" />
+  </g>
+  <defs
+     id="defs64009">
+    <clipPath
+       id="cpNy4wOXw1NDguNjh8NDYuNTh8MjU0LjM3">
+      <rect
+         x="7.0900002"
+         y="46.580002"
+         width="541.59998"
+         height="207.78999"
+         id="rect64006" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#cpNy4wOXw1NDguNjh8NDYuNTh8MjU0LjM3)"
+     id="g64039"
+     transform="translate(-7.5616012,-6.9176181)">
+    <rect
+       x="7.0900002"
+       y="46.580002"
+       width="541.59998"
+       height="207.78999"
+       style="fill:#ffffff;stroke:none;stroke-width:1.07"
+       id="rect64011" />
+    <polyline
+       points="7.09,244.92 548.68,244.92 "
+       style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
+       id="polyline64013" />
+    <polyline
+       points="7.09,197.70 548.68,197.70 "
+       style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
+       id="polyline64015" />
+    <polyline
+       points="7.09,150.47 548.68,150.47 "
+       style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
+       id="polyline64017" />
+    <polyline
+       points="7.09,103.25 548.68,103.25 "
+       style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
+       id="polyline64019" />
+    <polyline
+       points="7.09,56.02 548.68,56.02 "
+       style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
+       id="polyline64021" />
+    <path
+       style="color:#000000;fill:#000000;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:0.75;stroke-dasharray:none;stroke:#ffffff;stroke-opacity:1"
+       d="m 523.79297,93.146484 -16.94922,2.826172 -16.93555,2.355469 -16.95703,1.886715 a 1.6251625,1.6251625 0 0 0 -0.17383,0.0293 l -16.91601,3.76563 -16.8711,2.34375 -16.92578,1.41796 a 1.6251625,1.6251625 0 0 0 -0.13086,0.0156 l -16.98047,2.83008 a 1.6251625,1.6251625 0 0 0 -0.0859,0.0176 l -16.98047,3.77929 -16.95899,3.77539 -16.95703,3.29493 a 1.6251625,1.6251625 0 0 0 -0.16601,0.041 l -16.82617,5.15625 -16.76172,1.86523 -16.91211,0.46875 a 1.6251625,1.6251625 0 0 0 -0.39063,0.0586 l -16.85351,4.68555 -16.83985,1.875 a 1.6251625,1.6251625 0 0 0 -0.0879,0.0117 l -16.98047,2.83008 a 1.6251625,1.6251625 0 0 0 -0.043,0.008 l -16.95898,3.30665 -16.95703,2.82617 a 1.6251625,1.6251625 0 0 0 -0.002,0 l -16.97852,2.83984 a 1.6251625,1.6251625 0 0 0 -0.12695,0.0273 l -16.94922,4.24415 -16.76367,3.7207 -16.77735,-0.46289 a 1.6251625,1.6251625 0 0 0 -0.63476,0.10937 l -16.96289,6.60352 -16.90235,6.11133 -16.890622,4.70898 -16.917969,4.23438 -16.894531,3.2832 -16.935547,2.35351 a 1.6251625,1.6251625 0 0 0 -0.04492,0.006 l -16.980468,2.83985 0.537109,3.20703 16.957031,-2.83789 16.957031,-2.35547 a 1.6251625,1.6251625 0 0 0 0.08789,-0.0156 l 16.978516,-3.29882 a 1.6251625,1.6251625 0 0 0 0.08594,-0.0195 l 16.978514,-4.25 a 1.6251625,1.6251625 0 0 0 0.043,-0.01 l 16.96875,-4.73047 a 1.6251625,1.6251625 0 0 0 0.11719,-0.0371 l 16.98047,-6.14062 a 1.6251625,1.6251625 0 0 0 0.0371,-0.0137 l 16.67382,-6.49023 16.65039,0.46094 a 1.6251625,1.6251625 0 0 0 0.39844,-0.0391 l 16.97852,-3.76954 a 1.6251625,1.6251625 0 0 0 0.043,-0.01 l 16.9082,-4.23438 16.91602,-2.83007 16.97851,-2.83008 a 1.6251625,1.6251625 0 0 0 0.043,-0.008 l 16.95898,-3.30468 16.91407,-2.82032 16.92773,-1.88476 a 1.6251625,1.6251625 0 0 0 0.25391,-0.0488 l 16.78906,-4.66601 16.78125,-0.46485 a 1.6251625,1.6251625 0 0 0 0.13477,-0.01 l 16.98046,-1.89063 a 1.6251625,1.6251625 0 0 0 0.29493,-0.0606 l 16.88867,-5.17578 16.89648,-3.2832 a 1.6251625,1.6251625 0 0 0 0.043,-0.01 l 16.98047,-3.77929 16.9375,-3.76953 16.87109,-2.8125 16.90235,-1.41407 a 1.6251625,1.6251625 0 0 0 0.0898,-0.01 l 16.97852,-2.36133 a 1.6251625,1.6251625 0 0 0 0.13086,-0.0234 l 16.89257,-3.75976 16.89258,-1.88086 a 1.6251625,1.6251625 0 0 0 0.0449,-0.006 l 16.98047,-2.359377 a 1.6251625,1.6251625 0 0 0 0.043,-0.0059 l 16.9707,-2.830078 z"
+       id="polyline64023" />
+    <path
+       style="color:#000000;fill:#e66439;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:0.75;stroke-dasharray:none;stroke:#ffffff;stroke-opacity:1"
+       d="m 523.83008,104.73047 -16.94727,2.42773 -16.95703,1.92774 a 1.6251625,1.6251625 0 0 0 -0.0156,0.002 l -16.98047,2.10938 a 1.6251625,1.6251625 0 0 0 -0.0859,0.0137 l -16.90625,3.01562 -16.90625,1.44336 a 1.6251625,1.6251625 0 0 0 -0.0293,0.004 l -16.96875,1.75976 a 1.6251625,1.6251625 0 0 0 -0.17968,0.0293 l -16.96094,3.70508 -16.9375,3.27148 L 371,127.19531 a 1.6251625,1.6251625 0 0 0 -0.0195,0.004 L 354,130.16992 a 1.6251625,1.6251625 0 0 0 -0.16016,0.0352 l -16.81836,4.73828 -16.76171,1.36133 -16.91797,0.0801 a 1.6251625,1.6251625 0 0 0 -0.41211,0.0547 l -16.85157,4.51758 -16.83984,1.67578 a 1.6251625,1.6251625 0 0 0 -0.082,0.01 l -16.98047,2.58008 a 1.6251625,1.6251625 0 0 0 -0.0273,0.006 l -16.95703,2.86523 -16.95508,2.38672 -16.97461,2.30859 a 1.6251625,1.6251625 0 0 0 -0.1543,0.0293 l -16.93359,3.99219 -16.84766,3.15429 -16.88476,1.13477 a 1.6251625,1.6251625 0 0 0 -0.45704,0.0977 l -16.94921,6.29882 -16.91016,5.52539 -16.900391,4.57227 -16.912109,3.93359 -16.902344,3.02735 -16.939453,2.24414 -16.976562,2.16992 0.412109,3.22266 16.980469,-2.16993 a 1.6251625,1.6251625 0 0 0 0.0059,0 l 16.980469,-2.25 a 1.6251625,1.6251625 0 0 0 0.07422,-0.0117 l 16.978515,-3.04102 a 1.6251625,1.6251625 0 0 0 0.08203,-0.0156 l 16.980469,-3.95117 a 1.6251625,1.6251625 0 0 0 0.05664,-0.0137 l 16.96875,-4.58984 a 1.6251625,1.6251625 0 0 0 0.082,-0.0234 l 16.97852,-5.55078 a 1.6251625,1.6251625 0 0 0 0.0625,-0.0215 l 16.75781,-6.22656 16.74414,-1.125 a 1.6251625,1.6251625 0 0 0 0.19141,-0.0234 l 16.97851,-3.17968 a 1.6251625,1.6251625 0 0 0 0.0742,-0.0156 L 201.77734,156 l 16.90235,-2.30078 a 1.6251625,1.6251625 0 0 0 0.006,0 l 16.98047,-2.39063 a 1.6251625,1.6251625 0 0 0 0.0449,-0.006 l 16.96679,-2.86914 16.92579,-2.57031 16.92773,-1.68555 a 1.6251625,1.6251625 0 0 0 0.25977,-0.0488 l 16.77734,-4.49414 16.76953,-0.0801 a 1.6251625,1.6251625 0 0 0 0.12305,-0.006 l 16.98047,-1.37891 a 1.6251625,1.6251625 0 0 0 0.30859,-0.0566 l 16.89062,-4.75586 16.89063,-2.95508 16.96875,-2.75781 a 1.6251625,1.6251625 0 0 0 0.0488,-0.01 l 16.97851,-3.2793 a 1.6251625,1.6251625 0 0 0 0.0391,-0.008 l 16.89257,-3.69141 16.86329,-1.74805 16.96679,-1.44922 a 1.6251625,1.6251625 0 0 0 0.14649,-0.0195 l 16.9375,-3.02148 16.92968,-2.10352 16.97071,-1.92968 a 1.6251625,1.6251625 0 0 0 0.0469,-0.006 l 16.97071,-2.42969 z"
+       id="polyline64025" />
+    <line
+       x1="7.0900002"
+       y1="174.09"
+       x2="548.67999"
+       y2="174.09"
+       style="stroke:#757575;stroke-width:1.16;stroke-linecap:butt;stroke-dasharray:6.21, 6.21"
+       id="line64027" />
+    <line
+       x1="7.0900002"
+       y1="103.25"
+       x2="548.67999"
+       y2="103.25"
+       style="stroke:#757575;stroke-width:1.16;stroke-linecap:butt;stroke-dasharray:6.21, 6.21"
+       id="line64029" />
+    <polygon
+       points="156.17,106.8 156.44,106.58 156.67,106.32 156.85,106.03 156.99,105.71 157.07,105.37 157.1,105.02 157.1,105.02 157.1,101.47 157.1,101.47 157.07,101.12 156.99,100.78 156.85,100.46 156.67,100.17 156.44,99.91 156.17,99.69 155.87,99.52 155.54,99.39 155.2,99.32 154.94,99.31 33.86,99.31 34.12,99.32 33.78,99.31 33.43,99.35 33.1,99.45 32.78,99.6 32.5,99.79 32.25,100.04 32.04,100.31 31.88,100.62 31.77,100.95 31.71,101.29 31.7,101.47 31.7,105.02 31.71,104.85 31.71,105.2 31.77,105.54 31.88,105.87 32.04,106.18 32.25,106.46 32.5,106.7 32.78,106.9 33.1,107.04 33.43,107.14 33.78,107.18 33.86,107.18 154.94,107.18 154.85,107.18 155.2,107.17 155.54,107.1 155.87,106.98 "
+       style="fill:#ffffff;stroke:none;stroke-width:0"
+       id="polygon64031" />
+    <text
+       x="31.700001"
+       y="107.18"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="125.4"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64033">High human development</text>
+    <polygon
+       points="512.23,177.64 512.5,177.42 512.73,177.16 512.92,176.87 513.06,176.55 513.14,176.21 513.17,175.86 513.17,175.86 513.17,172.31 513.17,172.31 513.14,171.96 513.06,171.62 512.92,171.3 512.73,171.01 512.5,170.75 512.23,170.53 511.93,170.36 511.61,170.23 511.27,170.16 511.01,170.15 373.42,170.15 373.68,170.16 373.34,170.15 372.99,170.19 372.66,170.29 372.34,170.44 372.06,170.63 371.81,170.87 371.6,171.15 371.44,171.46 371.33,171.79 371.27,172.13 371.26,172.31 371.26,175.86 371.27,175.69 371.27,176.04 371.33,176.38 371.44,176.71 371.6,177.02 371.81,177.3 372.06,177.54 372.34,177.73 372.66,177.88 372.99,177.98 373.34,178.02 373.42,178.02 511.01,178.02 510.92,178.02 511.27,178.01 511.61,177.94 511.93,177.82 "
+       style="fill:#ffffff;stroke:none;stroke-width:0"
+       id="polygon64035" />
+    <text
+       x="371.26001"
+       y="178.02"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="141.89999"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64037">Medium human development</text>
+  </g>
+  <g
+     clip-path="url(#cpMC4wMHw1NzYuMDB8MC4wMHwzMDYuMDA=)"
+     id="g64157"
+     transform="translate(-7.5616012,-6.9176181)">
+    <text
+       x="553.60999"
+       y="248.86"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="15.3"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64041">0.4</text>
+    <text
+       x="553.60999"
+       y="201.64"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="15.3"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64043">0.5</text>
+    <text
+       x="553.60999"
+       y="154.41"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="15.3"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64045">0.6</text>
+    <text
+       x="553.60999"
+       y="107.18"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="15.3"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64047">0.7</text>
+    <text
+       x="553.60999"
+       y="59.959999"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="15.3"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64049">0.8</text>
+    <polyline
+       points="48.68,257.11 48.68,254.37 "
+       style="stroke:#757575;stroke-width:1.16;stroke-linecap:butt"
+       id="polyline64051" />
+    <polyline
+       points="116.59,257.11 116.59,254.37 "
+       style="stroke:#757575;stroke-width:1.16;stroke-linecap:butt"
+       id="polyline64053" />
+    <polyline
+       points="184.51,257.11 184.51,254.37 "
+       style="stroke:#757575;stroke-width:1.16;stroke-linecap:butt"
+       id="polyline64055" />
+    <polyline
+       points="252.42,257.11 252.42,254.37 "
+       style="stroke:#757575;stroke-width:1.16;stroke-linecap:butt"
+       id="polyline64057" />
+    <polyline
+       points="320.33,257.11 320.33,254.37 "
+       style="stroke:#757575;stroke-width:1.16;stroke-linecap:butt"
+       id="polyline64059" />
+    <polyline
+       points="388.24,257.11 388.24,254.37 "
+       style="stroke:#757575;stroke-width:1.16;stroke-linecap:butt"
+       id="polyline64061" />
+    <polyline
+       points="456.15,257.11 456.15,254.37 "
+       style="stroke:#757575;stroke-width:1.16;stroke-linecap:butt"
+       id="polyline64063" />
+    <polyline
+       points="524.06,257.11 524.06,254.37 "
+       style="stroke:#757575;stroke-width:1.16;stroke-linecap:butt"
+       id="polyline64065" />
+    <text
+       x="48.68"
+       y="267.17999"
+       text-anchor="middle"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="24.48"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64067">1991</text>
+    <text
+       x="116.59"
+       y="267.17999"
+       text-anchor="middle"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="14.34"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64069">'95</text>
+    <text
+       x="184.50999"
+       y="267.17999"
+       text-anchor="middle"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="14.34"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64071">'99</text>
+    <text
+       x="252.42"
+       y="267.17999"
+       text-anchor="middle"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="24.48"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64073">2003</text>
+    <text
+       x="320.32999"
+       y="267.17999"
+       text-anchor="middle"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="14.34"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64075">'07</text>
+    <text
+       x="388.23999"
+       y="267.17999"
+       text-anchor="middle"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="13.53"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64077">'11</text>
+    <text
+       x="456.14999"
+       y="267.17999"
+       text-anchor="middle"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="14.34"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64079">'15</text>
+    <text
+       x="524.06"
+       y="267.17999"
+       text-anchor="middle"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="14.34"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64081">'19</text>
+    <line
+       x1="35.889999"
+       y1="68.470001"
+       x2="49.720001"
+       y2="68.470001"
+       style="stroke-width:2.13;stroke-linecap:butt"
+       id="line64083" />
+    <line
+       x1="35.889999"
+       y1="85.75"
+       x2="49.720001"
+       y2="85.75"
+       style="stroke:#e66439;stroke-width:2.13;stroke-linecap:butt"
+       id="line64085" />
+    <text
+       x="57.419998"
+       y="72.400002"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="18.940001"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64087">HDI</text>
+    <text
+       x="57.419998"
+       y="89.68"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="26.280001"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64089">PHDI</text>
+    <text
+       x="7.0900002"
+       y="33.98"
+       style="font-size:12.5px;font-family:Arial;fill:#757575"
+       textLength="40.279999"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64091"
+       transform="translate(-0.52899268)">Human</text>
+    <text
+       x="50.84"
+       y="33.98"
+       style="font-size:12.5px;font-family:Arial;fill:#757575"
+       textLength="71.550003"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64093"
+       transform="translate(-0.52899268)">development</text>
+    <text
+       x="125.86"
+       y="33.98"
+       style="font-size:12.5px;font-family:Arial;fill:#757575"
+       textLength="29.870001"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64095"
+       transform="translate(-0.52899268)">index</text>
+    <text
+       x="159.2"
+       y="33.98"
+       style="font-size:12.5px;font-family:Arial;fill:#757575"
+       textLength="29.85"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64097"
+       transform="translate(-0.52899268)">(HDI)</text>
+    <text
+       x="192.52"
+       y="33.98"
+       style="font-size:12.5px;font-family:Arial;fill:#757575"
+       textLength="20.84"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64099"
+       transform="translate(-0.52899268)">and</text>
+    <text
+       x="216.84"
+       y="33.98"
+       style="font-size:12.5px;font-family:Arial;fill:#757575"
+       textLength="51.400002"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64101"
+       transform="translate(-0.52899268)">planetary</text>
+    <text
+       x="271.70999"
+       y="33.98"
+       style="font-size:12.5px;font-family:Arial;fill:#757575"
+       textLength="106.26"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64103"
+       transform="translate(-0.52899268)">pressures-adjusted</text>
+    <text
+       x="381.44"
+       y="33.98"
+       style="font-size:12.5px;font-family:Arial;fill:#757575"
+       textLength="21.530001"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64105"
+       transform="translate(-0.52899268)">HDI</text>
+    <text
+       x="406.44"
+       y="33.98"
+       style="font-size:12.5px;font-family:Arial;fill:#757575"
+       textLength="38.189999"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64107"
+       transform="translate(-0.52899268)">(PHDI)</text>
+    <text
+       x="7.0900002"
+       y="17.110001"
+       style="font-weight:bold;font-size:14px;font-family:Arial"
+       textLength="28.780001"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64109"
+       transform="translate(-0.19134365)">CO2</text>
+    <text
+       x="39.75"
+       y="17.110001"
+       style="font-weight:bold;font-size:14px;font-family:Arial"
+       textLength="72.339996"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64111"
+       transform="translate(-0.19134365)">emissions,</text>
+    <text
+       x="115.98"
+       y="17.110001"
+       style="font-weight:bold;font-size:14px;font-family:Arial"
+       textLength="59.130001"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64113"
+       transform="translate(-0.19134365)">resource</text>
+    <text
+       x="178.99001"
+       y="17.110001"
+       style="font-weight:bold;font-size:14px;font-family:Arial"
+       textLength="24.110001"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64115"
+       transform="translate(-0.19134365)">use</text>
+    <text
+       x="206.99001"
+       y="17.110001"
+       style="font-weight:bold;font-size:14px;font-family:Arial"
+       textLength="36.549999"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64117"
+       transform="translate(-0.19134365)">lower</text>
+    <text
+       x="247.44"
+       y="17.110001"
+       style="font-weight:bold;font-size:14px;font-family:Arial"
+       textLength="76.419998"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64119"
+       transform="translate(-0.19134365)">Indonesia's</text>
+    <text
+       x="327.75"
+       y="17.110001"
+       style="font-weight:bold;font-size:14px;font-family:Arial"
+       textLength="45.869999"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64121"
+       transform="translate(-0.19134365)">human</text>
+    <text
+       x="377.51001"
+       y="17.110001"
+       style="font-weight:bold;font-size:14px;font-family:Arial"
+       textLength="86.309998"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64123"
+       transform="translate(-0.19134365)">development</text>
+    <text
+       x="7.0900002"
+       y="286.98001"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="36.18"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64125">Source:</text>
+    <text
+       x="46.18"
+       y="286.98001"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="30.35"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64127">United</text>
+    <text
+       x="79.449997"
+       y="286.98001"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="38.509998"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64129">Nations;</text>
+    <text
+       x="120.88"
+       y="286.98001"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="30.35"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64131">Global</text>
+    <text
+       x="154.14"
+       y="286.98001"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="34.439999"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64133">Carbon</text>
+    <text
+       x="191.49001"
+       y="286.98001"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="35.59"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64135">Project;</text>
+    <text
+       x="230"
+       y="286.98001"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="17.5"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64137">Our</text>
+    <text
+       x="250.42"
+       y="286.98001"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="27.23"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64139">World</text>
+    <text
+       x="280.56"
+       y="286.98001"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="8.1700001"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64141">in</text>
+    <text
+       x="291.64999"
+       y="286.98001"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="25.09"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64143">Data;</text>
+    <text
+       x="319.66"
+       y="286.98001"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="37.02"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64145">author's</text>
+    <text
+       x="359.60001"
+       y="286.98001"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="37.93"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64147">analysis</text>
+    <text
+       x="7.0900002"
+       y="296.70001"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="28.59"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64149"
+       transform="translate(-0.05129298)">Chart:</text>
+    <text
+       x="38.59"
+       y="296.70001"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="41.43"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64151"
+       transform="translate(-0.05129298)">Dzulfiqar</text>
+    <text
+       x="82.940002"
+       y="296.70001"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="30.35"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64153"
+       transform="translate(-0.05129298)">Fathur</text>
+    <text
+       x="116.2"
+       y="296.70001"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="39.689999"
+       lengthAdjust="spacingAndGlyphs"
+       id="text64155"
+       transform="translate(-0.05129298)">Rahman</text>
+  </g>
 </svg>

@@ -1,7 +1,44 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='svglite' width='576.00pt' height='324.00pt' viewBox='0 0 576.00 324.00'>
-<defs>
-  <style type='text/css'><![CDATA[
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   class="svglite"
+   width="561.37939pt"
+   height="309.69818pt"
+   viewBox="0 0 561.37939 309.69818"
+   version="1.1"
+   id="svg70392"
+   sodipodi:docname="manufacturing-value-added-share.svg"
+   inkscape:export-filename="C:\Users\dzulf\Documents\projects\jakpost-graphics\2022\2022-02-09-deindustrialization\result\manufacturing-value-added-share.png"
+   inkscape:export-xdpi="164.16705"
+   inkscape:export-ydpi="164.16705"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview70394"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="pt"
+     showgrid="false"
+     inkscape:zoom="1.5833333"
+     inkscape:cx="368.84211"
+     inkscape:cy="206.52632"
+     inkscape:window-width="1920"
+     inkscape:window-height="1046"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg70392" />
+  <defs
+     id="defs70240">
+    <style
+       type="text/css"
+       id="style70238"><![CDATA[
     .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
       fill: none;
       stroke: #000000;
@@ -10,88 +47,493 @@
       stroke-miterlimit: 10.00;
     }
   ]]></style>
-</defs>
-<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
-<defs>
-  <clipPath id='cpMC4wMHw1NzYuMDB8MC4wMHwzMjQuMDA='>
-    <rect x='0.00' y='0.00' width='576.00' height='324.00' />
-  </clipPath>
-</defs>
-<g clip-path='url(#cpMC4wMHw1NzYuMDB8MC4wMHwzMjQuMDA=)'>
-<rect x='0.00' y='0.00' width='576.00' height='324.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
-</g>
-<defs>
-  <clipPath id='cpNy4wOXw1NTEuNzR8NDYuNTh8MjYyLjY0'>
-    <rect x='7.09' y='46.58' width='544.66' height='216.07' />
-  </clipPath>
-</defs>
-<g clip-path='url(#cpNy4wOXw1NTEuNzR8NDYuNTh8MjYyLjY0)'>
-<rect x='7.09' y='46.58' width='544.66' height='216.07' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
-<polyline points='7.09,262.64 551.74,262.64 ' style='stroke-width: 1.16; stroke: #E0E0E0; stroke-linecap: butt;' />
-<polyline points='7.09,219.43 551.74,219.43 ' style='stroke-width: 1.16; stroke: #E0E0E0; stroke-linecap: butt;' />
-<polyline points='7.09,176.22 551.74,176.22 ' style='stroke-width: 1.16; stroke: #E0E0E0; stroke-linecap: butt;' />
-<polyline points='7.09,133.00 551.74,133.00 ' style='stroke-width: 1.16; stroke: #E0E0E0; stroke-linecap: butt;' />
-<polyline points='7.09,89.79 551.74,89.79 ' style='stroke-width: 1.16; stroke: #E0E0E0; stroke-linecap: butt;' />
-<polyline points='7.09,46.58 551.74,46.58 ' style='stroke-width: 1.16; stroke: #E0E0E0; stroke-linecap: butt;' />
-<polyline points='31.84,212.76 41.75,210.13 51.65,207.40 61.55,205.45 71.45,200.92 81.36,196.61 91.26,194.89 101.16,191.77 111.07,185.87 120.97,181.10 130.87,171.93 140.77,170.07 150.68,170.99 160.58,158.06 170.48,143.32 180.39,133.15 190.29,128.98 200.19,121.74 210.09,113.47 220.00,110.46 229.90,106.35 239.80,103.99 249.71,99.62 259.61,93.35 269.51,85.76 279.41,81.42 289.32,75.07 299.22,74.09 309.12,70.42 319.03,64.45 328.93,62.44 338.83,63.10 348.73,61.59 358.64,60.53 368.54,57.93 378.44,60.05 388.35,61.81 398.25,64.98 408.15,69.37 418.05,73.94 427.96,77.04 437.86,76.88 447.76,77.60 457.67,79.69 467.57,80.32 477.47,81.27 487.37,82.61 497.28,83.94 507.18,85.47 517.08,87.53 526.98,89.07 ' style='stroke-width: 2.13; stroke: #1D81A2; stroke-linecap: butt;' />
-<line x1='309.12' y1='262.64' x2='309.12' y2='46.58' style='stroke-width: 1.07; stroke: #757575; stroke-dasharray: 5.69,5.69; stroke-linecap: butt;' />
-<line x1='526.98' y1='262.64' x2='526.98' y2='46.58' style='stroke-width: 1.07; stroke: #757575; stroke-dasharray: 5.69,5.69; stroke-linecap: butt;' />
-<text x='304.17' y='59.16' text-anchor='end' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='99.05px' lengthAdjust='spacingAndGlyphs'>Asian financial crisis</text>
-<text x='522.03' y='59.16' text-anchor='end' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='50.75px' lengthAdjust='spacingAndGlyphs'>COVID-19</text>
-</g>
-<g clip-path='url(#cpMC4wMHw1NzYuMDB8MC4wMHwzMjQuMDA=)'>
-<text x='556.67' y='266.58' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='6.12px' lengthAdjust='spacingAndGlyphs'>0</text>
-<text x='556.67' y='223.37' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='6.12px' lengthAdjust='spacingAndGlyphs'>5</text>
-<text x='556.67' y='180.15' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='12.24px' lengthAdjust='spacingAndGlyphs'>10</text>
-<text x='556.67' y='136.94' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='12.24px' lengthAdjust='spacingAndGlyphs'>15</text>
-<text x='556.67' y='93.73' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='12.24px' lengthAdjust='spacingAndGlyphs'>20</text>
-<text x='556.67' y='50.51' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='12.24px' lengthAdjust='spacingAndGlyphs'>25</text>
-<polyline points='7.09,262.64 551.74,262.64 ' style='stroke-width: 1.16; stroke-linecap: butt;' />
-<polyline points='31.84,265.38 31.84,262.64 ' style='stroke-width: 1.16; stroke-linecap: butt;' />
-<polyline points='81.36,265.38 81.36,262.64 ' style='stroke-width: 1.16; stroke-linecap: butt;' />
-<polyline points='130.87,265.38 130.87,262.64 ' style='stroke-width: 1.16; stroke-linecap: butt;' />
-<polyline points='180.39,265.38 180.39,262.64 ' style='stroke-width: 1.16; stroke-linecap: butt;' />
-<polyline points='229.90,265.38 229.90,262.64 ' style='stroke-width: 1.16; stroke-linecap: butt;' />
-<polyline points='279.41,265.38 279.41,262.64 ' style='stroke-width: 1.16; stroke-linecap: butt;' />
-<polyline points='328.93,265.38 328.93,262.64 ' style='stroke-width: 1.16; stroke-linecap: butt;' />
-<polyline points='378.44,265.38 378.44,262.64 ' style='stroke-width: 1.16; stroke-linecap: butt;' />
-<polyline points='427.96,265.38 427.96,262.64 ' style='stroke-width: 1.16; stroke-linecap: butt;' />
-<polyline points='477.47,265.38 477.47,262.64 ' style='stroke-width: 1.16; stroke-linecap: butt;' />
-<polyline points='526.98,265.38 526.98,262.64 ' style='stroke-width: 1.16; stroke-linecap: butt;' />
-<text x='31.84' y='275.45' text-anchor='middle' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='24.48px' lengthAdjust='spacingAndGlyphs'>1970</text>
-<text x='81.36' y='275.45' text-anchor='middle' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='14.34px' lengthAdjust='spacingAndGlyphs'>'75</text>
-<text x='130.87' y='275.45' text-anchor='middle' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='14.34px' lengthAdjust='spacingAndGlyphs'>'80</text>
-<text x='180.39' y='275.45' text-anchor='middle' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='14.34px' lengthAdjust='spacingAndGlyphs'>'85</text>
-<text x='229.90' y='275.45' text-anchor='middle' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='14.34px' lengthAdjust='spacingAndGlyphs'>'90</text>
-<text x='279.41' y='275.45' text-anchor='middle' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='14.34px' lengthAdjust='spacingAndGlyphs'>'95</text>
-<text x='328.93' y='275.45' text-anchor='middle' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='24.48px' lengthAdjust='spacingAndGlyphs'>2000</text>
-<text x='378.44' y='275.45' text-anchor='middle' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='14.34px' lengthAdjust='spacingAndGlyphs'>'05</text>
-<text x='427.96' y='275.45' text-anchor='middle' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='14.34px' lengthAdjust='spacingAndGlyphs'>'10</text>
-<text x='477.47' y='275.45' text-anchor='middle' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='14.34px' lengthAdjust='spacingAndGlyphs'>'15</text>
-<text x='526.98' y='275.45' text-anchor='middle' style='font-size: 11.00px; fill: #757575; font-family: Arial;' textLength='14.34px' lengthAdjust='spacingAndGlyphs'>'20</text>
-<text x='7.09' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='33.34px' lengthAdjust='spacingAndGlyphs'>Share</text>
-<text x='43.90' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='10.42px' lengthAdjust='spacingAndGlyphs'>of</text>
-<text x='57.79' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='79.18px' lengthAdjust='spacingAndGlyphs'>manufacturing</text>
-<text x='140.44' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='29.87px' lengthAdjust='spacingAndGlyphs'>value</text>
-<text x='173.78' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='34.74px' lengthAdjust='spacingAndGlyphs'>added</text>
-<text x='211.99' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='9.73px' lengthAdjust='spacingAndGlyphs'>in</text>
-<text x='225.19' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='31.95px' lengthAdjust='spacingAndGlyphs'>GDP*</text>
-<text x='260.61' y='33.98' style='font-size: 12.50px; fill: #757575; font-family: Arial;' textLength='50.00px' lengthAdjust='spacingAndGlyphs'>(percent)</text>
-<text x='7.09' y='17.11' style='font-size: 14.00px; font-weight: bold; font-family: Arial;' textLength='125.18px' lengthAdjust='spacingAndGlyphs'>Deindustrialization</text>
-<text x='136.15' y='17.11' style='font-size: 14.00px; font-weight: bold; font-family: Arial;' textLength='12.43px' lengthAdjust='spacingAndGlyphs'>in</text>
-<text x='152.48' y='17.11' style='font-size: 14.00px; font-weight: bold; font-family: Arial;' textLength='65.31px' lengthAdjust='spacingAndGlyphs'>Indonesia</text>
-<text x='7.09' y='295.25' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='14.00px' lengthAdjust='spacingAndGlyphs'>*At</text>
-<text x='24.00' y='295.25' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='23.36px' lengthAdjust='spacingAndGlyphs'>2015</text>
-<text x='50.27' y='295.25' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='14.58px' lengthAdjust='spacingAndGlyphs'>US</text>
-<text x='67.77' y='295.25' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='30.93px' lengthAdjust='spacingAndGlyphs'>dollars</text>
-<text x='7.09' y='304.98' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='36.18px' lengthAdjust='spacingAndGlyphs'>Source:</text>
-<text x='46.18' y='304.98' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='30.35px' lengthAdjust='spacingAndGlyphs'>United</text>
-<text x='79.45' y='304.98' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='38.51px' lengthAdjust='spacingAndGlyphs'>Nations;</text>
-<text x='120.88' y='304.98' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='37.02px' lengthAdjust='spacingAndGlyphs'>author's</text>
-<text x='160.81' y='304.98' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='37.93px' lengthAdjust='spacingAndGlyphs'>analysis</text>
-<text x='7.09' y='314.70' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='28.59px' lengthAdjust='spacingAndGlyphs'>Chart:</text>
-<text x='38.59' y='314.70' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='41.43px' lengthAdjust='spacingAndGlyphs'>Dzulfiqar</text>
-<text x='82.94' y='314.70' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='30.35px' lengthAdjust='spacingAndGlyphs'>Fathur</text>
-<text x='116.20' y='314.70' style='font-size: 10.50px; fill: #9E9E9E; font-family: Arial;' textLength='39.69px' lengthAdjust='spacingAndGlyphs'>Rahman</text>
-</g>
+  </defs>
+  <rect
+     width="100%"
+     height="100%"
+     style="fill:#ffffff;stroke:none"
+     id="rect70242"
+     x="-7.0900002"
+     y="-7.0885153" />
+  <defs
+     id="defs70247">
+    <clipPath
+       id="cpMC4wMHw1NzYuMDB8MC4wMHwzMjQuMDA=">
+      <rect
+         x="0"
+         y="0"
+         width="576"
+         height="324"
+         id="rect70244" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#cpMC4wMHw1NzYuMDB8MC4wMHwzMjQuMDA=)"
+     id="g70251"
+     transform="translate(-7.09,-7.0885155)">
+    <rect
+       x="0"
+       y="0"
+       width="576"
+       height="324"
+       style="fill:#ffffff;stroke:none;stroke-width:1.07"
+       id="rect70249" />
+  </g>
+  <defs
+     id="defs70256">
+    <clipPath
+       id="cpNy4wOXw1NTEuNzR8NDYuNTh8MjYyLjY0">
+      <rect
+         x="7.0900002"
+         y="46.580002"
+         width="544.65997"
+         height="216.07001"
+         id="rect70253" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#cpNy4wOXw1NTEuNzR8NDYuNTh8MjYyLjY0)"
+     id="g70282"
+     transform="translate(-7.09,-7.0885155)">
+    <rect
+       x="7.0900002"
+       y="46.580002"
+       width="544.65997"
+       height="216.07001"
+       style="fill:#ffffff;stroke:none;stroke-width:1.07"
+       id="rect70258" />
+    <polyline
+       points="7.09,262.64 551.74,262.64 "
+       style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
+       id="polyline70260" />
+    <polyline
+       points="7.09,219.43 551.74,219.43 "
+       style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
+       id="polyline70262" />
+    <polyline
+       points="7.09,176.22 551.74,176.22 "
+       style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
+       id="polyline70264" />
+    <polyline
+       points="7.09,133.00 551.74,133.00 "
+       style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
+       id="polyline70266" />
+    <polyline
+       points="7.09,89.79 551.74,89.79 "
+       style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
+       id="polyline70268" />
+    <polyline
+       points="7.09,46.58 551.74,46.58 "
+       style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
+       id="polyline70270" />
+    <path
+       style="color:#000000;fill:#1d81a2;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:0.75;stroke-dasharray:none;stroke:#ffffff;stroke-opacity:1"
+       d="m 368.88086,56.341797 a 1.6251625,1.6251625 0 0 0 -0.75391,0.01563 l -9.78125,2.570312 -9.78906,1.046875 a 1.6251625,1.6251625 0 0 0 -0.0723,0.0098 l -9.7246,1.482422 -9.72071,-0.648438 a 1.6251625,1.6251625 0 0 0 -0.43164,0.0293 l -9.90039,2.009766 a 1.6251625,1.6251625 0 0 0 -0.51562,0.201172 l -9.7793,5.890625 -9.56055,3.544922 -9.6914,0.958984 a 1.6251625,1.6251625 0 0 0 -0.7168,0.248047 l -9.80274,6.28125 -9.7832,4.289062 a 1.6251625,1.6251625 0 0 0 -0.33594,0.199219 l -9.84179,7.544922 -9.73633,6.166016 -9.66406,4.261719 -9.75586,2.32617 a 1.6251625,1.6251625 0 0 0 -0.2461,0.0801 l -9.82617,4.07812 -9.83398,2.98829 a 1.6251625,1.6251625 0 0 0 -0.56836,0.30664 l -9.86133,8.23632 -9.70313,7.09766 -9.7246,4.0957 a 1.6251625,1.6251625 0 0 0 -0.53321,0.36328 l -9.91015,10.16993 a 1.6251625,1.6251625 0 0 0 -0.18555,0.22851 l -9.87109,14.69727 -9.32422,12.17773 -9.01563,-0.83789 a 1.6251625,1.6251625 0 0 0 -0.44922,0.0215 l -9.90039,1.85937 a 1.6251625,1.6251625 0 0 0 -0.80469,0.40625 l -9.7207,9.00391 -9.67969,4.66406 a 1.6251625,1.6251625 0 0 0 -0.12695,0.0684 l -9.74805,5.80273 -9.61523,3.0293 -9.792969,1.70313 a 1.6251625,1.6251625 0 0 0 -0.371094,0.10937 l -9.908203,4.31055 a 1.6251625,1.6251625 0 0 0 -0.0293,0.0117 l -9.724609,4.45117 -9.712891,1.91211 a 1.6251625,1.6251625 0 0 0 -0.117187,0.0293 l -9.892578,2.72657 -9.902344,2.6289 0.832031,3.14063 9.910157,-2.62891 a 1.6251625,1.6251625 0 0 0 0.01563,-0.004 l 9.841796,-2.71485 9.839844,-1.9375 a 1.6251625,1.6251625 0 0 0 0.363281,-0.11719 l 9.884766,-4.52343 9.71875,-4.22657 9.708984,-1.6875 a 1.6251625,1.6251625 0 0 0 0.208985,-0.0508 l 9.900393,-3.11914 a 1.6251625,1.6251625 0 0 0 0.34375,-0.15429 l 9.84765,-5.86329 9.83594,-4.73828 a 1.6251625,1.6251625 0 0 0 0.39844,-0.27148 l 9.55664,-8.85156 9.21484,-1.73243 9.6836,0.89844 a 1.6251625,1.6251625 0 0 0 1.4414,-0.6289 l 9.90039,-12.92969 a 1.6251625,1.6251625 0 0 0 0.0586,-0.082 l 9.8164,-14.61914 9.57813,-9.82813 9.5957,-4.04101 a 1.6251625,1.6251625 0 0 0 0.33008,-0.1875 l 9.89844,-7.24024 a 1.6251625,1.6251625 0 0 0 0.084,-0.0645 l 9.64649,-8.05664 9.59375,-2.91406 a 1.6251625,1.6251625 0 0 0 0.15039,-0.0547 l 9.77929,-4.06055 9.77539,-2.33008 a 1.6251625,1.6251625 0 0 0 0.27735,-0.0937 l 9.91015,-4.36914 a 1.6251625,1.6251625 0 0 0 0.21485,-0.11523 l 9.89844,-6.269534 a 1.6251625,1.6251625 0 0 0 0.12109,-0.08398 l 9.74219,-7.46875 9.7207,-4.261719 a 1.6251625,1.6251625 0 0 0 0.22461,-0.119141 l 9.58203,-6.140625 9.51172,-0.941406 a 1.6251625,1.6251625 0 0 0 0.4043,-0.09375 l 9.90039,-3.669922 a 1.6251625,1.6251625 0 0 0 0.27343,-0.130859 l 9.66993,-5.826172 9.41015,-1.910156 9.6836,0.644531 a 1.6251625,1.6251625 0 0 0 0.35156,-0.01367 l 9.86523,-1.505859 9.87305,-1.054688 a 1.6251625,1.6251625 0 0 0 0.24023,-0.04492 l 9.52539,-2.501953 9.52149,2.039063 a 1.6251625,1.6251625 0 0 0 0.0566,0.01172 l 9.80273,1.740234 9.71289,3.109375 9.8086,4.349609 9.88867,4.566407 a 1.6251625,1.6251625 0 0 0 0.19531,0.07422 l 9.91016,3.101563 a 1.6251625,1.6251625 0 0 0 0.51172,0.07227 l 9.82812,-0.158203 9.71875,0.707032 9.80078,2.066406 a 1.6251625,1.6251625 0 0 0 0.23243,0.0332 l 9.875,0.626953 9.84179,0.945313 9.86914,1.335937 a 1.6251625,1.6251625 0 0 0 0.002,0 l 9.89257,1.328125 9.84375,1.521484 9.85743,2.050782 a 1.6251625,1.6251625 0 0 0 0.082,0.01367 l 9.90039,1.541015 0.5,-3.210937 -9.85938,-1.535157 -9.85937,-2.050781 a 1.6251625,1.6251625 0 0 0 -0.084,-0.01563 l -9.90039,-1.529297 a 1.6251625,1.6251625 0 0 0 -0.0312,-0.0039 L 487.58789,81 477.6875,79.660156 a 1.6251625,1.6251625 0 0 0 -0.0625,-0.0078 l -9.90039,-0.949219 a 1.6251625,1.6251625 0 0 0 -0.0508,-0.0039 l -9.78321,-0.623047 -9.79492,-2.066406 a 1.6251625,1.6251625 0 0 0 -0.21875,-0.03125 l -9.89843,-0.71875 a 1.6251625,1.6251625 0 0 0 -0.14454,-0.0039 l -9.63867,0.154297 -9.56054,-2.990234 -9.80274,-4.525391 a 1.6251625,1.6251625 0 0 0 -0.0234,-0.0098 l -9.90039,-4.390625 a 1.6251625,1.6251625 0 0 0 -0.16211,-0.0625 l -9.90039,-3.169922 a 1.6251625,1.6251625 0 0 0 -0.21093,-0.05078 l -9.88282,-1.755859 z"
+       id="polyline70272" />
+    <line
+       x1="309.12"
+       y1="262.64001"
+       x2="309.12"
+       y2="46.580002"
+       style="stroke:#757575;stroke-width:1.07;stroke-linecap:butt;stroke-dasharray:5.69, 5.69"
+       id="line70274" />
+    <line
+       x1="526.97998"
+       y1="262.64001"
+       x2="526.97998"
+       y2="46.580002"
+       style="stroke:#757575;stroke-width:1.07;stroke-linecap:butt;stroke-dasharray:5.69, 5.69"
+       id="line70276" />
+    <text
+       x="304.17001"
+       y="59.16"
+       text-anchor="end"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="99.050003"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70278">Asian financial crisis</text>
+    <text
+       x="522.03003"
+       y="59.16"
+       text-anchor="end"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="50.75"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70280">COVID-19</text>
+  </g>
+  <g
+     clip-path="url(#cpMC4wMHw1NzYuMDB8MC4wMHwzMjQuMDA=)"
+     id="g70390"
+     transform="translate(-7.09,-7.0885155)">
+    <text
+       x="556.66998"
+       y="266.57999"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="6.1199999"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70284">0</text>
+    <text
+       x="556.66998"
+       y="223.37"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="6.1199999"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70286">5</text>
+    <text
+       x="556.66998"
+       y="180.14999"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="12.24"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70288">10</text>
+    <text
+       x="556.66998"
+       y="136.94"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="12.24"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70290">15</text>
+    <text
+       x="556.66998"
+       y="93.730003"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="12.24"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70292">20</text>
+    <text
+       x="556.66998"
+       y="50.509998"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="12.24"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70294">25</text>
+    <polyline
+       points="7.09,262.64 551.74,262.64 "
+       style="stroke-width:1.16;stroke-linecap:butt"
+       id="polyline70296" />
+    <polyline
+       points="31.84,265.38 31.84,262.64 "
+       style="stroke-width:1.16;stroke-linecap:butt"
+       id="polyline70298" />
+    <polyline
+       points="81.36,265.38 81.36,262.64 "
+       style="stroke-width:1.16;stroke-linecap:butt"
+       id="polyline70300" />
+    <polyline
+       points="130.87,265.38 130.87,262.64 "
+       style="stroke-width:1.16;stroke-linecap:butt"
+       id="polyline70302" />
+    <polyline
+       points="180.39,265.38 180.39,262.64 "
+       style="stroke-width:1.16;stroke-linecap:butt"
+       id="polyline70304" />
+    <polyline
+       points="229.90,265.38 229.90,262.64 "
+       style="stroke-width:1.16;stroke-linecap:butt"
+       id="polyline70306" />
+    <polyline
+       points="279.41,265.38 279.41,262.64 "
+       style="stroke-width:1.16;stroke-linecap:butt"
+       id="polyline70308" />
+    <polyline
+       points="328.93,265.38 328.93,262.64 "
+       style="stroke-width:1.16;stroke-linecap:butt"
+       id="polyline70310" />
+    <polyline
+       points="378.44,265.38 378.44,262.64 "
+       style="stroke-width:1.16;stroke-linecap:butt"
+       id="polyline70312" />
+    <polyline
+       points="427.96,265.38 427.96,262.64 "
+       style="stroke-width:1.16;stroke-linecap:butt"
+       id="polyline70314" />
+    <polyline
+       points="477.47,265.38 477.47,262.64 "
+       style="stroke-width:1.16;stroke-linecap:butt"
+       id="polyline70316" />
+    <polyline
+       points="526.98,265.38 526.98,262.64 "
+       style="stroke-width:1.16;stroke-linecap:butt"
+       id="polyline70318" />
+    <text
+       x="31.84"
+       y="275.45001"
+       text-anchor="middle"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="24.48"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70320">1970</text>
+    <text
+       x="81.360001"
+       y="275.45001"
+       text-anchor="middle"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="14.34"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70322">'75</text>
+    <text
+       x="130.87"
+       y="275.45001"
+       text-anchor="middle"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="14.34"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70324">'80</text>
+    <text
+       x="180.39"
+       y="275.45001"
+       text-anchor="middle"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="14.34"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70326">'85</text>
+    <text
+       x="229.89999"
+       y="275.45001"
+       text-anchor="middle"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="14.34"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70328">'90</text>
+    <text
+       x="279.41"
+       y="275.45001"
+       text-anchor="middle"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="14.34"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70330">'95</text>
+    <text
+       x="328.92999"
+       y="275.45001"
+       text-anchor="middle"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="24.48"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70332">2000</text>
+    <text
+       x="378.44"
+       y="275.45001"
+       text-anchor="middle"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="14.34"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70334">'05</text>
+    <text
+       x="427.95999"
+       y="275.45001"
+       text-anchor="middle"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="14.34"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70336">'10</text>
+    <text
+       x="477.47"
+       y="275.45001"
+       text-anchor="middle"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="14.34"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70338">'15</text>
+    <text
+       x="526.97998"
+       y="275.45001"
+       text-anchor="middle"
+       style="font-size:11px;font-family:Arial;fill:#757575"
+       textLength="14.34"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70340">'20</text>
+    <text
+       x="7.0900002"
+       y="33.98"
+       style="font-size:12.5px;font-family:Arial;fill:#757575"
+       textLength="33.34"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70342"
+       transform="translate(-0.56125909)">Share</text>
+    <text
+       x="43.900002"
+       y="33.98"
+       style="font-size:12.5px;font-family:Arial;fill:#757575"
+       textLength="10.42"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70344"
+       transform="translate(-0.56125909)">of</text>
+    <text
+       x="57.790001"
+       y="33.98"
+       style="font-size:12.5px;font-family:Arial;fill:#757575"
+       textLength="79.18"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70346"
+       transform="translate(-0.56125909)">manufacturing</text>
+    <text
+       x="140.44"
+       y="33.98"
+       style="font-size:12.5px;font-family:Arial;fill:#757575"
+       textLength="29.870001"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70348"
+       transform="translate(-0.56125909)">value</text>
+    <text
+       x="173.78"
+       y="33.98"
+       style="font-size:12.5px;font-family:Arial;fill:#757575"
+       textLength="34.740002"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70350"
+       transform="translate(-0.56125909)">added</text>
+    <text
+       x="211.99001"
+       y="33.98"
+       style="font-size:12.5px;font-family:Arial;fill:#757575"
+       textLength="9.7299995"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70352"
+       transform="translate(-0.56125909)">in</text>
+    <text
+       x="225.19"
+       y="33.98"
+       style="font-size:12.5px;font-family:Arial;fill:#757575"
+       textLength="31.950001"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70354"
+       transform="translate(-0.56125909)">GDP*</text>
+    <text
+       x="260.60999"
+       y="33.98"
+       style="font-size:12.5px;font-family:Arial;fill:#757575"
+       textLength="50"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70356"
+       transform="translate(-0.56125909)">(percent)</text>
+    <text
+       x="7.0900002"
+       y="17.110001"
+       style="font-weight:bold;font-size:14px;font-family:Arial"
+       textLength="125.18"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70358"
+       transform="translate(-1.0112796)">Deindustrialization</text>
+    <text
+       x="136.14999"
+       y="17.110001"
+       style="font-weight:bold;font-size:14px;font-family:Arial"
+       textLength="12.43"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70360"
+       transform="translate(-1.0112796)">in</text>
+    <text
+       x="152.48"
+       y="17.110001"
+       style="font-weight:bold;font-size:14px;font-family:Arial"
+       textLength="65.309998"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70362"
+       transform="translate(-1.0112796)">Indonesia</text>
+    <text
+       x="7.0900002"
+       y="295.25"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="14"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70364"
+       transform="translate(-0.32796502)">*At</text>
+    <text
+       x="24"
+       y="295.25"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="23.360001"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70366"
+       transform="translate(-0.32796502)">2015</text>
+    <text
+       x="50.27"
+       y="295.25"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="14.58"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70368"
+       transform="translate(-0.32796502)">US</text>
+    <text
+       x="67.769997"
+       y="295.25"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="30.93"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70370"
+       transform="translate(-0.32796502)">dollars</text>
+    <text
+       x="7.0900002"
+       y="304.98001"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="36.18"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70372"
+       transform="translate(-0.47160118)">Source:</text>
+    <text
+       x="46.18"
+       y="304.98001"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="30.35"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70374"
+       transform="translate(-0.47160118)">United</text>
+    <text
+       x="79.449997"
+       y="304.98001"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="38.509998"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70376"
+       transform="translate(-0.47160118)">Nations;</text>
+    <text
+       x="120.88"
+       y="304.98001"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="37.02"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70378"
+       transform="translate(-0.47160118)">author's</text>
+    <text
+       x="160.81"
+       y="304.98001"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="37.93"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70380"
+       transform="translate(-0.47160118)">analysis</text>
+    <text
+       x="7.0900002"
+       y="314.70001"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="28.59"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70382"
+       transform="translate(-0.52289418)">Chart:</text>
+    <text
+       x="38.59"
+       y="314.70001"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="41.43"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70384"
+       transform="translate(-0.52289418)">Dzulfiqar</text>
+    <text
+       x="82.940002"
+       y="314.70001"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="30.35"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70386"
+       transform="translate(-0.52289418)">Fathur</text>
+    <text
+       x="116.2"
+       y="314.70001"
+       style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
+       textLength="39.689999"
+       lengthAdjust="spacingAndGlyphs"
+       id="text70388"
+       transform="translate(-0.52289418)">Rahman</text>
+  </g>
 </svg>

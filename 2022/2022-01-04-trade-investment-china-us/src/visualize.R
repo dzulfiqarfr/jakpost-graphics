@@ -59,7 +59,7 @@ ggplot(
   ) +
   scale_x_continuous(
     breaks = seq(1990, 2020, 5),
-    labels = c("1990", "95", "2000", "05", "10", "15", "20")
+    labels = c("1990", "'95", "2000", "'05", "'10", "'15", "'20")
   ) +
   scale_y_continuous(
     labels = seq(0, 100, 25),
@@ -116,7 +116,7 @@ ggplot(
   scale_x_continuous(
     breaks = seq(2010, 2020),
     limits = c(2010, 2020),
-    labels = c("2010", seq(11, 20))
+    labels = c("2010", paste0("'", seq(11, 20)))
   ) +
   scale_y_continuous(
     breaks = seq(-6, 4, 2),
