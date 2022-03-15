@@ -1,6 +1,6 @@
 # Overview
 
-This article seeks to explain why relying solely on domestic travelers may not recover Bali's tourism secotr, especially the accommodation industry. Read the article on [this link](https://www.thejakartapost.com/business/2022/01/18/domestic-travelers-not-enough-to-revive-bali-tourism.html).
+This article seeks to explain why relying solely on domestic travelers may not recover Bali's tourism sector, especially the accommodation industry. Read the story on [this link](https://www.thejakartapost.com/business/2022/01/18/domestic-travelers-not-enough-to-revive-bali-tourism.html).
 
 
 # Data

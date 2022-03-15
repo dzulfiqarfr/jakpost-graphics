@@ -1,6 +1,6 @@
 # Overview
 
-This story seeks to describe the concentration of service workers in traditional sectors, which offer relatively low pay. Most workers in such sectors had a low educational attainment. Read the story on [this link](https://www.thejakartapost.com/business/2022/03/04/covid-19-pulls-more-workers-into-low-paying-service-sector-jobs.html).
+This project seeks to describe the concentration of service workers in traditional sectors, which offer relatively low pay. Most workers in such sectors had a low educational attainment. Read the story on [this link](https://www.thejakartapost.com/business/2022/03/04/covid-19-pulls-more-workers-into-low-paying-service-sector-jobs.html).
 
 
 # Data

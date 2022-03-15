@@ -1,6 +1,6 @@
 # Overview
 
-This article seeks to describe how the uneven rate of vaccination against COVID-19 may have led to a global recovery that leaves poor countries behind. Read the article on [this link](https://www.thejakartapost.com/news/2021/08/01/slow-vaccination-takes-toll-on-indonesia-in-uneven-global-recovery.html).
+This project seeks to describe how the uneven rate of vaccination against COVID-19 may have led to a global recovery that leaves poor countries behind. Read the story on [this link](https://www.thejakartapost.com/news/2021/08/01/slow-vaccination-takes-toll-on-indonesia-in-uneven-global-recovery.html).
 
 
 # Data

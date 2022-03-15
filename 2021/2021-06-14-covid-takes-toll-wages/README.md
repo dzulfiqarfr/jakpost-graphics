@@ -1,6 +1,6 @@
 # Overview
 
-This article seeks to describe the COVID-19 pandemic's impact on wages across provinces and sectors. Read the article on [this link](https://www.thejakartapost.com/news/2021/06/14/covid-19-takes-severe-toll-on-wages.html).
+This project seeks to describe the COVID-19 pandemic's impact on wages across provinces and sectors. Read the story on [this link](https://www.thejakartapost.com/news/2021/06/14/covid-19-takes-severe-toll-on-wages.html).
 
 
 # Data
@@ -12,8 +12,6 @@ Average net wage and minimum wage by province | [BPS](https://www.bps.go.id/pres
 Unemployment rate | [BPS](https://bps.go.id/indicator/6/529/1/penduduk-berumur-15-tahun-ke-atas-menurut-jenis-kegiatan.html) |  
 Gross value added by sector | [BPS](https://bps.go.id/indicator/11/104/1/-seri-2010-laju-pertumbuhan-pdb-seri-2010.html) |  
 Consumer price index | [World Bank](https://data.worldbank.org/indicator/FP.CPI.TOTL?locations=ID) |  
-
-Since the average net wage and minimum wage by province data are stored in a PDF, I used Tabula to extract it and Google Sheets to clean it.
 
 
 # Changelog

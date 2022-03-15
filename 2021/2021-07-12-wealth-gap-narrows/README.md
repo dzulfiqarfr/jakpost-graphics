@@ -1,6 +1,6 @@
 # Overview
 
-This article seeks to describe how the pandemic affected both wealth distribution and growth in Indonesia. Read the article on [this link](https://www.thejakartapost.com/news/2021/07/12/wealth-gap-narrows-in-indonesia-as-stock-market-slumps-house-prices-grow.html).
+This project seeks to describe how the pandemic affected both wealth distribution and growth in Indonesia. Read the story on [this link](https://www.thejakartapost.com/news/2021/07/12/wealth-gap-narrows-in-indonesia-as-stock-market-slumps-house-prices-grow.html).
 
 
 # Data

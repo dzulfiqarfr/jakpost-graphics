@@ -1,6 +1,6 @@
 # Overview
 
-This project seeks to describe the relationship between economic development and population concentration in Java between 1971 and 2020. You can read the article on [this link](https://www.thejakartapost.com/news/2021/05/23/indonesia-remains-java-centric-despite-jokowis-infrastructure-campaign.html).
+This project seeks to describe the concentration of population and economic development in Java between 1971 and 2020. You can read the story on [this link](https://www.thejakartapost.com/news/2021/05/23/indonesia-remains-java-centric-despite-jokowis-infrastructure-campaign.html).
 
 
 # Data
@@ -11,8 +11,6 @@ Population (1971-2010) | [Statistics Indonesia (BPS)](https://www.bps.go.id/stat
 Population (2020) | [BPS](https://www.bps.go.id/pressrelease/2021/01/21/1854/hasil-sensus-penduduk-2020.html) |  
 Gross regional domestic product (GRDP) | [BPS](https://www.bps.go.id/indicator/171/533/1/-seri-2010-2-pdrb-atas-dasar-harga-konstan-menurut-pengeluaran-2010-100-.html) |  
 Migration | [BPS](https://bps.go.id/publication/2020/12/02/725d484ca73434e95d4d4b9d/profil-migran-hasil-survei-sosial-ekonomi-nasional-2019.html) |  
-
-The 2020 population and migration data are stored in PDFs, so I had to extract them using Tabula. I cleaned these data using Google Sheets.
 
 
 # Changelog

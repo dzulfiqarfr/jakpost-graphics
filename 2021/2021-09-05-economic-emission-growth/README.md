@@ -1,6 +1,6 @@
 # Overview
 
-This article seeks to describe the lack of progress in decoupling economic development from emission by Indonesia. It also seeks to gauge how emission negatively affect the country's human development. Read the article on [this link](https://www.thejakartapost.com/news/2021/09/03/indonesia-lags-behind-in-decoupling-economic-and-emissions-growth.html).
+This project seeks to describe the lack of progress in decoupling economic development from emission by Indonesia. It also seeks to gauge how emission negatively affect the country's human development. Read the story on [this link](https://www.thejakartapost.com/news/2021/09/03/indonesia-lags-behind-in-decoupling-economic-and-emissions-growth.html).
 
 
 # Data
