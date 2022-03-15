@@ -5,18 +5,18 @@
    height="309.86908pt"
    viewBox="0 0 561.31519 309.86908"
    version="1.1"
-   id="svg2018"
+   id="svg1475"
    sodipodi:docname="fdi-china-us.svg"
    inkscape:export-filename="C:\Users\dzulf\Documents\projects\jakpost-graphics\2022\2022-01-04-trade-investment-china-us\result\fdi-china-us.png"
-   inkscape:export-xdpi="164.20787"
-   inkscape:export-ydpi="164.20787"
+   inkscape:export-xdpi="160.00002"
+   inkscape:export-ydpi="160.00002"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
-     id="namedview2020"
+     id="namedview1477"
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
@@ -25,20 +25,20 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="1.1195857"
-     inkscape:cx="376.92513"
-     inkscape:cy="176.85113"
+     inkscape:zoom="1.6757813"
+     inkscape:cx="373.85548"
+     inkscape:cy="235.11422"
      inkscape:window-width="1920"
      inkscape:window-height="1046"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg2018" />
+     inkscape:current-layer="svg1475" />
   <defs
-     id="defs1864">
+     id="defs1321">
     <style
        type="text/css"
-       id="style1862"><![CDATA[
+       id="style1319"><![CDATA[
     .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
       fill: none;
       stroke: #000000;
@@ -52,11 +52,11 @@
      width="100%"
      height="100%"
      style="fill:#ffffff;stroke:none"
-     id="rect1866"
+     id="rect1323"
      x="-7.5616012"
      y="-6.9176173" />
   <defs
-     id="defs1871">
+     id="defs1328">
     <clipPath
        id="cpMC4wMHw1NzYuMDB8MC4wMHwzMjQuMDA=">
       <rect
@@ -64,12 +64,12 @@
          y="0"
          width="576"
          height="324"
-         id="rect1868" />
+         id="rect1325" />
     </clipPath>
   </defs>
   <g
      clip-path="url(#cpMC4wMHw1NzYuMDB8MC4wMHwzMjQuMDA=)"
-     id="g1875"
+     id="g1332"
      transform="translate(-7.5616012,-6.9176171)">
     <rect
        x="0"
@@ -77,10 +77,10 @@
        width="576"
        height="324"
        style="fill:#ffffff;stroke:none;stroke-width:1.07"
-       id="rect1873" />
+       id="rect1330" />
   </g>
   <defs
-     id="defs1880">
+     id="defs1337">
     <clipPath
        id="cpNy4wOXw1NTQuMjB8NDYuNTh8MjcyLjM3">
       <rect
@@ -88,12 +88,12 @@
          y="46.580002"
          width="547.10999"
          height="225.78999"
-         id="rect1877" />
+         id="rect1334" />
     </clipPath>
   </defs>
   <g
      clip-path="url(#cpNy4wOXw1NTQuMjB8NDYuNTh8MjcyLjM3)"
-     id="g1902"
+     id="g1359"
      transform="translate(-7.0900002,-6.9176171)">
     <rect
        x="7.0900002"
@@ -101,58 +101,61 @@
        width="547.10999"
        height="225.78999"
        style="fill:#ffffff;stroke:none;stroke-width:1.07"
-       id="rect1882" />
+       id="rect1339" />
     <polyline
        points="7.09,262.11 554.20,262.11 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline1884" />
+       id="polyline1341" />
     <polyline
        points="7.09,221.05 554.20,221.05 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline1886" />
+       id="polyline1343" />
     <polyline
        points="7.09,180.00 554.20,180.00 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline1888" />
+       id="polyline1345" />
     <polyline
        points="7.09,138.95 554.20,138.95 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline1890" />
+       id="polyline1347" />
     <polyline
        points="7.09,97.89 554.20,97.89 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline1892" />
+       id="polyline1349" />
     <polyline
        points="7.09,56.84 554.20,56.84 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline1894" />
+       id="polyline1351" />
     <line
        x1="7.0900002"
        y1="138.95"
        x2="554.20001"
        y2="138.95"
        style="stroke-width:1.16;stroke-linecap:butt"
-       id="line1896" />
+       id="line1353" />
     <path
-       style="color:#000000;fill:#e91e63;stroke:#ffffff;stroke-width:0.75;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       style="color:#000000;fill:#c83200;stroke:#ffffff;stroke-width:0.75;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        d="m 429.03516,67.783203 -49.73047,28.830078 a 1.6251625,1.6251625 0 0 0 -0.0957,0.06055 l -49.33593,33.367189 -49,0.63085 -49.4961,-15.20507 a 1.6251625,1.6251625 0 0 0 -1.09765,0.0508 l -49.34571,20.40234 -49.32422,-5.46484 a 1.6251625,1.6251625 0 0 0 -0.25976,-0.008 l -49.652344,2.45507 -49.644532,-2.84375 -0.185547,3.24414 49.730469,2.84961 a 1.6251625,1.6251625 0 0 0 0.171875,0 l 49.611329,-2.45312 49.60937,5.49609 a 1.6251625,1.6251625 0 0 0 0.80079,-0.11328 l 49.18945,-20.33789 49.18164,15.10938 a 1.6251625,1.6251625 0 0 0 0.49805,0.0723 l 49.74023,-0.64062 a 1.6251625,1.6251625 0 0 0 0.89063,-0.2793 l 49.69335,-33.60742 48.5625,-28.154296 48.85743,52.156246 a 1.6251625,1.6251625 0 0 0 1.24804,0.51367 l 49.74024,-1.91015 -0.125,-3.24805 -48.99805,1.88281 -49.23437,-52.560542 a 1.6251625,1.6251625 0 0 0 -2,-0.294922 z"
-       id="polyline1898" />
+       id="polyline1355" />
     <path
-       style="color:#000000;fill:#0d47a1;stroke:#ffffff;stroke-width:0.75;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       style="color:#000000;fill:#193264;stroke:#ffffff;stroke-width:0.75;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        d="m 480.00195,111.77734 a 1.6251625,1.6251625 0 0 0 -1.88476,0.88477 l -48.97071,104.73633 -48.06054,-29.3125 -49.63477,-43.48828 a 1.6251625,1.6251625 0 0 0 -0.48437,-0.29297 l -49.74024,-19.25 a 1.6251625,1.6251625 0 0 0 -1.51953,0.18554 l -48.76953,34.23829 -48.78516,-37.03321 a 1.6251625,1.6251625 0 0 0 -0.92187,-0.33008 l -49.74024,-1.83007 a 1.6251625,1.6251625 0 0 0 -0.81445,0.18554 l -49.064452,25.67578 -49.025391,-20.44531 -1.251953,2.99805 49.730469,20.74023 a 1.6251625,1.6251625 0 0 0 1.378906,-0.0605 l 49.357421,-25.83008 48.79688,1.79687 49.32031,37.43946 a 1.6251625,1.6251625 0 0 0 1.91601,0.0352 l 49.0293,-34.42187 48.66211,18.83398 49.52344,43.39063 a 1.6251625,1.6251625 0 0 0 0.22461,0.16406 l 49.73047,30.33008 a 1.6251625,1.6251625 0 0 0 2.31836,-0.69922 l 49.16601,-105.15234 48.42969,12.67578 0.82422,-3.14258 z"
-       id="polyline1900" />
+       id="polyline1357" />
   </g>
   <g
      clip-path="url(#cpMC4wMHw1NzYuMDB8MC4wMHwzMjQuMDA=)"
-     id="g2016"
-     transform="translate(-7.5616012,-6.9176171)">
+     id="g1473"
+     transform="translate(-7.5616012,-6.9176171)"
+     inkscape:export-filename="C:\Users\dzulf\Documents\projects\jakpost-graphics\2022\2022-01-04-trade-investment-china-us\result\fdi-china-us.png"
+     inkscape:export-xdpi="164.18584"
+     inkscape:export-ydpi="164.18584">
     <text
        x="559.13"
        y="266.04001"
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="9.7799997"
        lengthAdjust="spacingAndGlyphs"
-       id="text1904"
+       id="text1361"
        transform="translate(0.47160105)">-6</text>
     <text
        x="559.13"
@@ -160,7 +163,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="9.7799997"
        lengthAdjust="spacingAndGlyphs"
-       id="text1906"
+       id="text1363"
        transform="translate(0.47160105)">-4</text>
     <text
        x="559.13"
@@ -168,7 +171,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="9.7799997"
        lengthAdjust="spacingAndGlyphs"
-       id="text1908"
+       id="text1365"
        transform="translate(0.47160105)">-2</text>
     <text
        x="559.13"
@@ -176,7 +179,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="6.1199999"
        lengthAdjust="spacingAndGlyphs"
-       id="text1910"
+       id="text1367"
        transform="translate(0.47160105)">0</text>
     <text
        x="559.13"
@@ -184,7 +187,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="6.1199999"
        lengthAdjust="spacingAndGlyphs"
-       id="text1912"
+       id="text1369"
        transform="translate(0.47160105)">2</text>
     <text
        x="559.13"
@@ -192,62 +195,62 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="6.1199999"
        lengthAdjust="spacingAndGlyphs"
-       id="text1914"
+       id="text1371"
        transform="translate(0.47160105)">4</text>
     <polyline
        points="31.96,275.11 31.96,272.37 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline1916"
+       id="polyline1373"
        transform="translate(0.47160105)" />
     <polyline
        points="81.69,275.11 81.69,272.37 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline1918"
+       id="polyline1375"
        transform="translate(0.47160105)" />
     <polyline
        points="131.43,275.11 131.43,272.37 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline1920"
+       id="polyline1377"
        transform="translate(0.47160105)" />
     <polyline
        points="181.17,275.11 181.17,272.37 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline1922"
+       id="polyline1379"
        transform="translate(0.47160105)" />
     <polyline
        points="230.90,275.11 230.90,272.37 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline1924"
+       id="polyline1381"
        transform="translate(0.47160105)" />
     <polyline
        points="280.64,275.11 280.64,272.37 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline1926"
+       id="polyline1383"
        transform="translate(0.47160105)" />
     <polyline
        points="330.38,275.11 330.38,272.37 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline1928"
+       id="polyline1385"
        transform="translate(0.47160105)" />
     <polyline
        points="380.12,275.11 380.12,272.37 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline1930"
+       id="polyline1387"
        transform="translate(0.47160105)" />
     <polyline
        points="429.85,275.11 429.85,272.37 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline1932"
+       id="polyline1389"
        transform="translate(0.47160105)" />
     <polyline
        points="479.59,275.11 479.59,272.37 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline1934"
+       id="polyline1391"
        transform="translate(0.47160105)" />
     <polyline
        points="529.33,275.11 529.33,272.37 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline1936"
+       id="polyline1393"
        transform="translate(0.47160105)" />
     <text
        x="31.959999"
@@ -256,7 +259,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="24.48"
        lengthAdjust="spacingAndGlyphs"
-       id="text1938"
+       id="text1395"
        transform="translate(0.47160105)">2010</text>
     <text
        x="81.690002"
@@ -265,7 +268,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="13.53"
        lengthAdjust="spacingAndGlyphs"
-       id="text1940"
+       id="text1397"
        transform="translate(0.47160105)">'11</text>
     <text
        x="131.42999"
@@ -274,7 +277,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="14.34"
        lengthAdjust="spacingAndGlyphs"
-       id="text1942"
+       id="text1399"
        transform="translate(0.47160105)">'12</text>
     <text
        x="181.17"
@@ -283,7 +286,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="14.34"
        lengthAdjust="spacingAndGlyphs"
-       id="text1944"
+       id="text1401"
        transform="translate(0.47160105)">'13</text>
     <text
        x="230.89999"
@@ -292,7 +295,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="14.34"
        lengthAdjust="spacingAndGlyphs"
-       id="text1946"
+       id="text1403"
        transform="translate(0.47160105)">'14</text>
     <text
        x="280.64001"
@@ -301,7 +304,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="14.34"
        lengthAdjust="spacingAndGlyphs"
-       id="text1948"
+       id="text1405"
        transform="translate(0.47160105)">'15</text>
     <text
        x="330.38"
@@ -310,7 +313,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="14.34"
        lengthAdjust="spacingAndGlyphs"
-       id="text1950"
+       id="text1407"
        transform="translate(0.47160105)">'16</text>
     <text
        x="380.12"
@@ -319,7 +322,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="14.34"
        lengthAdjust="spacingAndGlyphs"
-       id="text1952"
+       id="text1409"
        transform="translate(0.47160105)">'17</text>
     <text
        x="429.85001"
@@ -328,7 +331,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="14.34"
        lengthAdjust="spacingAndGlyphs"
-       id="text1954"
+       id="text1411"
        transform="translate(0.47160105)">'18</text>
     <text
        x="479.59"
@@ -337,7 +340,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="14.34"
        lengthAdjust="spacingAndGlyphs"
-       id="text1956"
+       id="text1413"
        transform="translate(0.47160105)">'19</text>
     <text
        x="529.33002"
@@ -346,43 +349,43 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="14.34"
        lengthAdjust="spacingAndGlyphs"
-       id="text1958"
+       id="text1415"
        transform="translate(0.47160105)">'20</text>
     <line
        x1="32.540001"
        y1="69.150002"
        x2="46.369999"
        y2="69.150002"
-       style="stroke:#e91e63;stroke-width:2.67;stroke-linecap:butt"
-       id="line1960" />
+       style="stroke:#c83200;stroke-width:2.67;stroke-linecap:butt"
+       id="line1417" />
     <line
        x1="32.540001"
        y1="86.43"
        x2="46.369999"
        y2="86.43"
-       style="stroke:#0d47a1;stroke-width:2.67;stroke-linecap:butt"
-       id="line1962" />
+       style="stroke:#193264;stroke-width:2.67;stroke-linecap:butt"
+       id="line1419" />
     <text
        x="54.07"
        y="73.089996"
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="28.74"
        lengthAdjust="spacingAndGlyphs"
-       id="text1964">China</text>
+       id="text1421">China</text>
     <text
        x="54.07"
        y="90.370003"
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="66.059998"
        lengthAdjust="spacingAndGlyphs"
-       id="text1966">United States</text>
+       id="text1423">United States</text>
     <text
        x="7.0900002"
        y="33.98"
        style="font-size:12.5px;font-family:Arial;fill:#757575"
        textLength="19.450001"
        lengthAdjust="spacingAndGlyphs"
-       id="text1968"
+       id="text1425"
        transform="translate(-0.48045419)">Net</text>
     <text
        x="30"
@@ -390,7 +393,7 @@
        style="font-size:12.5px;font-family:Arial;fill:#757575"
        textLength="38.200001"
        lengthAdjust="spacingAndGlyphs"
-       id="text1970"
+       id="text1427"
        transform="translate(-0.48045419)">foreign</text>
     <text
        x="71.68"
@@ -398,7 +401,7 @@
        style="font-size:12.5px;font-family:Arial;fill:#757575"
        textLength="30.559999"
        lengthAdjust="spacingAndGlyphs"
-       id="text1972"
+       id="text1429"
        transform="translate(-0.48045419)">direct</text>
     <text
        x="105.71"
@@ -406,7 +409,7 @@
        style="font-size:12.5px;font-family:Arial;fill:#757575"
        textLength="60.419998"
        lengthAdjust="spacingAndGlyphs"
-       id="text1974"
+       id="text1431"
        transform="translate(-0.48045419)">investment</text>
     <text
        x="169.60001"
@@ -414,7 +417,7 @@
        style="font-size:12.5px;font-family:Arial;fill:#757575"
        textLength="9.7299995"
        lengthAdjust="spacingAndGlyphs"
-       id="text1976"
+       id="text1433"
        transform="translate(-0.48045419)">in</text>
     <text
        x="182.8"
@@ -422,7 +425,7 @@
        style="font-size:12.5px;font-family:Arial;fill:#757575"
        textLength="54.189999"
        lengthAdjust="spacingAndGlyphs"
-       id="text1978"
+       id="text1435"
        transform="translate(-0.48045419)">Indonesia</text>
     <text
        x="240.45"
@@ -430,7 +433,7 @@
        style="font-size:12.5px;font-family:Arial;fill:#757575"
        textLength="13.2"
        lengthAdjust="spacingAndGlyphs"
-       id="text1980"
+       id="text1437"
        transform="translate(-0.48045419)">by</text>
     <text
        x="257.12"
@@ -438,7 +441,7 @@
        style="font-size:12.5px;font-family:Arial;fill:#757575"
        textLength="40.98"
        lengthAdjust="spacingAndGlyphs"
-       id="text1982"
+       id="text1439"
        transform="translate(-0.48045419)">country</text>
     <text
        x="301.57001"
@@ -446,7 +449,7 @@
        style="font-size:12.5px;font-family:Arial;fill:#757575"
        textLength="36.119999"
        lengthAdjust="spacingAndGlyphs"
-       id="text1984"
+       id="text1441"
        transform="translate(-0.48045419)">(billion</text>
     <text
        x="341.16"
@@ -454,7 +457,7 @@
        style="font-size:12.5px;font-family:Arial;fill:#757575"
        textLength="17.370001"
        lengthAdjust="spacingAndGlyphs"
-       id="text1986"
+       id="text1443"
        transform="translate(-0.48045419)">US</text>
     <text
        x="362"
@@ -462,7 +465,7 @@
        style="font-size:12.5px;font-family:Arial;fill:#757575"
        textLength="40.98"
        lengthAdjust="spacingAndGlyphs"
-       id="text1988"
+       id="text1445"
        transform="translate(-0.48045419)">dollars)</text>
     <text
        x="7.0900002"
@@ -470,7 +473,7 @@
        style="font-weight:bold;font-size:14px;font-family:Arial"
        textLength="33.439999"
        lengthAdjust="spacingAndGlyphs"
-       id="text1990"
+       id="text1447"
        transform="translate(-0.5193656)">More</text>
     <text
        x="44.41"
@@ -478,7 +481,7 @@
        style="font-weight:bold;font-size:14px;font-family:Arial"
        textLength="24.879999"
        lengthAdjust="spacingAndGlyphs"
-       id="text1992"
+       id="text1449"
        transform="translate(-0.5193656)">and</text>
     <text
        x="73.18"
@@ -486,7 +489,7 @@
        style="font-weight:bold;font-size:14px;font-family:Arial"
        textLength="34.23"
        lengthAdjust="spacingAndGlyphs"
-       id="text1994"
+       id="text1451"
        transform="translate(-0.5193656)">more</text>
     <text
        x="111.29"
@@ -494,7 +497,7 @@
        style="font-weight:bold;font-size:14px;font-family:Arial"
        textLength="73.879997"
        lengthAdjust="spacingAndGlyphs"
-       id="text1996"
+       id="text1453"
        transform="translate(-0.5193656)">investment</text>
     <text
        x="189.06"
@@ -502,7 +505,7 @@
        style="font-weight:bold;font-size:14px;font-family:Arial"
        textLength="31.1"
        lengthAdjust="spacingAndGlyphs"
-       id="text1998"
+       id="text1455"
        transform="translate(-0.5193656)">from</text>
     <text
        x="224.05"
@@ -510,7 +513,7 @@
        style="font-weight:bold;font-size:14px;font-family:Arial"
        textLength="38.869999"
        lengthAdjust="spacingAndGlyphs"
-       id="text2000"
+       id="text1457"
        transform="translate(-0.5193656)">China</text>
     <text
        x="7.0900002"
@@ -518,28 +521,28 @@
        style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
        textLength="36.18"
        lengthAdjust="spacingAndGlyphs"
-       id="text2002">Source:</text>
+       id="text1459">Source:</text>
     <text
        x="46.18"
        y="304.98001"
        style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
        textLength="23.93"
        lengthAdjust="spacingAndGlyphs"
-       id="text2004">Bank</text>
+       id="text1461">Bank</text>
     <text
        x="73.019997"
        y="304.98001"
        style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
        textLength="45.529999"
        lengthAdjust="spacingAndGlyphs"
-       id="text2006">Indonesia</text>
+       id="text1463">Indonesia</text>
     <text
        x="7.0900002"
        y="314.70001"
        style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
        textLength="28.59"
        lengthAdjust="spacingAndGlyphs"
-       id="text2008"
+       id="text1465"
        transform="translate(-0.05129298)">Chart:</text>
     <text
        x="38.59"
@@ -547,7 +550,7 @@
        style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
        textLength="41.43"
        lengthAdjust="spacingAndGlyphs"
-       id="text2010"
+       id="text1467"
        transform="translate(-0.05129298)">Dzulfiqar</text>
     <text
        x="82.940002"
@@ -555,7 +558,7 @@
        style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
        textLength="30.35"
        lengthAdjust="spacingAndGlyphs"
-       id="text2012"
+       id="text1469"
        transform="translate(-0.05129298)">Fathur</text>
     <text
        x="116.2"
@@ -563,7 +566,7 @@
        style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
        textLength="39.689999"
        lengthAdjust="spacingAndGlyphs"
-       id="text2014"
+       id="text1471"
        transform="translate(-0.05129298)">Rahman</text>
   </g>
 </svg>

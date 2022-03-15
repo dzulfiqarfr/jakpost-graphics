@@ -68,7 +68,7 @@ ggplot(
     position = "right"
   ) +
   scale_fill_manual(
-    values = c("China" = "#E91E63", "USA" = "#0D47A1", "Other" = "#E0E0E0"),
+    values = c("China" = "#C83200FF", "USA" = "#193264FF", "Other" = "#E0E0E0"),
     labels = c("China" = "China", "USA" = "United States", "Other" = "Other")
   ) +
   guides(fill = guide_legend(nrow = 1, override.aes = list(color = NA))) +
@@ -124,7 +124,7 @@ ggplot(
     position = "right"
   ) +
   scale_color_manual(
-    values = c("China" = "#E91E63", "United States" = "#0D47A1")
+    values = c("China" = "#C83200FF", "United States" = "#193264FF")
   ) +
   labs(
     title = "More and more investment from China",

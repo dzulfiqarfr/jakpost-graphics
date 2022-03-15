@@ -5,15 +5,18 @@
    height="327.86908pt"
    viewBox="0 0 561.2934 327.86908"
    version="1.1"
-   id="svg2914"
+   id="svg273"
    sodipodi:docname="trade-share-china-us-other.svg"
+   inkscape:export-filename="C:\Users\dzulf\Documents\projects\jakpost-graphics\2022\2022-01-04-trade-investment-china-us\result\trade-share-china-us-other.png"
+   inkscape:export-xdpi="160.00002"
+   inkscape:export-ydpi="160.00002"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
-     id="namedview2916"
+     id="namedview275"
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
@@ -22,20 +25,20 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="1.5833333"
-     inkscape:cx="516"
-     inkscape:cy="218.52632"
+     inkscape:zoom="1.345984"
+     inkscape:cx="357.73085"
+     inkscape:cy="221.39936"
      inkscape:window-width="1920"
      inkscape:window-height="1046"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg2914" />
+     inkscape:current-layer="svg273" />
   <defs
-     id="defs2645">
+     id="defs4">
     <style
        type="text/css"
-       id="style2643"><![CDATA[
+       id="style2"><![CDATA[
     .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
       fill: none;
       stroke: #000000;
@@ -49,11 +52,11 @@
      width="100%"
      height="100%"
      style="fill:#ffffff;stroke:none"
-     id="rect2647"
+     id="rect6"
      x="-7.0900002"
      y="-6.9176173" />
   <defs
-     id="defs2652">
+     id="defs11">
     <clipPath
        id="cpMC4wMHw1NzYuMDB8MC4wMHwzNDIuMDA=">
       <rect
@@ -61,12 +64,12 @@
          y="0"
          width="576"
          height="342"
-         id="rect2649" />
+         id="rect8" />
     </clipPath>
   </defs>
   <g
      clip-path="url(#cpMC4wMHw1NzYuMDB8MC4wMHwzNDIuMDA=)"
-     id="g2656"
+     id="g15"
      transform="translate(-7.09,-6.9176171)">
     <rect
        x="0"
@@ -74,10 +77,10 @@
        width="576"
        height="342"
        style="fill:#ffffff;stroke:none;stroke-width:1.07"
-       id="rect2654" />
+       id="rect13" />
   </g>
   <defs
-     id="defs2661">
+     id="defs20">
     <clipPath
        id="cpNy4wOXwyNjkuMTV8OTAuOTF8MjgwLjY0">
       <rect
@@ -85,12 +88,12 @@
          y="90.910004"
          width="262.07001"
          height="189.73"
-         id="rect2658" />
+         id="rect17" />
     </clipPath>
   </defs>
   <g
      clip-path="url(#cpNy4wOXwyNjkuMTV8OTAuOTF8MjgwLjY0)"
-     id="g2699"
+     id="g58"
      transform="translate(-7.09,-6.9176171)">
     <rect
        x="7.0900002"
@@ -98,100 +101,100 @@
        width="262.07001"
        height="189.73"
        style="fill:#ffffff;stroke:none;stroke-width:1.07"
-       id="rect2663" />
+       id="rect22" />
     <polyline
        points="7.09,280.64 269.15,280.64 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2665" />
+       id="polyline24" />
     <polyline
        points="7.09,233.21 269.15,233.21 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2667" />
+       id="polyline26" />
     <polyline
        points="7.09,185.78 269.15,185.78 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2669" />
+       id="polyline28" />
     <polyline
        points="7.09,138.34 269.15,138.34 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2671" />
+       id="polyline30" />
     <polyline
        points="7.09,90.91 269.15,90.91 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2673" />
+       id="polyline32" />
     <polygon
-       points="34.37,90.91 42.05,90.91 49.74,90.91 57.43,90.91 65.11,90.91 72.8,90.91 80.48,90.91 88.17,90.91 95.85,90.91 103.54,90.91 111.22,90.91 118.91,90.91 126.59,90.91 134.28,90.91 141.96,90.91 149.65,90.91 157.33,90.91 165.02,90.91 172.7,90.91 180.39,90.91 188.07,90.91 195.76,90.91 203.45,90.91 211.13,90.91 218.82,90.91 226.5,90.91 234.19,90.91 241.87,90.91 249.56,90.91 257.24,90.91 257.24,222.04 249.56,228.78 241.87,232.64 234.19,234.72 226.5,237.37 218.82,241.13 211.13,243.82 203.45,240.79 195.76,244.13 188.07,243.87 180.39,244.57 172.7,244.18 165.02,246.42 157.33,245.19 149.65,243.74 141.96,243.98 134.28,245.15 126.59,245.87 118.91,245.88 111.22,247.08 103.54,246.26 95.85,245.88 88.17,246.16 80.48,247.33 72.8,246.93 65.11,246.96 57.43,246.77 49.74,247.26 42.05,248.16 34.37,250.05 26.68,249.61 19,245.83 19,90.91 26.68,90.91 "
+       points="95.85,90.91 103.54,90.91 111.22,90.91 118.91,90.91 126.59,90.91 134.28,90.91 141.96,90.91 149.65,90.91 157.33,90.91 165.02,90.91 172.7,90.91 180.39,90.91 188.07,90.91 195.76,90.91 203.45,90.91 211.13,90.91 218.82,90.91 226.5,90.91 234.19,90.91 241.87,90.91 249.56,90.91 257.24,90.91 257.24,222.04 249.56,228.78 241.87,232.64 234.19,234.72 226.5,237.37 218.82,241.13 211.13,243.82 203.45,240.79 195.76,244.13 188.07,243.87 180.39,244.57 172.7,244.18 165.02,246.42 157.33,245.19 149.65,243.74 141.96,243.98 134.28,245.15 126.59,245.87 118.91,245.88 111.22,247.08 103.54,246.26 95.85,245.88 88.17,246.16 80.48,247.33 72.8,246.93 65.11,246.96 57.43,246.77 49.74,247.26 42.05,248.16 34.37,250.05 26.68,249.61 19,245.83 19,90.91 26.68,90.91 34.37,90.91 42.05,90.91 49.74,90.91 57.43,90.91 65.11,90.91 72.8,90.91 80.48,90.91 88.17,90.91 "
        style="fill:#e0e0e0;fill-opacity:0.75;stroke:none;stroke-width:0"
-       id="polygon2675" />
+       id="polygon34" />
     <polyline
        points="19.00,90.91 26.68,90.91 34.37,90.91 42.05,90.91 49.74,90.91 57.43,90.91 65.11,90.91 72.80,90.91 80.48,90.91 88.17,90.91 95.85,90.91 103.54,90.91 111.22,90.91 118.91,90.91 126.59,90.91 134.28,90.91 141.96,90.91 149.65,90.91 157.33,90.91 165.02,90.91 172.70,90.91 180.39,90.91 188.07,90.91 195.76,90.91 203.45,90.91 211.13,90.91 218.82,90.91 226.50,90.91 234.19,90.91 241.87,90.91 249.56,90.91 257.24,90.91 "
        style="stroke:#ffffff;stroke-width:1.07"
-       id="polyline2677" />
+       id="polyline36" />
     <polygon
-       points="34.37,250.05 42.05,248.16 49.74,247.26 57.43,246.77 65.11,246.96 72.8,246.93 80.48,247.33 88.17,246.16 95.85,245.88 103.54,246.26 111.22,247.08 118.91,245.88 126.59,245.87 134.28,245.15 141.96,243.98 149.65,243.74 157.33,245.19 165.02,246.42 172.7,244.18 180.39,244.57 188.07,243.87 195.76,244.13 203.45,240.79 211.13,243.82 218.82,241.13 226.5,237.37 234.19,234.72 241.87,232.64 249.56,228.78 257.24,222.04 257.24,243.73 249.56,249 241.87,252.08 234.19,254.74 226.5,258.6 218.82,261.66 211.13,261.67 203.45,257.15 195.76,259.02 188.07,259.25 180.39,261.77 172.7,261.92 165.02,264.53 157.33,264.55 149.65,264.94 141.96,265.89 134.28,268.44 126.59,268.83 118.91,271.01 111.22,273.23 103.54,272.19 95.85,272.81 88.17,273.53 80.48,272.73 72.8,272.81 65.11,273.37 57.43,274.38 49.74,274.2 42.05,272.84 34.37,272.89 26.68,274.48 19,275.75 19,245.83 26.68,249.61 "
-       style="fill:#0d47a1;fill-opacity:0.75;stroke:none;stroke-width:0"
-       id="polygon2679" />
+       points="95.85,245.88 103.54,246.26 111.22,247.08 118.91,245.88 126.59,245.87 134.28,245.15 141.96,243.98 149.65,243.74 157.33,245.19 165.02,246.42 172.7,244.18 180.39,244.57 188.07,243.87 195.76,244.13 203.45,240.79 211.13,243.82 218.82,241.13 226.5,237.37 234.19,234.72 241.87,232.64 249.56,228.78 257.24,222.04 257.24,243.73 249.56,249 241.87,252.08 234.19,254.74 226.5,258.6 218.82,261.66 211.13,261.67 203.45,257.15 195.76,259.02 188.07,259.25 180.39,261.77 172.7,261.92 165.02,264.53 157.33,264.55 149.65,264.94 141.96,265.89 134.28,268.44 126.59,268.83 118.91,271.01 111.22,273.23 103.54,272.19 95.85,272.81 88.17,273.53 80.48,272.73 72.8,272.81 65.11,273.37 57.43,274.38 49.74,274.2 42.05,272.84 34.37,272.89 26.68,274.48 19,275.75 19,245.83 26.68,249.61 34.37,250.05 42.05,248.16 49.74,247.26 57.43,246.77 65.11,246.96 72.8,246.93 80.48,247.33 88.17,246.16 "
+       style="fill:#193264;fill-opacity:0.75;stroke:none;stroke-width:0"
+       id="polygon38" />
     <polyline
        points="19.00,245.83 26.68,249.61 34.37,250.05 42.05,248.16 49.74,247.26 57.43,246.77 65.11,246.96 72.80,246.93 80.48,247.33 88.17,246.16 95.85,245.88 103.54,246.26 111.22,247.08 118.91,245.88 126.59,245.87 134.28,245.15 141.96,243.98 149.65,243.74 157.33,245.19 165.02,246.42 172.70,244.18 180.39,244.57 188.07,243.87 195.76,244.13 203.45,240.79 211.13,243.82 218.82,241.13 226.50,237.37 234.19,234.72 241.87,232.64 249.56,228.78 257.24,222.04 "
        style="stroke:#ffffff;stroke-width:1.07"
-       id="polyline2681" />
+       id="polyline40" />
     <polygon
-       points="34.37,272.89 42.05,272.84 49.74,274.2 57.43,274.38 65.11,273.37 72.8,272.81 80.48,272.73 88.17,273.53 95.85,272.81 103.54,272.19 111.22,273.23 118.91,271.01 126.59,268.83 134.28,268.44 141.96,265.89 149.65,264.94 157.33,264.55 165.02,264.53 172.7,261.92 180.39,261.77 188.07,259.25 195.76,259.02 203.45,257.15 211.13,261.67 218.82,261.66 226.5,258.6 234.19,254.74 241.87,252.08 249.56,249 257.24,243.73 257.24,280.64 249.56,280.64 241.87,280.64 234.19,280.64 226.5,280.64 218.82,280.64 211.13,280.64 203.45,280.64 195.76,280.64 188.07,280.64 180.39,280.64 172.7,280.64 165.02,280.64 157.33,280.64 149.65,280.64 141.96,280.64 134.28,280.64 126.59,280.64 118.91,280.64 111.22,280.64 103.54,280.64 95.85,280.64 88.17,280.64 80.48,280.64 72.8,280.64 65.11,280.64 57.43,280.64 49.74,280.64 42.05,280.64 34.37,280.64 26.68,280.64 19,280.64 19,275.75 26.68,274.48 "
-       style="fill:#e91e63;fill-opacity:0.75;stroke:none;stroke-width:0"
-       id="polygon2683" />
+       points="95.85,272.81 103.54,272.19 111.22,273.23 118.91,271.01 126.59,268.83 134.28,268.44 141.96,265.89 149.65,264.94 157.33,264.55 165.02,264.53 172.7,261.92 180.39,261.77 188.07,259.25 195.76,259.02 203.45,257.15 211.13,261.67 218.82,261.66 226.5,258.6 234.19,254.74 241.87,252.08 249.56,249 257.24,243.73 257.24,280.64 249.56,280.64 241.87,280.64 234.19,280.64 226.5,280.64 218.82,280.64 211.13,280.64 203.45,280.64 195.76,280.64 188.07,280.64 180.39,280.64 172.7,280.64 165.02,280.64 157.33,280.64 149.65,280.64 141.96,280.64 134.28,280.64 126.59,280.64 118.91,280.64 111.22,280.64 103.54,280.64 95.85,280.64 88.17,280.64 80.48,280.64 72.8,280.64 65.11,280.64 57.43,280.64 49.74,280.64 42.05,280.64 34.37,280.64 26.68,280.64 19,280.64 19,275.75 26.68,274.48 34.37,272.89 42.05,272.84 49.74,274.2 57.43,274.38 65.11,273.37 72.8,272.81 80.48,272.73 88.17,273.53 "
+       style="fill:#c83200;fill-opacity:0.75;stroke:none;stroke-width:0"
+       id="polygon42" />
     <polyline
        points="19.00,275.75 26.68,274.48 34.37,272.89 42.05,272.84 49.74,274.20 57.43,274.38 65.11,273.37 72.80,272.81 80.48,272.73 88.17,273.53 95.85,272.81 103.54,272.19 111.22,273.23 118.91,271.01 126.59,268.83 134.28,268.44 141.96,265.89 149.65,264.94 157.33,264.55 165.02,264.53 172.70,261.92 180.39,261.77 188.07,259.25 195.76,259.02 203.45,257.15 211.13,261.67 218.82,261.66 226.50,258.60 234.19,254.74 241.87,252.08 249.56,249.00 257.24,243.73 "
        style="stroke:#ffffff;stroke-width:1.07"
-       id="polyline2685" />
+       id="polyline44" />
     <line
        x1="111.22"
        y1="280.64001"
        x2="111.22"
        y2="90.910004"
        style="stroke-width:1.07;stroke-linecap:butt"
-       id="line2687" />
+       id="line46" />
     <line
        x1="180.39"
        y1="280.64001"
        x2="180.39"
        y2="90.910004"
        style="stroke-width:1.07;stroke-linecap:butt"
-       id="line2689" />
+       id="line48" />
     <text
        x="78.879997"
        y="104.29"
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="28.74"
        lengthAdjust="spacingAndGlyphs"
-       id="text2691">China</text>
+       id="text50">China</text>
     <text
        x="78.260002"
        y="117.44"
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="29.360001"
        lengthAdjust="spacingAndGlyphs"
-       id="text2693">joined</text>
+       id="text52">joined</text>
     <text
        x="77.879997"
        y="130.59"
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="29.74"
        lengthAdjust="spacingAndGlyphs"
-       id="text2695">WTO*</text>
+       id="text54">WTO*</text>
     <text
        x="132.98"
        y="104.29"
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="43.799999"
        lengthAdjust="spacingAndGlyphs"
-       id="text2697">ACFTA**</text>
+       id="text56">ACFTA**</text>
   </g>
   <g
      clip-path="url(#cpMC4wMHw1NzYuMDB8MC4wMHwzNDIuMDA=)"
-     id="g2701"
+     id="g60"
      transform="translate(-7.09,-6.9176171)" />
   <defs
-     id="defs2706">
+     id="defs65">
     <clipPath
        id="cpMjgzLjU1fDU0NS42Mnw5MC45MXwyODAuNjQ=">
       <rect
@@ -199,12 +202,12 @@
          y="90.910004"
          width="262.07001"
          height="189.73"
-         id="rect2703" />
+         id="rect62" />
     </clipPath>
   </defs>
   <g
      clip-path="url(#cpMjgzLjU1fDU0NS42Mnw5MC45MXwyODAuNjQ=)"
-     id="g2736"
+     id="g95"
      transform="translate(-7.09,-6.9176171)">
     <rect
        x="283.54999"
@@ -212,72 +215,72 @@
        width="262.07001"
        height="189.73"
        style="fill:#ffffff;stroke:none;stroke-width:1.07"
-       id="rect2708" />
+       id="rect67" />
     <polyline
        points="283.55,280.64 545.62,280.64 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2710" />
+       id="polyline69" />
     <polyline
        points="283.55,233.21 545.62,233.21 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2712" />
+       id="polyline71" />
     <polyline
        points="283.55,185.78 545.62,185.78 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2714" />
+       id="polyline73" />
     <polyline
        points="283.55,138.34 545.62,138.34 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2716" />
+       id="polyline75" />
     <polyline
        points="283.55,90.91 545.62,90.91 "
        style="stroke:#e0e0e0;stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2718" />
+       id="polyline77" />
     <polygon
-       points="310.84,90.91 318.52,90.91 326.21,90.91 333.89,90.91 341.58,90.91 349.26,90.91 356.95,90.91 364.63,90.91 372.32,90.91 380,90.91 387.69,90.91 395.37,90.91 403.06,90.91 410.75,90.91 418.43,90.91 426.12,90.91 433.8,90.91 441.49,90.91 449.17,90.91 456.86,90.91 464.54,90.91 472.23,90.91 479.91,90.91 487.6,90.91 495.28,90.91 502.97,90.91 510.65,90.91 518.34,90.91 526.02,90.91 533.71,90.91 533.71,215.94 526.02,220.55 518.34,224.59 510.65,227.54 502.97,227.33 495.28,231.41 487.6,239.31 479.91,241.06 472.23,240.06 464.54,241.03 456.86,238.91 449.17,239.31 441.49,246.66 433.8,246.62 426.12,247.39 418.43,248.65 410.75,250.72 403.06,247.65 395.37,249.89 387.69,249.68 380,249.99 372.32,248.37 364.63,249.9 356.95,248.95 349.26,251.22 341.58,251.45 333.89,251.24 326.21,252.58 318.52,248.83 310.84,249.61 303.15,253.08 295.47,248.81 295.47,90.91 303.15,90.91 "
+       points="372.32,90.91 380,90.91 387.69,90.91 395.37,90.91 403.06,90.91 410.75,90.91 418.43,90.91 426.12,90.91 433.8,90.91 441.49,90.91 449.17,90.91 456.86,90.91 464.54,90.91 472.23,90.91 479.91,90.91 487.6,90.91 495.28,90.91 502.97,90.91 510.65,90.91 518.34,90.91 526.02,90.91 533.71,90.91 533.71,215.94 526.02,220.55 518.34,224.59 510.65,227.54 502.97,227.33 495.28,231.41 487.6,239.31 479.91,241.06 472.23,240.06 464.54,241.03 456.86,238.91 449.17,239.31 441.49,246.66 433.8,246.62 426.12,247.39 418.43,248.65 410.75,250.72 403.06,247.65 395.37,249.89 387.69,249.68 380,249.99 372.32,248.37 364.63,249.9 356.95,248.95 349.26,251.22 341.58,251.45 333.89,251.24 326.21,252.58 318.52,248.83 310.84,249.61 303.15,253.08 295.47,248.81 295.47,90.91 303.15,90.91 310.84,90.91 318.52,90.91 326.21,90.91 333.89,90.91 341.58,90.91 349.26,90.91 356.95,90.91 364.63,90.91 "
        style="fill:#e0e0e0;fill-opacity:0.75;stroke:none;stroke-width:0"
-       id="polygon2720" />
+       id="polygon79" />
     <polyline
        points="295.47,90.91 303.15,90.91 310.84,90.91 318.52,90.91 326.21,90.91 333.89,90.91 341.58,90.91 349.26,90.91 356.95,90.91 364.63,90.91 372.32,90.91 380.00,90.91 387.69,90.91 395.37,90.91 403.06,90.91 410.75,90.91 418.43,90.91 426.12,90.91 433.80,90.91 441.49,90.91 449.17,90.91 456.86,90.91 464.54,90.91 472.23,90.91 479.91,90.91 487.60,90.91 495.28,90.91 502.97,90.91 510.65,90.91 518.34,90.91 526.02,90.91 533.71,90.91 "
        style="stroke:#ffffff;stroke-width:1.07"
-       id="polyline2722" />
+       id="polyline81" />
     <polygon
-       points="310.84,249.61 318.52,248.83 326.21,252.58 333.89,251.24 341.58,251.45 349.26,251.22 356.95,248.95 364.63,249.9 372.32,248.37 380,249.99 387.69,249.68 395.37,249.89 403.06,247.65 410.75,250.72 418.43,248.65 426.12,247.39 433.8,246.62 441.49,246.66 449.17,239.31 456.86,238.91 464.54,241.03 472.23,240.06 479.91,241.06 487.6,239.31 495.28,231.41 502.97,227.33 510.65,227.54 518.34,224.59 526.02,220.55 533.71,215.94 533.71,227.52 526.02,230.87 518.34,234.86 510.65,237.4 502.97,237.56 495.28,241.54 487.6,248.03 479.91,250.3 472.23,251.56 464.54,252.61 456.86,252.08 449.17,253.21 441.49,258.26 433.8,258.84 426.12,260.02 418.43,261.43 410.75,263.92 403.06,263.4 395.37,265.92 387.69,269.35 380,269.2 372.32,270.82 364.63,274.35 356.95,273.73 349.26,273.58 341.58,273.66 333.89,272.52 326.21,274.37 318.52,275.42 310.84,274.52 303.15,274.98 295.47,274.53 295.47,248.81 303.15,253.08 "
-       style="fill:#0d47a1;fill-opacity:0.75;stroke:none;stroke-width:0"
-       id="polygon2724" />
+       points="372.32,248.37 380,249.99 387.69,249.68 395.37,249.89 403.06,247.65 410.75,250.72 418.43,248.65 426.12,247.39 433.8,246.62 441.49,246.66 449.17,239.31 456.86,238.91 464.54,241.03 472.23,240.06 479.91,241.06 487.6,239.31 495.28,231.41 502.97,227.33 510.65,227.54 518.34,224.59 526.02,220.55 533.71,215.94 533.71,227.52 526.02,230.87 518.34,234.86 510.65,237.4 502.97,237.56 495.28,241.54 487.6,248.03 479.91,250.3 472.23,251.56 464.54,252.61 456.86,252.08 449.17,253.21 441.49,258.26 433.8,258.84 426.12,260.02 418.43,261.43 410.75,263.92 403.06,263.4 395.37,265.92 387.69,269.35 380,269.2 372.32,270.82 364.63,274.35 356.95,273.73 349.26,273.58 341.58,273.66 333.89,272.52 326.21,274.37 318.52,275.42 310.84,274.52 303.15,274.98 295.47,274.53 295.47,248.81 303.15,253.08 310.84,249.61 318.52,248.83 326.21,252.58 333.89,251.24 341.58,251.45 349.26,251.22 356.95,248.95 364.63,249.9 "
+       style="fill:#193264;fill-opacity:0.75;stroke:none;stroke-width:0"
+       id="polygon83" />
     <polyline
        points="295.47,248.81 303.15,253.08 310.84,249.61 318.52,248.83 326.21,252.58 333.89,251.24 341.58,251.45 349.26,251.22 356.95,248.95 364.63,249.90 372.32,248.37 380.00,249.99 387.69,249.68 395.37,249.89 403.06,247.65 410.75,250.72 418.43,248.65 426.12,247.39 433.80,246.62 441.49,246.66 449.17,239.31 456.86,238.91 464.54,241.03 472.23,240.06 479.91,241.06 487.60,239.31 495.28,231.41 502.97,227.33 510.65,227.54 518.34,224.59 526.02,220.55 533.71,215.94 "
        style="stroke:#ffffff;stroke-width:1.07"
-       id="polyline2726" />
+       id="polyline85" />
     <polygon
-       points="310.84,274.52 318.52,275.42 326.21,274.37 333.89,272.52 341.58,273.66 349.26,273.58 356.95,273.73 364.63,274.35 372.32,270.82 380,269.2 387.69,269.35 395.37,265.92 403.06,263.4 410.75,263.92 418.43,261.43 426.12,260.02 433.8,258.84 441.49,258.26 449.17,253.21 456.86,252.08 464.54,252.61 472.23,251.56 479.91,250.3 487.6,248.03 495.28,241.54 502.97,237.56 510.65,237.4 518.34,234.86 526.02,230.87 533.71,227.52 533.71,280.64 526.02,280.64 518.34,280.64 510.65,280.64 502.97,280.64 495.28,280.64 487.6,280.64 479.91,280.64 472.23,280.64 464.54,280.64 456.86,280.64 449.17,280.64 441.49,280.64 433.8,280.64 426.12,280.64 418.43,280.64 410.75,280.64 403.06,280.64 395.37,280.64 387.69,280.64 380,280.64 372.32,280.64 364.63,280.64 356.95,280.64 349.26,280.64 341.58,280.64 333.89,280.64 326.21,280.64 318.52,280.64 310.84,280.64 303.15,280.64 295.47,280.64 295.47,274.53 303.15,274.98 "
-       style="fill:#e91e63;fill-opacity:0.75;stroke:none;stroke-width:0"
-       id="polygon2728" />
+       points="372.32,270.82 380,269.2 387.69,269.35 395.37,265.92 403.06,263.4 410.75,263.92 418.43,261.43 426.12,260.02 433.8,258.84 441.49,258.26 449.17,253.21 456.86,252.08 464.54,252.61 472.23,251.56 479.91,250.3 487.6,248.03 495.28,241.54 502.97,237.56 510.65,237.4 518.34,234.86 526.02,230.87 533.71,227.52 533.71,280.64 526.02,280.64 518.34,280.64 510.65,280.64 502.97,280.64 495.28,280.64 487.6,280.64 479.91,280.64 472.23,280.64 464.54,280.64 456.86,280.64 449.17,280.64 441.49,280.64 433.8,280.64 426.12,280.64 418.43,280.64 410.75,280.64 403.06,280.64 395.37,280.64 387.69,280.64 380,280.64 372.32,280.64 364.63,280.64 356.95,280.64 349.26,280.64 341.58,280.64 333.89,280.64 326.21,280.64 318.52,280.64 310.84,280.64 303.15,280.64 295.47,280.64 295.47,274.53 303.15,274.98 310.84,274.52 318.52,275.42 326.21,274.37 333.89,272.52 341.58,273.66 349.26,273.58 356.95,273.73 364.63,274.35 "
+       style="fill:#c83200;fill-opacity:0.75;stroke:none;stroke-width:0"
+       id="polygon87" />
     <polyline
        points="295.47,274.53 303.15,274.98 310.84,274.52 318.52,275.42 326.21,274.37 333.89,272.52 341.58,273.66 349.26,273.58 356.95,273.73 364.63,274.35 372.32,270.82 380.00,269.20 387.69,269.35 395.37,265.92 403.06,263.40 410.75,263.92 418.43,261.43 426.12,260.02 433.80,258.84 441.49,258.26 449.17,253.21 456.86,252.08 464.54,252.61 472.23,251.56 479.91,250.30 487.60,248.03 495.28,241.54 502.97,237.56 510.65,237.40 518.34,234.86 526.02,230.87 533.71,227.52 "
        style="stroke:#ffffff;stroke-width:1.07"
-       id="polyline2730" />
+       id="polyline89" />
     <line
        x1="387.69"
        y1="280.64001"
        x2="387.69"
        y2="90.910004"
        style="stroke-width:1.07;stroke-linecap:butt"
-       id="line2732" />
+       id="line91" />
     <line
        x1="456.85999"
        y1="280.64001"
        x2="456.85999"
        y2="90.910004"
        style="stroke-width:1.07;stroke-linecap:butt"
-       id="line2734" />
+       id="line93" />
   </g>
   <g
      clip-path="url(#cpMC4wMHw1NzYuMDB8MC4wMHwzNDIuMDA=)"
-     id="g2738"
+     id="g97"
      transform="translate(-7.09,-6.9176171)" />
   <defs
-     id="defs2743">
+     id="defs102">
     <clipPath
        id="cpNy4wOXwyNjkuMTV8NzQuODF8OTAuOTE=">
       <rect
@@ -285,12 +288,12 @@
          y="74.809998"
          width="262.07001"
          height="16.1"
-         id="rect2740" />
+         id="rect99" />
     </clipPath>
   </defs>
   <g
      clip-path="url(#cpNy4wOXwyNjkuMTV8NzQuODF8OTAuOTE=)"
-     id="g2747"
+     id="g106"
      transform="translate(-7.963187,-6.9176171)">
     <text
        x="7.0900002"
@@ -298,14 +301,14 @@
        style="font-weight:bold;font-size:12px;font-family:Arial;fill:#757575"
        textLength="38.009998"
        lengthAdjust="spacingAndGlyphs"
-       id="text2745">Export</text>
+       id="text104">Export</text>
   </g>
   <g
      clip-path="url(#cpMC4wMHw1NzYuMDB8MC4wMHwzNDIuMDA=)"
-     id="g2749"
+     id="g108"
      transform="translate(-7.09,-6.9176171)" />
   <defs
-     id="defs2754">
+     id="defs113">
     <clipPath
        id="cpMjgzLjU1fDU0NS42Mnw3NC44MXw5MC45MQ==">
       <rect
@@ -313,12 +316,12 @@
          y="74.809998"
          width="262.07001"
          height="16.1"
-         id="rect2751" />
+         id="rect110" />
     </clipPath>
   </defs>
   <g
      clip-path="url(#cpMjgzLjU1fDU0NS42Mnw3NC44MXw5MC45MQ==)"
-     id="g2758"
+     id="g117"
      transform="translate(-7.9102986,-6.9176171)">
     <text
        x="283.54999"
@@ -326,47 +329,47 @@
        style="font-weight:bold;font-size:12px;font-family:Arial;fill:#757575"
        textLength="37.330002"
        lengthAdjust="spacingAndGlyphs"
-       id="text2756">Import</text>
+       id="text115">Import</text>
   </g>
   <g
      clip-path="url(#cpMC4wMHw1NzYuMDB8MC4wMHwzNDIuMDA=)"
-     id="g2912"
+     id="g271"
      transform="translate(-7.09,-6.9176171)"
      inkscape:export-filename="C:\Users\dzulf\Documents\projects\jakpost-graphics\2022\2022-01-04-trade-investment-china-us\result\trade-share-china-us-other.png"
-     inkscape:export-xdpi="164.20787"
-     inkscape:export-ydpi="164.20787">
+     inkscape:export-xdpi="164.19221"
+     inkscape:export-ydpi="164.19221">
     <polyline
        points="7.09,280.64 269.15,280.64 "
        style="stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2760" />
+       id="polyline119" />
     <polyline
        points="26.68,283.38 26.68,280.64 "
        style="stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2762" />
+       id="polyline121" />
     <polyline
        points="65.11,283.38 65.11,280.64 "
        style="stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2764" />
+       id="polyline123" />
     <polyline
        points="103.54,283.38 103.54,280.64 "
        style="stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2766" />
+       id="polyline125" />
     <polyline
        points="141.96,283.38 141.96,280.64 "
        style="stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2768" />
+       id="polyline127" />
     <polyline
        points="180.39,283.38 180.39,280.64 "
        style="stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2770" />
+       id="polyline129" />
     <polyline
        points="218.82,283.38 218.82,280.64 "
        style="stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2772" />
+       id="polyline131" />
     <polyline
        points="257.24,283.38 257.24,280.64 "
        style="stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2774" />
+       id="polyline133" />
     <text
        x="26.68"
        y="293.45001"
@@ -374,7 +377,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="24.48"
        lengthAdjust="spacingAndGlyphs"
-       id="text2776">1990</text>
+       id="text135">1990</text>
     <text
        x="65.110001"
        y="293.45001"
@@ -382,7 +385,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="14.34"
        lengthAdjust="spacingAndGlyphs"
-       id="text2778">'95</text>
+       id="text137">'95</text>
     <text
        x="103.54"
        y="293.45001"
@@ -390,7 +393,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="24.48"
        lengthAdjust="spacingAndGlyphs"
-       id="text2780">2000</text>
+       id="text139">2000</text>
     <text
        x="141.96001"
        y="293.45001"
@@ -398,7 +401,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="14.34"
        lengthAdjust="spacingAndGlyphs"
-       id="text2782">'05</text>
+       id="text141">'05</text>
     <text
        x="180.39"
        y="293.45001"
@@ -406,7 +409,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="14.34"
        lengthAdjust="spacingAndGlyphs"
-       id="text2784">'10</text>
+       id="text143">'10</text>
     <text
        x="218.82001"
        y="293.45001"
@@ -414,7 +417,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="14.34"
        lengthAdjust="spacingAndGlyphs"
-       id="text2786">'15</text>
+       id="text145">'15</text>
     <text
        x="257.23999"
        y="293.45001"
@@ -422,39 +425,39 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="14.34"
        lengthAdjust="spacingAndGlyphs"
-       id="text2788">'20</text>
+       id="text147">'20</text>
     <polyline
        points="283.55,280.64 545.62,280.64 "
        style="stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2790" />
+       id="polyline149" />
     <polyline
        points="303.15,283.38 303.15,280.64 "
        style="stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2792" />
+       id="polyline151" />
     <polyline
        points="341.58,283.38 341.58,280.64 "
        style="stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2794" />
+       id="polyline153" />
     <polyline
        points="380.00,283.38 380.00,280.64 "
        style="stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2796" />
+       id="polyline155" />
     <polyline
        points="418.43,283.38 418.43,280.64 "
        style="stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2798" />
+       id="polyline157" />
     <polyline
        points="456.86,283.38 456.86,280.64 "
        style="stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2800" />
+       id="polyline159" />
     <polyline
        points="495.28,283.38 495.28,280.64 "
        style="stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2802" />
+       id="polyline161" />
     <polyline
        points="533.71,283.38 533.71,280.64 "
        style="stroke-width:1.16;stroke-linecap:butt"
-       id="polyline2804" />
+       id="polyline163" />
     <text
        x="303.14999"
        y="293.45001"
@@ -462,7 +465,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="24.48"
        lengthAdjust="spacingAndGlyphs"
-       id="text2806">1990</text>
+       id="text165">1990</text>
     <text
        x="341.57999"
        y="293.45001"
@@ -470,7 +473,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="14.34"
        lengthAdjust="spacingAndGlyphs"
-       id="text2808">'95</text>
+       id="text167">'95</text>
     <text
        x="380"
        y="293.45001"
@@ -478,7 +481,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="24.48"
        lengthAdjust="spacingAndGlyphs"
-       id="text2810">2000</text>
+       id="text169">2000</text>
     <text
        x="418.42999"
        y="293.45001"
@@ -486,7 +489,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="14.34"
        lengthAdjust="spacingAndGlyphs"
-       id="text2812">'05</text>
+       id="text171">'05</text>
     <text
        x="456.85999"
        y="293.45001"
@@ -494,7 +497,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="14.34"
        lengthAdjust="spacingAndGlyphs"
-       id="text2814">'10</text>
+       id="text173">'10</text>
     <text
        x="495.28"
        y="293.45001"
@@ -502,7 +505,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="14.34"
        lengthAdjust="spacingAndGlyphs"
-       id="text2816">'15</text>
+       id="text175">'15</text>
     <text
        x="533.71002"
        y="293.45001"
@@ -510,70 +513,70 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="14.34"
        lengthAdjust="spacingAndGlyphs"
-       id="text2818">'20</text>
+       id="text177">'20</text>
     <text
        x="550.54999"
        y="284.57999"
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="6.1199999"
        lengthAdjust="spacingAndGlyphs"
-       id="text2820">0</text>
+       id="text179">0</text>
     <text
        x="550.54999"
        y="237.14999"
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="12.24"
        lengthAdjust="spacingAndGlyphs"
-       id="text2822">25</text>
+       id="text181">25</text>
     <text
        x="550.54999"
        y="189.72"
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="12.24"
        lengthAdjust="spacingAndGlyphs"
-       id="text2824">50</text>
+       id="text183">50</text>
     <text
        x="550.54999"
        y="142.28"
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="12.24"
        lengthAdjust="spacingAndGlyphs"
-       id="text2826">75</text>
+       id="text185">75</text>
     <text
        x="550.54999"
        y="94.849998"
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="18.360001"
        lengthAdjust="spacingAndGlyphs"
-       id="text2828">100</text>
+       id="text187">100</text>
     <rect
        x="7.0900002"
        y="47.279999"
        width="15.86"
        height="15.86"
-       style="fill:#e91e63;fill-opacity:0.75;stroke:none;stroke-width:1.07;stroke-linecap:square;stroke-linejoin:miter"
-       id="rect2830" />
+       style="fill:#c83200;fill-opacity:0.75;stroke:none;stroke-width:1.07;stroke-linecap:square;stroke-linejoin:miter"
+       id="rect189" />
     <rect
        x="65.07"
        y="47.279999"
        width="15.86"
        height="15.86"
-       style="fill:#0d47a1;fill-opacity:0.75;stroke:none;stroke-width:1.07;stroke-linecap:square;stroke-linejoin:miter"
-       id="rect2832" />
+       style="fill:#193264;fill-opacity:0.75;stroke:none;stroke-width:1.07;stroke-linecap:square;stroke-linejoin:miter"
+       id="rect191" />
     <rect
        x="160.37"
        y="47.279999"
        width="15.86"
        height="15.86"
        style="fill:#e0e0e0;fill-opacity:0.75;stroke:none;stroke-width:1.07;stroke-linecap:square;stroke-linejoin:miter"
-       id="rect2834" />
+       id="rect193" />
     <text
        x="36.32"
        y="59.150002"
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="28.74"
        lengthAdjust="spacingAndGlyphs"
-       id="text2836"
+       id="text195"
        transform="translate(-6.6800005)">China</text>
     <text
        x="94.300003"
@@ -581,7 +584,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="66.059998"
        lengthAdjust="spacingAndGlyphs"
-       id="text2838"
+       id="text197"
        transform="translate(-6.6800005)">United States</text>
     <text
        x="189.59"
@@ -589,7 +592,7 @@
        style="font-size:11px;font-family:Arial;fill:#757575"
        textLength="27.530001"
        lengthAdjust="spacingAndGlyphs"
-       id="text2840"
+       id="text199"
        transform="translate(-6.6800005)">Other</text>
     <text
        x="7.0900002"
@@ -597,7 +600,7 @@
        style="font-size:12.5px;font-family:Arial;fill:#757575"
        textLength="33.34"
        lengthAdjust="spacingAndGlyphs"
-       id="text2842"
+       id="text201"
        transform="translate(-0.56125909)">Share</text>
     <text
        x="43.900002"
@@ -605,7 +608,7 @@
        style="font-size:12.5px;font-family:Arial;fill:#757575"
        textLength="10.42"
        lengthAdjust="spacingAndGlyphs"
-       id="text2844"
+       id="text203"
        transform="translate(-0.56125909)">of</text>
     <text
        x="57.790001"
@@ -613,7 +616,7 @@
        style="font-size:12.5px;font-family:Arial;fill:#757575"
        textLength="62.82"
        lengthAdjust="spacingAndGlyphs"
-       id="text2846"
+       id="text205"
        transform="translate(-0.56125909)">Indonesia's</text>
     <text
        x="124.08"
@@ -621,7 +624,7 @@
        style="font-size:12.5px;font-family:Arial;fill:#757575"
        textLength="34.040001"
        lengthAdjust="spacingAndGlyphs"
-       id="text2848"
+       id="text207"
        transform="translate(-0.56125909)">goods</text>
     <text
        x="161.59"
@@ -629,7 +632,7 @@
        style="font-size:12.5px;font-family:Arial;fill:#757575"
        textLength="40.98"
        lengthAdjust="spacingAndGlyphs"
-       id="text2850"
+       id="text209"
        transform="translate(-0.56125909)">exports</text>
     <text
        x="206.03999"
@@ -637,7 +640,7 @@
        style="font-size:12.5px;font-family:Arial;fill:#757575"
        textLength="20.84"
        lengthAdjust="spacingAndGlyphs"
-       id="text2852"
+       id="text211"
        transform="translate(-0.56125909)">and</text>
     <text
        x="230.35001"
@@ -645,7 +648,7 @@
        style="font-size:12.5px;font-family:Arial;fill:#757575"
        textLength="40.970001"
        lengthAdjust="spacingAndGlyphs"
-       id="text2854"
+       id="text213"
        transform="translate(-0.56125909)">imports</text>
     <text
        x="274.79001"
@@ -653,7 +656,7 @@
        style="font-size:12.5px;font-family:Arial;fill:#757575"
        textLength="13.2"
        lengthAdjust="spacingAndGlyphs"
-       id="text2856"
+       id="text215"
        transform="translate(-0.56125909)">by</text>
     <text
        x="291.45999"
@@ -661,7 +664,7 @@
        style="font-size:12.5px;font-family:Arial;fill:#757575"
        textLength="38.200001"
        lengthAdjust="spacingAndGlyphs"
-       id="text2858"
+       id="text217"
        transform="translate(-0.56125909)">trading</text>
     <text
        x="333.13"
@@ -669,7 +672,7 @@
        style="font-size:12.5px;font-family:Arial;fill:#757575"
        textLength="39.59"
        lengthAdjust="spacingAndGlyphs"
-       id="text2860"
+       id="text219"
        transform="translate(-0.56125909)">partner</text>
     <text
        x="376.19"
@@ -677,7 +680,7 @@
        style="font-size:12.5px;font-family:Arial;fill:#757575"
        textLength="50"
        lengthAdjust="spacingAndGlyphs"
-       id="text2862"
+       id="text221"
        transform="translate(-0.56125909)">(percent)</text>
     <text
        x="7.0900002"
@@ -685,7 +688,7 @@
        style="font-weight:bold;font-size:14px;font-family:Arial"
        textLength="38.869999"
        lengthAdjust="spacingAndGlyphs"
-       id="text2864"
+       id="text223"
        transform="translate(-0.66275107)">China</text>
     <text
        x="49.849998"
@@ -693,7 +696,7 @@
        style="font-weight:bold;font-size:14px;font-family:Arial"
        textLength="24.110001"
        lengthAdjust="spacingAndGlyphs"
-       id="text2866"
+       id="text225"
        transform="translate(-0.66275107)">has</text>
     <text
        x="77.849998"
@@ -701,7 +704,7 @@
        style="font-weight:bold;font-size:14px;font-family:Arial"
        textLength="52.889999"
        lengthAdjust="spacingAndGlyphs"
-       id="text2868"
+       id="text227"
        transform="translate(-0.66275107)">become</text>
     <text
        x="134.63"
@@ -709,7 +712,7 @@
        style="font-weight:bold;font-size:14px;font-family:Arial"
        textLength="76.419998"
        lengthAdjust="spacingAndGlyphs"
-       id="text2870"
+       id="text229"
        transform="translate(-0.66275107)">Indonesia's</text>
     <text
        x="214.94"
@@ -717,7 +720,7 @@
        style="font-weight:bold;font-size:14px;font-family:Arial"
        textLength="45.889999"
        lengthAdjust="spacingAndGlyphs"
-       id="text2872"
+       id="text231"
        transform="translate(-0.66275107)">largest</text>
     <text
        x="264.72"
@@ -725,7 +728,7 @@
        style="font-weight:bold;font-size:14px;font-family:Arial"
        textLength="47.419998"
        lengthAdjust="spacingAndGlyphs"
-       id="text2874"
+       id="text233"
        transform="translate(-0.66275107)">trading</text>
     <text
        x="316.01999"
@@ -733,7 +736,7 @@
        style="font-weight:bold;font-size:14px;font-family:Arial"
        textLength="48.220001"
        lengthAdjust="spacingAndGlyphs"
-       id="text2876"
+       id="text235"
        transform="translate(-0.66275107)">partner</text>
     <text
        x="7.0900002"
@@ -741,7 +744,7 @@
        style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
        textLength="31.309999"
        lengthAdjust="spacingAndGlyphs"
-       id="text2878"
+       id="text237"
        transform="translate(-0.32806826)">*World</text>
     <text
        x="41.32"
@@ -749,7 +752,7 @@
        style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
        textLength="27.040001"
        lengthAdjust="spacingAndGlyphs"
-       id="text2880"
+       id="text239"
        transform="translate(-0.32806826)">Trade</text>
     <text
        x="71.269997"
@@ -757,7 +760,7 @@
        style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
        textLength="59.529999"
        lengthAdjust="spacingAndGlyphs"
-       id="text2882"
+       id="text241"
        transform="translate(-0.32806826)">Organization</text>
     <text
        x="133.72"
@@ -765,7 +768,7 @@
        style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
        textLength="74.669998"
        lengthAdjust="spacingAndGlyphs"
-       id="text2884"
+       id="text243"
        transform="translate(-0.32806826)">**ASEAN-China</text>
     <text
        x="211.31"
@@ -773,7 +776,7 @@
        style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
        textLength="21.59"
        lengthAdjust="spacingAndGlyphs"
-       id="text2886"
+       id="text245"
        transform="translate(-0.32806826)">Free</text>
     <text
        x="235.82001"
@@ -781,7 +784,7 @@
        style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
        textLength="27.040001"
        lengthAdjust="spacingAndGlyphs"
-       id="text2888"
+       id="text247"
        transform="translate(-0.32806826)">Trade</text>
     <text
        x="265.78"
@@ -789,7 +792,7 @@
        style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
        textLength="22.18"
        lengthAdjust="spacingAndGlyphs"
-       id="text2890"
+       id="text249"
        transform="translate(-0.32806826)">Area</text>
     <text
        x="7.0900002"
@@ -797,7 +800,7 @@
        style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
        textLength="36.18"
        lengthAdjust="spacingAndGlyphs"
-       id="text2892"
+       id="text251"
        transform="translate(-0.47160118)">Source:</text>
     <text
        x="46.18"
@@ -805,7 +808,7 @@
        style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
        textLength="30.35"
        lengthAdjust="spacingAndGlyphs"
-       id="text2894"
+       id="text253"
        transform="translate(-0.47160118)">United</text>
     <text
        x="79.449997"
@@ -813,7 +816,7 @@
        style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
        textLength="35.599998"
        lengthAdjust="spacingAndGlyphs"
-       id="text2896"
+       id="text255"
        transform="translate(-0.47160118)">Nations</text>
     <text
        x="117.96"
@@ -821,7 +824,7 @@
        style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
        textLength="25.08"
        lengthAdjust="spacingAndGlyphs"
-       id="text2898"
+       id="text257"
        transform="translate(-0.47160118)">(UN);</text>
     <text
        x="145.95"
@@ -829,7 +832,7 @@
        style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
        textLength="37.02"
        lengthAdjust="spacingAndGlyphs"
-       id="text2900"
+       id="text259"
        transform="translate(-0.47160118)">author's</text>
     <text
        x="185.89"
@@ -837,7 +840,7 @@
        style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
        textLength="32.68"
        lengthAdjust="spacingAndGlyphs"
-       id="text2902"
+       id="text261"
        transform="translate(-0.47160118)">analyis</text>
     <text
        x="7.0900002"
@@ -845,7 +848,7 @@
        style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
        textLength="28.59"
        lengthAdjust="spacingAndGlyphs"
-       id="text2904"
+       id="text263"
        transform="translate(-0.52289418)">Chart:</text>
     <text
        x="38.59"
@@ -853,7 +856,7 @@
        style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
        textLength="41.43"
        lengthAdjust="spacingAndGlyphs"
-       id="text2906"
+       id="text265"
        transform="translate(-0.52289418)">Dzulfiqar</text>
     <text
        x="82.940002"
@@ -861,7 +864,7 @@
        style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
        textLength="30.35"
        lengthAdjust="spacingAndGlyphs"
-       id="text2908"
+       id="text267"
        transform="translate(-0.52289418)">Fathur</text>
     <text
        x="116.2"
@@ -869,7 +872,7 @@
        style="font-size:10.5px;font-family:Arial;fill:#9e9e9e"
        textLength="39.689999"
        lengthAdjust="spacingAndGlyphs"
-       id="text2910"
+       id="text269"
        transform="translate(-0.52289418)">Rahman</text>
   </g>
 </svg>

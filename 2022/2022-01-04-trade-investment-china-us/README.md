@@ -13,4 +13,5 @@ Foreign direct investment by country of origin | [Bank Indonesia](https://www.bi
 # Changelog
 
 Both charts:
-- added minor visual improvements.
+- added minor visual improvements; and  
+- changed the color palette.
