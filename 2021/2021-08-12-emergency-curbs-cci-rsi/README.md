@@ -1,9 +1,9 @@
-# Overview
+# Emergency curbs reverse recovery in consumer confidence, retail sales
 
 This project seeks to explain how the Delta wave reverses recovery among consumers and businesses by looking at consumer confidence and retail sales, as well as mobility and COVID-19 cases. Read the story on [this link](https://www.thejakartapost.com/news/2021/08/12/emergency-curbs-reverse-recovery-in-consumer-confidence-retail-sales.html).
 
 
-# Data
+## Data
 
 Data | Source |  
 ---- | ------ |  
@@ -14,7 +14,7 @@ Population | [Statistics Indonesia (BPS)](https://bps.go.id/indicator/12/1886/1/
 COVID-19 cases | [COVID-19 task force](https://data.covid19.go.id/public/api/prov.json) |  
 
 
-# Changelog
+## Changelog
 
 The chart on consumer confidence and retail sales:  
 - used a more descriptive subtitle; and  

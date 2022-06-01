@@ -1,16 +1,16 @@
-# Overview
+# Wealth gap narrows in Indonesia as stock market slumps, house prices grow
 
 This project seeks to describe how the pandemic affected both wealth distribution and growth in Indonesia. Read the story on [this link](https://www.thejakartapost.com/news/2021/07/12/wealth-gap-narrows-in-indonesia-as-stock-market-slumps-house-prices-grow.html).
 
 
-# Data
+## Data
 
 Data | Source |  
 ---- | ------ |  
 Wealth estimates | [Credit Suisse](https://www.credit-suisse.com/about-us/en/reports-research/global-wealth-report.html) |  
 
 
-# Changelog
+## Changelog
 
 The wealth distribution chart:  
 - removed annotation on the wealth share of the bottom 40 percent;  

@@ -1,9 +1,9 @@
-# Overview
+# Domestic travelers ‘not enough’ to revive Bali tourism
 
 This article seeks to explain why relying solely on domestic travelers may not recover Bali's tourism sector, especially the accommodation industry. Read the story on [this link](https://www.thejakartapost.com/business/2022/01/18/domestic-travelers-not-enough-to-revive-bali-tourism.html).
 
 
-# Data
+## Data
 
 Data | Source |  
 ---- | ------ |  
@@ -13,7 +13,7 @@ Foreign guests at star hotels | [BPS](https://bps.go.id/indicator/16/310/1/jumla
 Foreign guests at nonstar hotels | [BPS](https://bps.go.id/indicator/16/326/1/jumlah-tamu-asing-pada-hotel-non-bintang-.html) |  
 
 
-# Changelog
+## Changelog
 
 The chart:
 - added five more provinces, so the chart covers top 10 provinces;  

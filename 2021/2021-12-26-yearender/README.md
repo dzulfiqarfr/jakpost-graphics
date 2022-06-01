@@ -1,9 +1,9 @@
-# Overview
+# Yearender 2021: How the Delta wave disrupted Indonesia’s economic recovery
 
 This project is part of The Jakarta Post's yearender series, which look back at the big events in the past year. It looks at how the Delta wave of COVID-19 disrupts the country's recovery. Read the story on [this link](https://www.thejakartapost.com/business/2021/12/25/year-ender-how-the-delta-wave-disrupted-indonesias-economic-recovery.html).
 
 
-# Data
+## Data
 
 Data | Source |  
 ---- | ------ |  
@@ -14,7 +14,7 @@ Gross domestic product (GDP) growth | [Statistics Indonesia](https://bps.go.id/i
 I have filtered the mobility data for Indonesia and cleaned the column names. This allows me to commit the data to this repository, otherwise the raw data will be too big.
 
 
-# Changelog
+## Changelog
 
 The chart:  
 - added footnotes to explain the data was smoothed to seven-day moving average and the mobility was compared with normal levels in January-February 2020; and  

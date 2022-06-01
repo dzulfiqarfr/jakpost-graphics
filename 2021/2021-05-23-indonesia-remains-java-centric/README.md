@@ -1,9 +1,9 @@
-# Overview
+# Indonesia remains Java-centric despite Jokowi's infrastructure campaign
 
 This project seeks to describe the concentration of population and economic development in Java between 1971 and 2020. You can read the story on [this link](https://www.thejakartapost.com/news/2021/05/23/indonesia-remains-java-centric-despite-jokowis-infrastructure-campaign.html).
 
 
-# Data
+## Data
 
 Data | Source |  
 ---- | ------ |  
@@ -13,7 +13,7 @@ Gross regional domestic product (GRDP) | [BPS](https://www.bps.go.id/indicator/1
 Migration | [BPS](https://bps.go.id/publication/2020/12/02/725d484ca73434e95d4d4b9d/profil-migran-hasil-survei-sosial-ekonomi-nasional-2019.html) |  
 
 
-# Changelog
+## Changelog
 
 The population and GDP distribution chart:  
 - improved title, subtitle, caption and axis texts; and  

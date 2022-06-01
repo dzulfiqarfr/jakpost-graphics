@@ -1,9 +1,9 @@
-# Overview
+# Indonesia lags behind in decoupling economic and emissions growth
 
 This project seeks to describe the lack of progress in decoupling economic development from emission by Indonesia. It also seeks to gauge how emission negatively affect the country's human development. Read the story on [this link](https://www.thejakartapost.com/news/2021/09/03/indonesia-lags-behind-in-decoupling-economic-and-emissions-growth.html).
 
 
-# Data
+## Data
 
 Data | Source |  
 ---- | ------ |  
@@ -14,7 +14,7 @@ Human development index (HDI) | [UN](https://hdr.undp.org/en/content/human-devel
 Material footprint per capita | [UN](https://wesr.unep.org/downloader) |  
 
 
-# Changelog
+## Changelog
 
 The GDP and emission per capita chart:
 - removed Turkey and China from the chart. As an outlier, China could hide trends in other countries;  

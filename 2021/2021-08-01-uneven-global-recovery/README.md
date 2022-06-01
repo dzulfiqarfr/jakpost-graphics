@@ -1,9 +1,9 @@
-# Overview
+# Slow vaccination takes toll on Indonesia in uneven global recovery
 
 This project seeks to describe how the uneven rate of vaccination against COVID-19 may have led to a global recovery that leaves poor countries behind. Read the story on [this link](https://www.thejakartapost.com/news/2021/08/01/slow-vaccination-takes-toll-on-indonesia-in-uneven-global-recovery.html).
 
 
-# Data
+## Data
 
 Data | Source |  
 ---- | ------ |  
@@ -12,7 +12,7 @@ COVID-19 vaccination rate | [Our World in Data](https://ourworldindata.org/coron
 Country classification by income group | [World Bank](https://datahelpdesk.worldbank.org/knowledgebase/articles/906519-world-bank-country-and-lending-groups) |  
 
 
-# Changelog
+## Changelog
 
 The economic growth forecast chart:  
 - used a more descriptive subtitle;  
